@@ -13,6 +13,29 @@ export interface Word {
   firstLetter: string;
 }
 
+// Clean up Bangla text by removing excess spaces between characters
+function cleanBanglaText(text: string): string {
+  if (!text) return '';
+  
+  // Remove the "বা াংল া  অ র্ থঃ" prefix pattern
+  let cleaned = text.replace(/^ব\s*া\s*া?ং?ল\s*া\s*অ\s*র্\s*থঃ?\s*/gi, '');
+  
+  // Remove excess spaces between Bangla characters
+  // Match Bangla character followed by spaces followed by another Bangla character
+  cleaned = cleaned.replace(/([\u0980-\u09FF])\s+([\u0980-\u09FF])/g, '$1$2');
+  // Run multiple times to catch all cases
+  cleaned = cleaned.replace(/([\u0980-\u09FF])\s+([\u0980-\u09FF])/g, '$1$2');
+  cleaned = cleaned.replace(/([\u0980-\u09FF])\s+([\u0980-\u09FF])/g, '$1$2');
+  
+  // Clean up multiple spaces
+  cleaned = cleaned.replace(/\s{2,}/g, ' ').trim();
+  
+  // Remove standalone punctuation/symbols at start
+  cleaned = cleaned.replace(/^[,;:\s]+/, '');
+  
+  return cleaned;
+}
+
 export function parseWordsFromText(text: string): Word[] {
   const words: Word[] = [];
   const blocks = text.split(/🎯\s*/);
@@ -57,53 +80,45 @@ function parseWordBlock(block: string): Word | null {
     }
   }
 
-  // Extract Bangla meaning (lines starting with বা or containing Bengali)
-  const banglaMeaningLines = lines.filter(l => 
-    l.includes('বা') || l.includes('অর্থ') || /[\u0980-\u09FF]{3,}/.test(l)
-  );
-  const banglaMeaning = banglaMeaningLines.slice(0, 2).join(' ').replace(/^[বা াংল অর্থঃ\s:]+/g, '').trim();
-
-  // Extract Smart Meaning
-  const smartMeaningLine = lines.find(l => l.includes('Word Smart Meaning') || l.includes('➭'));
-  const smartMeaning = smartMeaningLine?.replace(/Word Smart Meaning:?➭?\s*/i, '').trim() || '';
-
-  // Extract part of speech from smart meaning
-  const posMatch = smartMeaning.match(/^(v|n|adj|adv|prep|conj|interj)/i);
-  const partOfSpeech = posMatch ? getFullPartOfSpeech(posMatch[1]) : 'noun';
-
-  // Extract synonyms
-  const synonymLine = lines.find(l => l.toLowerCase().includes('synonym'));
-  const synonyms = synonymLine 
-    ? synonymLine.replace(/synonyms?:?-?\s*/i, '').split(/[,;]/).map(s => s.trim()).filter(Boolean)
-    : [];
-
-  // Extract antonyms
-  const antonymLine = lines.find(l => l.toLowerCase().includes('antonym'));
-  const antonyms = antonymLine 
-    ? antonymLine.replace(/antonyms?:?-?\s*/i, '').split(/[,;]/).map(s => s.trim()).filter(Boolean)
-    : [];
-
-  // Extract examples
-  const examples: string[] = [];
-  const exampleSection = lines.findIndex(l => l.toLowerCase().includes('examples'));
-  if (exampleSection > -1) {
-    for (let i = exampleSection + 1; i < lines.length && i < exampleSection + 10; i++) {
-      const line = lines[i];
-      if (line.startsWith('❑') || line.match(/^[A-Z]/)) {
-        examples.push(line.replace(/^❑\s*/, '').trim());
-      }
+  // Find lines with Bangla অর্থ pattern
+  const banglaMeaningLines: string[] = [];
+  for (let i = 0; i < Math.min(lines.length, 10); i++) {
+    const line = lines[i];
+    // Match lines that start with the broken "বা াংল া  অ র্ থঃ" pattern
+    if (line.match(/^ব\s*া\s*া?ং?ল\s*া\s*অ\s*র্\s*থঃ?/i) || 
+        (i > 0 && i < 5 && /^[\u0980-\u09FF]/.test(line) && !line.includes('Word Smart'))) {
+      banglaMeaningLines.push(line);
     }
   }
   
-  // Also get examples from main content (lines starting with ❑)
-  lines.forEach(line => {
-    if (line.startsWith('❑') && !examples.includes(line.replace(/^❑\s*/, '').trim())) {
-      const example = line.replace(/^❑\s*/, '').trim();
-      if (example.length > 20 && example.length < 300) {
-        examples.push(example);
-      }
-    }
-  });
+  // Clean and join Bangla meaning
+  let banglaMeaning = banglaMeaningLines.map(cleanBanglaText).filter(Boolean).join(', ');
+  if (!banglaMeaning) {
+    banglaMeaning = '';
+  }
+
+  // Extract Smart Meaning
+  const smartMeaningLine = lines.find(l => l.includes('Word Smart Meaning') || l.includes('➭'));
+  let smartMeaning = smartMeaningLine?.replace(/Word Smart Meaning:?➭?\s*/i, '').trim() || '';
+
+  // Extract part of speech from smart meaning
+  const posMatch = smartMeaning.match(/^(v|n|adj|adv|prep|conj|interj)\s+/i);
+  const partOfSpeech = posMatch ? getFullPartOfSpeech(posMatch[1]) : 'noun';
+  
+  // Remove POS from meaning
+  smartMeaning = smartMeaning.replace(/^(v|n|adj|adv|prep|conj|interj)\s+/i, '').trim();
+
+  // Extract synonyms
+  const synonymLine = lines.find(l => l.toLowerCase().startsWith('synonym'));
+  const synonyms = synonymLine 
+    ? synonymLine.replace(/synonyms?:?-?\s*/i, '').split(/[,;]/).map(s => s.trim()).filter(s => s && s.length > 1)
+    : [];
+
+  // Extract antonyms
+  const antonymLine = lines.find(l => l.toLowerCase().startsWith('antonym'));
+  const antonyms = antonymLine 
+    ? antonymLine.replace(/antonyms?:?-?\s*/i, '').split(/[,;]/).map(s => s.trim()).filter(s => s && s.length > 1)
+    : [];
 
   // Extract detailed Bangla meaning
   const detailedIndex = lines.findIndex(l => l.includes('Detailed Bangla Meaning'));
@@ -112,12 +127,45 @@ function parseWordBlock(block: string): Word | null {
     const detailedLines: string[] = [];
     for (let i = detailedIndex + 1; i < lines.length; i++) {
       const line = lines[i];
-      if (line.includes('Examples') || line.includes('Synonym') || line.includes('Antonym')) break;
-      if (/[\u0980-\u09FF]/.test(line) || line.startsWith('❑')) {
-        detailedLines.push(line.replace(/^[🗹❑\s]+/, ''));
+      if (line.includes('Examples') || line.toLowerCase().startsWith('synonym') || line.toLowerCase().startsWith('antonym')) break;
+      if (/[\u0980-\u09FF]/.test(line) || line.startsWith('❑') || line.startsWith('🗹')) {
+        const cleaned = cleanBanglaText(line.replace(/^[🗹❑\s]+/, ''));
+        if (cleaned) detailedLines.push(cleaned);
       }
     }
     detailedBanglaMeaning = detailedLines.join(' ').trim();
+  }
+
+  // Extract examples - look for lines starting with ❑ after "Examples" section
+  const examples: string[] = [];
+  const exampleSectionIndex = lines.findIndex(l => l.toLowerCase().includes('examples'));
+  
+  if (exampleSectionIndex > -1) {
+    for (let i = exampleSectionIndex + 1; i < lines.length && examples.length < 8; i++) {
+      const line = lines[i];
+      if (line.startsWith('❑')) {
+        const example = line.replace(/^❑\s*/, '').trim();
+        if (example.length > 15 && example.length < 400 && /^[A-Z]/.test(example)) {
+          examples.push(example);
+        }
+      }
+    }
+  }
+  
+  // Also collect examples from before the Examples section (in the definition area)
+  for (let i = 0; i < (exampleSectionIndex > -1 ? exampleSectionIndex : lines.length) && examples.length < 8; i++) {
+    const line = lines[i];
+    if (line.startsWith('❑')) {
+      const example = line.replace(/^❑\s*/, '').trim();
+      // Only add if it looks like an English sentence and isn't already added
+      if (example.length > 20 && example.length < 400 && /^[A-Z]/.test(example) && !examples.includes(example)) {
+        // Skip if it contains mostly Bangla
+        const banglaCharCount = (example.match(/[\u0980-\u09FF]/g) || []).length;
+        if (banglaCharCount < example.length * 0.3) {
+          examples.push(example);
+        }
+      }
+    }
   }
 
   // Determine difficulty based on word length and synonym count
@@ -133,8 +181,8 @@ function parseWordBlock(block: string): Word | null {
     word: wordText.toUpperCase(),
     pronunciation,
     partOfSpeech,
-    smartMeaning: smartMeaning.replace(/^(v|n|adj|adv)\s+/i, '').trim(),
-    banglaMeaning: banglaMeaning || 'অর্থ পাওয়া যায়নি',
+    smartMeaning,
+    banglaMeaning,
     detailedBanglaMeaning,
     synonyms: synonyms.slice(0, 15),
     antonyms: antonyms.slice(0, 15),
