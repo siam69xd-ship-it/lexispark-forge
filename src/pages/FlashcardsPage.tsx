@@ -1,37 +1,79 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence, PanInfo } from 'framer-motion';
-import { Layers, Shuffle, Volume2, RotateCcw, CheckCircle, Trash2, ChevronLeft, ChevronRight, Plus } from 'lucide-react';
+import { Layers, Shuffle, Volume2, RotateCcw, CheckCircle, ChevronLeft, ChevronRight, Type } from 'lucide-react';
 import { useWords } from '@/context/WordContext';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
-import { toast } from '@/hooks/use-toast';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 
-type ViewMode = 'selection' | 'flashcards';
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 export default function FlashcardsPage() {
-  const { words, flashcards, addToFlashcards, removeFromFlashcards, markAsMemorized, memorized } = useWords();
+  const { words, memorized, markAsMemorized } = useWords();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [shuffled, setShuffled] = useState(false);
   const [direction, setDirection] = useState(0);
-  const [viewMode, setViewMode] = useState<ViewMode>('selection');
+  const [useLetterFilter, setUseLetterFilter] = useState(false);
+  const [selectedLetters, setSelectedLetters] = useState<Set<string>>(new Set());
 
+  // Get available letters from words
+  const availableLetters = useMemo(() => {
+    const letters = new Set(words.map(w => w.firstLetter));
+    return ALPHABET.filter(l => letters.has(l));
+  }, [words]);
+
+  // Get letter counts
+  const letterCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    words.forEach(w => {
+      counts[w.firstLetter] = (counts[w.firstLetter] || 0) + 1;
+    });
+    return counts;
+  }, [words]);
+
+  const toggleLetter = (letter: string) => {
+    setSelectedLetters(prev => {
+      const updated = new Set(prev);
+      if (updated.has(letter)) {
+        updated.delete(letter);
+      } else {
+        updated.add(letter);
+      }
+      return updated;
+    });
+    setCurrentIndex(0);
+    setIsFlipped(false);
+  };
+
+  const selectAllLetters = () => {
+    setSelectedLetters(new Set(availableLetters));
+    setCurrentIndex(0);
+  };
+
+  const clearAllLetters = () => {
+    setSelectedLetters(new Set());
+    setCurrentIndex(0);
+  };
+
+  // All words are flashcards, optionally filtered by letter
   const flashcardWords = useMemo(() => {
-    const cardWords = words.filter(w => flashcards.has(w.id));
-    if (shuffled) {
-      return [...cardWords].sort(() => Math.random() - 0.5);
+    let filtered = [...words];
+    
+    if (useLetterFilter && selectedLetters.size > 0) {
+      filtered = filtered.filter(w => selectedLetters.has(w.firstLetter));
     }
-    return cardWords;
-  }, [words, flashcards, shuffled]);
+    
+    if (shuffled) {
+      return [...filtered].sort(() => Math.random() - 0.5);
+    }
+    return filtered;
+  }, [words, shuffled, useLetterFilter, selectedLetters]);
 
   const currentWord = flashcardWords[currentIndex];
 
-  const addAllWords = () => {
-    words.forEach(w => addToFlashcards(w.id));
-    toast({ title: `Added all ${words.length} words to flashcards` });
-  };
-
   const nextCard = () => {
+    if (flashcardWords.length === 0) return;
     setDirection(1);
     setIsFlipped(false);
     setTimeout(() => {
@@ -40,6 +82,7 @@ export default function FlashcardsPage() {
   };
 
   const prevCard = () => {
+    if (flashcardWords.length === 0) return;
     setDirection(-1);
     setIsFlipped(false);
     setTimeout(() => {
@@ -48,7 +91,7 @@ export default function FlashcardsPage() {
   };
 
   const handleShuffle = () => {
-    setShuffled(true);
+    setShuffled(prev => !prev);
     setCurrentIndex(0);
     setIsFlipped(false);
   };
@@ -74,27 +117,14 @@ export default function FlashcardsPage() {
   const handleMarkMemorized = () => {
     if (currentWord) {
       markAsMemorized(currentWord.id);
-      if (flashcardWords.length === 1) {
-        setCurrentIndex(0);
-      } else if (currentIndex >= flashcardWords.length - 1) {
+      if (currentIndex >= flashcardWords.length - 1) {
         setCurrentIndex(0);
       }
     }
   };
 
-  const handleRemove = () => {
-    if (currentWord) {
-      removeFromFlashcards(currentWord.id);
-      if (flashcardWords.length === 1) {
-        setCurrentIndex(0);
-      } else if (currentIndex >= flashcardWords.length - 1) {
-        setCurrentIndex(0);
-      }
-    }
-  };
-
-  // Selection Screen
-  if (viewMode === 'selection') {
+  // Empty State
+  if (flashcardWords.length === 0) {
     return (
       <div className="min-h-screen pt-20 pb-12">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -110,144 +140,91 @@ export default function FlashcardsPage() {
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
               <span className="gradient-text">Flashcard Deck</span>
             </h1>
-            <p className="text-muted-foreground max-w-xl mx-auto">
-              Practice vocabulary with interactive flashcards
-            </p>
           </motion.div>
 
-          {/* Stats Cards */}
-          <div className="grid sm:grid-cols-3 gap-4 mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="glass rounded-2xl p-6 border border-border/50 text-center"
-            >
-              <div className="text-4xl font-bold gradient-text mb-2">{words.length}</div>
-              <p className="text-muted-foreground text-sm">Total Words</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="glass rounded-2xl p-6 border border-border/50 text-center"
-            >
-              <div className="text-4xl font-bold text-primary mb-2">{flashcards.size}</div>
-              <p className="text-muted-foreground text-sm">In Deck</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="glass rounded-2xl p-6 border border-border/50 text-center"
-            >
-              <div className="text-4xl font-bold text-green-400 mb-2">{memorized.size}</div>
-              <p className="text-muted-foreground text-sm">Memorized</p>
-            </motion.div>
-          </div>
-
-          {/* Action Buttons */}
+          {/* Letter Filter */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="space-y-4"
+            className="glass rounded-2xl p-6 border border-border/50 mb-8"
           >
-            {/* Add All Words */}
-            <Button
-              onClick={addAllWords}
-              size="lg"
-              variant="outline"
-              className="w-full rounded-xl gap-2 h-14"
-            >
-              <Plus className="w-5 h-5" />
-              Add All {words.length} Words to Flashcards
-            </Button>
-
-            {/* Start Flashcards */}
-            {flashcards.size > 0 && (
-              <Button
-                onClick={() => {
-                  setCurrentIndex(0);
-                  setIsFlipped(false);
-                  setViewMode('flashcards');
-                }}
-                size="lg"
-                className="w-full rounded-xl gap-2 h-14 bg-gradient-button glow"
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <Type className="w-4 h-4 text-primary" />
+                <Label className="text-sm">Filter by Letter</Label>
+              </div>
+              <Switch
+                checked={useLetterFilter}
+                onCheckedChange={setUseLetterFilter}
+              />
+            </div>
+            
+            {useLetterFilter && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                className="space-y-3"
               >
-                <Layers className="w-5 h-5" />
-                Start Flashcards ({flashcards.size} cards)
-              </Button>
+                <div className="flex gap-2 mb-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={selectAllLetters}
+                    className="rounded-lg text-xs"
+                  >
+                    Select All
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={clearAllLetters}
+                    className="rounded-lg text-xs"
+                  >
+                    Clear All
+                  </Button>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {availableLetters.map(letter => (
+                    <button
+                      key={letter}
+                      onClick={() => toggleLetter(letter)}
+                      className={`w-10 h-10 rounded-lg border text-sm font-bold transition-all ${
+                        selectedLetters.has(letter)
+                          ? 'bg-primary text-primary-foreground border-primary'
+                          : 'border-border/50 text-muted-foreground hover:border-primary/30 hover:text-foreground'
+                      }`}
+                    >
+                      {letter}
+                      <span className="block text-[10px] font-normal opacity-70">
+                        {letterCounts[letter] || 0}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
             )}
-
-            {/* Browse Words Link */}
-            <Link to="/words" className="block">
-              <Button
-                variant="ghost"
-                size="lg"
-                className="w-full rounded-xl gap-2"
-              >
-                Or browse words to add individually
-              </Button>
-            </Link>
           </motion.div>
 
-          {/* Recent Cards Preview */}
-          {flashcards.size > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="mt-8"
-            >
-              <h2 className="text-lg font-semibold mb-4">Cards in Deck</h2>
-              <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto">
-                {flashcardWords.slice(0, 50).map(w => (
-                  <span
-                    key={w.id}
-                    className="px-3 py-1.5 rounded-lg glass border border-border/50 text-sm"
-                  >
-                    {w.word}
-                  </span>
-                ))}
-                {flashcards.size > 50 && (
-                  <span className="px-3 py-1.5 rounded-lg bg-muted text-muted-foreground text-sm">
-                    +{flashcards.size - 50} more
-                  </span>
-                )}
-              </div>
-            </motion.div>
-          )}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center"
+          >
+            <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-muted/50 flex items-center justify-center">
+              <Layers className="w-12 h-12 text-muted-foreground" />
+            </div>
+            <h2 className="text-2xl font-bold font-display mb-3">No Words Found</h2>
+            <p className="text-muted-foreground mb-6">
+              {useLetterFilter && selectedLetters.size > 0 
+                ? 'No words found for selected letters. Try selecting different letters.'
+                : 'Select some letters to start practicing flashcards.'}
+            </p>
+          </motion.div>
         </div>
       </div>
     );
   }
 
-  // Empty State (should not happen but just in case)
-  if (flashcardWords.length === 0) {
-    return (
-      <div className="min-h-screen pt-20 pb-12 flex items-center justify-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-md mx-auto px-4"
-        >
-          <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-muted/50 flex items-center justify-center">
-            <Layers className="w-12 h-12 text-muted-foreground" />
-          </div>
-          <h1 className="text-2xl font-bold font-display mb-3">No Flashcards Yet</h1>
-          <p className="text-muted-foreground mb-6">
-            Add words to your flashcard deck to start practicing.
-          </p>
-          <Button size="lg" className="rounded-xl" onClick={() => setViewMode('selection')}>
-            Go Back
-          </Button>
-        </motion.div>
-      </div>
-    );
-  }
-
-  // Flashcard View
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="container mx-auto px-4 max-w-2xl">
@@ -255,38 +232,100 @@ export default function FlashcardsPage() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-8"
+          className="text-center mb-6"
         >
-          <Button
-            variant="ghost"
-            onClick={() => setViewMode('selection')}
-            className="mb-4"
-          >
-            ← Back to Selection
-          </Button>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-4">
             <Layers className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium">{flashcardWords.length} Cards</span>
           </div>
-          <h1 className="text-4xl font-bold font-display mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2">
             <span className="gradient-text">Flashcards</span>
           </h1>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             Swipe or use arrows to navigate • Tap to flip
           </p>
+        </motion.div>
+
+        {/* Letter Filter */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="glass rounded-2xl p-4 border border-border/50 mb-6"
+        >
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <Type className="w-4 h-4 text-primary" />
+              <Label className="text-sm">Filter by Letter</Label>
+            </div>
+            <Switch
+              checked={useLetterFilter}
+              onCheckedChange={(checked) => {
+                setUseLetterFilter(checked);
+                setCurrentIndex(0);
+                setIsFlipped(false);
+              }}
+            />
+          </div>
+          
+          {useLetterFilter && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              className="space-y-2"
+            >
+              <div className="flex gap-2 mb-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={selectAllLetters}
+                  className="rounded-lg text-xs h-7"
+                >
+                  All
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={clearAllLetters}
+                  className="rounded-lg text-xs h-7"
+                >
+                  Clear
+                </Button>
+                {selectedLetters.size > 0 && (
+                  <span className="text-xs text-muted-foreground self-center ml-1">
+                    {selectedLetters.size} selected
+                  </span>
+                )}
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {availableLetters.map(letter => (
+                  <button
+                    key={letter}
+                    onClick={() => toggleLetter(letter)}
+                    className={`w-8 h-8 rounded-md border text-xs font-bold transition-all ${
+                      selectedLetters.has(letter)
+                        ? 'bg-primary text-primary-foreground border-primary'
+                        : 'border-border/50 text-muted-foreground hover:border-primary/30'
+                    }`}
+                  >
+                    {letter}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </motion.div>
 
         {/* Progress */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-center mb-6 text-muted-foreground"
+          className="text-center mb-4 text-muted-foreground text-sm"
         >
           Card {currentIndex + 1} of {flashcardWords.length}
         </motion.div>
 
         {/* Flashcard */}
-        <div className="relative h-[400px] md:h-[450px] perspective-1000 mb-8">
+        <div className="relative h-[350px] md:h-[400px] perspective-1000 mb-6">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={currentIndex}
@@ -323,7 +362,7 @@ export default function FlashcardsPage() {
                   </motion.button>
                   
                   <span className="text-sm text-muted-foreground mb-2">{currentWord?.partOfSpeech}</span>
-                  <h2 className="text-4xl md:text-5xl font-bold font-display gradient-text mb-4">
+                  <h2 className="text-4xl md:text-5xl font-bold font-display gradient-text mb-4 text-center">
                     {currentWord?.word}
                   </h2>
                   {currentWord?.pronunciation && (
@@ -358,7 +397,7 @@ export default function FlashcardsPage() {
                     {currentWord?.smartMeaning && (
                       <div>
                         <h3 className="text-sm font-semibold text-primary mb-2">Definition</h3>
-                        <p className="text-foreground">{currentWord?.smartMeaning}</p>
+                        <p className="text-foreground">{currentWord.smartMeaning}</p>
                       </div>
                     )}
 
@@ -394,7 +433,7 @@ export default function FlashcardsPage() {
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center justify-center gap-4 mb-8">
+        <div className="flex items-center justify-center gap-4 mb-6">
           <Button
             variant="outline"
             size="icon"
@@ -439,14 +478,17 @@ export default function FlashcardsPage() {
           <Button
             variant="outline"
             onClick={handleShuffle}
-            className="rounded-xl gap-2"
+            className={`rounded-xl gap-2 ${shuffled ? 'border-primary text-primary' : ''}`}
           >
             <Shuffle className="w-4 h-4" />
-            Shuffle
+            {shuffled ? 'Shuffled' : 'Shuffle'}
           </Button>
           <Button
             variant="outline"
-            onClick={() => setIsFlipped(false)}
+            onClick={() => {
+              setIsFlipped(false);
+              setCurrentIndex(0);
+            }}
             className="rounded-xl gap-2"
           >
             <RotateCcw className="w-4 h-4" />
@@ -459,14 +501,6 @@ export default function FlashcardsPage() {
             <CheckCircle className="w-4 h-4" />
             Memorized
           </Button>
-          <Button
-            variant="ghost"
-            onClick={handleRemove}
-            className="rounded-xl gap-2 text-destructive hover:text-destructive"
-          >
-            <Trash2 className="w-4 h-4" />
-            Remove
-          </Button>
         </div>
 
         {/* Stats */}
@@ -474,7 +508,7 @@ export default function FlashcardsPage() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="mt-8 text-center p-4 rounded-xl glass border border-green-500/20"
+            className="mt-6 text-center p-4 rounded-xl glass border border-green-500/20"
           >
             <p className="text-green-400">
               🎉 You've memorized {memorized.size} words!
