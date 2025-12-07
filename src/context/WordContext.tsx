@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Word, parseWordsFromText } from '@/lib/wordParser';
+import { Word, parseWordsFromText, parseBanglaFile, setBanglaMap } from '@/lib/wordParser';
 
 interface WordContextType {
   words: Word[];
@@ -29,11 +29,29 @@ export function WordProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     async function loadWords() {
       try {
-        const response = await fetch('/data/words.txt');
-        if (!response.ok) throw new Error('Failed to load words file');
-        const text = await response.text();
-        const parsedWords = parseWordsFromText(text);
+        // Load both files in parallel
+        const [englishResponse, banglaResponse] = await Promise.all([
+          fetch('/data/words_english.txt'),
+          fetch('/data/words_bangla.txt')
+        ]);
+        
+        if (!englishResponse.ok) throw new Error('Failed to load English words file');
+        if (!banglaResponse.ok) throw new Error('Failed to load Bangla words file');
+        
+        const [englishText, banglaText] = await Promise.all([
+          englishResponse.text(),
+          banglaResponse.text()
+        ]);
+        
+        // Parse Bangla file first and set the map
+        const banglaMap = parseBanglaFile(banglaText);
+        setBanglaMap(banglaMap);
+        
+        // Parse English file (will use banglaMap for Bangla meanings)
+        const parsedWords = parseWordsFromText(englishText);
         setWords(parsedWords);
+        
+        console.log(`Loaded ${parsedWords.length} words with ${banglaMap.size} Bangla translations`);
         
         // Load saved flashcards from localStorage
         const savedFlashcards = localStorage.getItem('vocaforge_flashcards');
@@ -46,6 +64,7 @@ export function WordProvider({ children }: { children: ReactNode }) {
         }
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load words');
+        console.error('Error loading words:', e);
       } finally {
         setLoading(false);
       }
@@ -88,6 +107,7 @@ export function WordProvider({ children }: { children: ReactNode }) {
     return words.filter(w => 
       w.word.toLowerCase().includes(q) ||
       w.smartMeaning.toLowerCase().includes(q) ||
+      w.banglaMeaning.toLowerCase().includes(q) ||
       w.synonyms.some(s => s.toLowerCase().includes(q))
     );
   };
