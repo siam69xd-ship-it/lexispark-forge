@@ -1,11 +1,12 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Brain, CheckCircle, XCircle, RotateCcw, Trophy, ArrowRight, Shuffle, Target } from 'lucide-react';
-import { useSearchParams } from 'react-router-dom';
+import { Brain, CheckCircle, XCircle, RotateCcw, Trophy, ArrowRight, Shuffle, Target, Settings, Minus, Plus } from 'lucide-react';
 import { useWords } from '@/context/WordContext';
 import { Word } from '@/lib/wordParser';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 
 type QuizType = 'definition' | 'synonym' | 'fillblank' | 'mixed';
 
@@ -19,7 +20,6 @@ interface Question {
 }
 
 export default function QuizPage() {
-  const [searchParams] = useSearchParams();
   const { words } = useWords();
   
   const [quizType, setQuizType] = useState<QuizType | null>(null);
@@ -30,14 +30,40 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [quizComplete, setQuizComplete] = useState(false);
   const [answers, setAnswers] = useState<boolean[]>([]);
+  
+  // Quiz configuration
+  const [questionCount, setQuestionCount] = useState(10);
+  const [useDifficulty, setUseDifficulty] = useState(false);
+  const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium');
+  const [showConfig, setShowConfig] = useState(false);
 
-  const wordParam = searchParams.get('word');
-  const specificWord = wordParam ? words.find(w => w.id === wordParam) : null;
+  const maxQuestions = useMemo(() => {
+    if (useDifficulty) {
+      return words.filter(w => w.difficulty === selectedDifficulty).length;
+    }
+    return words.length;
+  }, [words, useDifficulty, selectedDifficulty]);
+
+  const incrementCount = () => {
+    setQuestionCount(prev => Math.min(prev + 5, maxQuestions));
+  };
+
+  const decrementCount = () => {
+    setQuestionCount(prev => Math.max(prev - 5, 10));
+  };
 
   const generateQuestions = (type: QuizType): Question[] => {
-    const shuffledWords = specificWord 
-      ? [specificWord, ...words.filter(w => w.id !== specificWord.id).sort(() => Math.random() - 0.5).slice(0, 9)]
-      : [...words].sort(() => Math.random() - 0.5).slice(0, 10);
+    let availableWords = [...words];
+    
+    // Filter by difficulty if enabled
+    if (useDifficulty) {
+      availableWords = availableWords.filter(w => w.difficulty === selectedDifficulty);
+    }
+    
+    // Shuffle and select based on count
+    const shuffledWords = availableWords
+      .sort(() => Math.random() - 0.5)
+      .slice(0, Math.min(questionCount, availableWords.length));
     
     return shuffledWords.map(word => {
       const qType = type === 'mixed' 
@@ -81,19 +107,19 @@ export default function QuizPage() {
         };
       }
 
-      // Default: definition question
+      // Default: definition question - use Bangla meaning
       const wrongMeanings = words
-        .filter(w => w.id !== word.id)
-        .map(w => w.smartMeaning.slice(0, 60))
+        .filter(w => w.id !== word.id && w.banglaMeaning)
+        .map(w => w.banglaMeaning.slice(0, 80))
         .sort(() => Math.random() - 0.5)
         .slice(0, 3);
       
       return {
         type: 'definition',
         word,
-        question: `What does "${word.word}" mean?`,
-        options: [...wrongMeanings, word.smartMeaning.slice(0, 60)].sort(() => Math.random() - 0.5),
-        correctAnswer: word.smartMeaning.slice(0, 60),
+        question: `"${word.word}" এর অর্থ কী?`,
+        options: [...wrongMeanings, word.banglaMeaning.slice(0, 80)].sort(() => Math.random() - 0.5),
+        correctAnswer: word.banglaMeaning.slice(0, 80),
       };
     });
   };
@@ -142,6 +168,12 @@ export default function QuizPage() {
     { type: 'mixed' as QuizType, label: 'Mixed Quiz', desc: 'All question types', icon: Trophy },
   ];
 
+  const difficultyOptions = [
+    { value: 'easy' as const, label: 'Easy', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
+    { value: 'medium' as const, label: 'Medium', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
+    { value: 'hard' as const, label: 'Hard', color: 'bg-red-500/20 text-red-400 border-red-500/30' },
+  ];
+
   // Quiz Selection Screen
   if (!quizType) {
     return (
@@ -150,7 +182,7 @@ export default function QuizPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-6">
               <Brain className="w-4 h-4 text-primary" />
@@ -160,19 +192,95 @@ export default function QuizPage() {
               Choose Your <span className="gradient-text">Quiz</span>
             </h1>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              {specificWord 
-                ? `Start a quiz featuring "${specificWord.word}"`
-                : 'Select a quiz type to test your vocabulary skills'}
+              Select a quiz type and configure your preferences
             </p>
           </motion.div>
 
+          {/* Configuration Panel */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="glass rounded-2xl p-6 border border-border/50 mb-8"
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <Settings className="w-5 h-5 text-primary" />
+              <h2 className="text-lg font-semibold">Quiz Configuration</h2>
+            </div>
+
+            {/* Question Count */}
+            <div className="mb-6">
+              <Label className="text-sm text-muted-foreground mb-3 block">Number of Questions (min: 10)</Label>
+              <div className="flex items-center gap-4">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={decrementCount}
+                  disabled={questionCount <= 10}
+                  className="rounded-xl h-12 w-12"
+                >
+                  <Minus className="w-5 h-5" />
+                </Button>
+                <div className="flex-1 text-center">
+                  <span className="text-4xl font-bold gradient-text">{questionCount}</span>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Max available: {maxQuestions}
+                  </p>
+                </div>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={incrementCount}
+                  disabled={questionCount >= maxQuestions}
+                  className="rounded-xl h-12 w-12"
+                >
+                  <Plus className="w-5 h-5" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Difficulty Filter */}
+            <div className="border-t border-border/50 pt-6">
+              <div className="flex items-center justify-between mb-4">
+                <Label className="text-sm">Filter by Difficulty</Label>
+                <Switch
+                  checked={useDifficulty}
+                  onCheckedChange={setUseDifficulty}
+                />
+              </div>
+              
+              {useDifficulty && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  className="flex gap-3"
+                >
+                  {difficultyOptions.map(({ value, label, color }) => (
+                    <button
+                      key={value}
+                      onClick={() => setSelectedDifficulty(value)}
+                      className={`flex-1 py-3 rounded-xl border transition-all ${
+                        selectedDifficulty === value
+                          ? color
+                          : 'border-border/50 text-muted-foreground hover:border-border'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </motion.div>
+              )}
+            </div>
+          </motion.div>
+
+          {/* Quiz Type Selection */}
           <div className="grid sm:grid-cols-2 gap-4">
             {quizTypes.map(({ type, label, desc, icon: Icon }, index) => (
               <motion.button
                 key={type}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: 0.2 + index * 0.1 }}
                 onClick={() => startQuiz(type)}
                 className="group p-6 rounded-2xl glass border border-border/50 hover:border-primary/30 text-left transition-all"
               >
@@ -222,14 +330,14 @@ export default function QuizPage() {
               You got {score} out of {questions.length} correct
             </p>
             
-            <div className="flex justify-center gap-2 mb-4">
+            <div className="flex flex-wrap justify-center gap-1 mb-4 max-h-20 overflow-y-auto">
               {answers.map((correct, i) => (
                 <motion.div
                   key={i}
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ delay: i * 0.1 }}
-                  className={`w-3 h-3 rounded-full ${correct ? 'bg-green-500' : 'bg-red-500'}`}
+                  transition={{ delay: Math.min(i * 0.02, 1) }}
+                  className={`w-2.5 h-2.5 rounded-full ${correct ? 'bg-green-500' : 'bg-red-500'}`}
                 />
               ))}
             </div>
@@ -286,6 +394,13 @@ export default function QuizPage() {
               <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium capitalize">
                 {currentQuestion.type}
               </span>
+              {useDifficulty && (
+                <span className={`px-3 py-1 rounded-full text-sm font-medium capitalize ${
+                  difficultyOptions.find(d => d.value === selectedDifficulty)?.color
+                }`}>
+                  {selectedDifficulty}
+                </span>
+              )}
             </div>
 
             {/* Question */}
