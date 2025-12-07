@@ -1,8 +1,8 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
-  Volume2, BookmarkPlus, BookmarkCheck, ArrowLeft, Brain, 
-  Copy, Check, ChevronRight, ExternalLink 
+  Volume2, BookmarkPlus, BookmarkCheck, ArrowLeft, 
+  Copy, Check, ChevronRight 
 } from 'lucide-react';
 import { useState } from 'react';
 import { useWords } from '@/context/WordContext';
@@ -158,15 +158,17 @@ export default function WordDetailPage() {
           </div>
 
           {/* Smart Meaning */}
-          <div className="mb-8">
-            <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-              <span className="w-1 h-5 bg-primary rounded-full" />
-              Definition
-            </h2>
-            <p className="text-lg text-foreground leading-relaxed">
-              {word.smartMeaning}
-            </p>
-          </div>
+          {word.smartMeaning && (
+            <div className="mb-8">
+              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                <span className="w-1 h-5 bg-primary rounded-full" />
+                Definition
+              </h2>
+              <p className="text-lg text-foreground leading-relaxed">
+                {word.smartMeaning}
+              </p>
+            </div>
+          )}
 
           {/* Bangla Meaning */}
           {word.banglaMeaning && (
@@ -175,7 +177,7 @@ export default function WordDetailPage() {
                 <span className="w-1 h-5 bg-accent rounded-full" />
                 বাংলা অর্থ
               </h2>
-              <p className="text-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed text-lg">
                 {word.banglaMeaning}
               </p>
               {word.detailedBanglaMeaning && (
@@ -187,44 +189,46 @@ export default function WordDetailPage() {
           )}
 
           {/* Synonyms & Antonyms */}
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {word.synonyms.length > 0 && (
-              <div>
-                <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                  <span className="w-1 h-5 bg-green-500 rounded-full" />
-                  Synonyms
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {word.synonyms.map((syn, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1.5 rounded-lg bg-green-500/10 text-green-400 text-sm border border-green-500/20"
-                    >
-                      {syn}
-                    </span>
-                  ))}
+          {(word.synonyms.length > 0 || word.antonyms.length > 0) && (
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {word.synonyms.length > 0 && (
+                <div>
+                  <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <span className="w-1 h-5 bg-green-500 rounded-full" />
+                    Synonyms
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {word.synonyms.map((syn, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1.5 rounded-lg bg-green-500/10 text-green-400 text-sm border border-green-500/20"
+                      >
+                        {syn}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-            {word.antonyms.length > 0 && (
-              <div>
-                <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                  <span className="w-1 h-5 bg-red-500 rounded-full" />
-                  Antonyms
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {word.antonyms.map((ant, i) => (
-                    <span
-                      key={i}
-                      className="px-3 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-sm border border-red-500/20"
-                    >
-                      {ant}
-                    </span>
-                  ))}
+              )}
+              {word.antonyms.length > 0 && (
+                <div>
+                  <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <span className="w-1 h-5 bg-red-500 rounded-full" />
+                    Antonyms
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {word.antonyms.map((ant, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-sm border border-red-500/20"
+                      >
+                        {ant}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
+          )}
 
           {/* Examples */}
           {word.examples.length > 0 && (
@@ -251,27 +255,12 @@ export default function WordDetailPage() {
           )}
         </motion.div>
 
-        {/* Quiz Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-6"
-        >
-          <Link to={`/quiz?word=${word.id}`}>
-            <Button size="lg" className="w-full rounded-xl bg-gradient-button glow gap-2">
-              <Brain className="w-5 h-5" />
-              Start Quiz for "{word.word}"
-            </Button>
-          </Link>
-        </motion.div>
-
         {/* Related Words */}
         {relatedWords.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.2 }}
           >
             <h2 className="text-xl font-semibold mb-4">Related Words</h2>
             <div className="grid sm:grid-cols-2 gap-3">

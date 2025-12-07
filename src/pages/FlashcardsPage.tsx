@@ -1,17 +1,20 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence, PanInfo } from 'framer-motion';
-import { Layers, Shuffle, Volume2, RotateCcw, CheckCircle, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Layers, Shuffle, Volume2, RotateCcw, CheckCircle, Trash2, ChevronLeft, ChevronRight, Plus } from 'lucide-react';
 import { useWords } from '@/context/WordContext';
-import { Word } from '@/lib/wordParser';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { toast } from '@/hooks/use-toast';
+
+type ViewMode = 'selection' | 'flashcards';
 
 export default function FlashcardsPage() {
-  const { words, flashcards, removeFromFlashcards, markAsMemorized, memorized } = useWords();
+  const { words, flashcards, addToFlashcards, removeFromFlashcards, markAsMemorized, memorized } = useWords();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [shuffled, setShuffled] = useState(false);
   const [direction, setDirection] = useState(0);
+  const [viewMode, setViewMode] = useState<ViewMode>('selection');
 
   const flashcardWords = useMemo(() => {
     const cardWords = words.filter(w => flashcards.has(w.id));
@@ -22,6 +25,11 @@ export default function FlashcardsPage() {
   }, [words, flashcards, shuffled]);
 
   const currentWord = flashcardWords[currentIndex];
+
+  const addAllWords = () => {
+    words.forEach(w => addToFlashcards(w.id));
+    toast({ title: `Added all ${words.length} words to flashcards` });
+  };
 
   const nextCard = () => {
     setDirection(1);
@@ -85,7 +93,137 @@ export default function FlashcardsPage() {
     }
   };
 
-  // Empty State
+  // Selection Screen
+  if (viewMode === 'selection') {
+    return (
+      <div className="min-h-screen pt-20 pb-12">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-8"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-6">
+              <Layers className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">Flashcards</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
+              <span className="gradient-text">Flashcard Deck</span>
+            </h1>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Practice vocabulary with interactive flashcards
+            </p>
+          </motion.div>
+
+          {/* Stats Cards */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="glass rounded-2xl p-6 border border-border/50 text-center"
+            >
+              <div className="text-4xl font-bold gradient-text mb-2">{words.length}</div>
+              <p className="text-muted-foreground text-sm">Total Words</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="glass rounded-2xl p-6 border border-border/50 text-center"
+            >
+              <div className="text-4xl font-bold text-primary mb-2">{flashcards.size}</div>
+              <p className="text-muted-foreground text-sm">In Deck</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="glass rounded-2xl p-6 border border-border/50 text-center"
+            >
+              <div className="text-4xl font-bold text-green-400 mb-2">{memorized.size}</div>
+              <p className="text-muted-foreground text-sm">Memorized</p>
+            </motion.div>
+          </div>
+
+          {/* Action Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="space-y-4"
+          >
+            {/* Add All Words */}
+            <Button
+              onClick={addAllWords}
+              size="lg"
+              variant="outline"
+              className="w-full rounded-xl gap-2 h-14"
+            >
+              <Plus className="w-5 h-5" />
+              Add All {words.length} Words to Flashcards
+            </Button>
+
+            {/* Start Flashcards */}
+            {flashcards.size > 0 && (
+              <Button
+                onClick={() => {
+                  setCurrentIndex(0);
+                  setIsFlipped(false);
+                  setViewMode('flashcards');
+                }}
+                size="lg"
+                className="w-full rounded-xl gap-2 h-14 bg-gradient-button glow"
+              >
+                <Layers className="w-5 h-5" />
+                Start Flashcards ({flashcards.size} cards)
+              </Button>
+            )}
+
+            {/* Browse Words Link */}
+            <Link to="/words" className="block">
+              <Button
+                variant="ghost"
+                size="lg"
+                className="w-full rounded-xl gap-2"
+              >
+                Or browse words to add individually
+              </Button>
+            </Link>
+          </motion.div>
+
+          {/* Recent Cards Preview */}
+          {flashcards.size > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="mt-8"
+            >
+              <h2 className="text-lg font-semibold mb-4">Cards in Deck</h2>
+              <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto">
+                {flashcardWords.slice(0, 50).map(w => (
+                  <span
+                    key={w.id}
+                    className="px-3 py-1.5 rounded-lg glass border border-border/50 text-sm"
+                  >
+                    {w.word}
+                  </span>
+                ))}
+                {flashcards.size > 50 && (
+                  <span className="px-3 py-1.5 rounded-lg bg-muted text-muted-foreground text-sm">
+                    +{flashcards.size - 50} more
+                  </span>
+                )}
+              </div>
+            </motion.div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // Empty State (should not happen but just in case)
   if (flashcardWords.length === 0) {
     return (
       <div className="min-h-screen pt-20 pb-12 flex items-center justify-center">
@@ -99,24 +237,17 @@ export default function FlashcardsPage() {
           </div>
           <h1 className="text-2xl font-bold font-display mb-3">No Flashcards Yet</h1>
           <p className="text-muted-foreground mb-6">
-            Add words to your flashcard deck from the word library to start practicing.
+            Add words to your flashcard deck to start practicing.
           </p>
-          <Link to="/words">
-            <Button size="lg" className="rounded-xl">
-              Browse Words
-            </Button>
-          </Link>
-
-          {memorized.size > 0 && (
-            <p className="mt-6 text-sm text-green-400">
-              🎉 You've memorized {memorized.size} words!
-            </p>
-          )}
+          <Button size="lg" className="rounded-xl" onClick={() => setViewMode('selection')}>
+            Go Back
+          </Button>
         </motion.div>
       </div>
     );
   }
 
+  // Flashcard View
   return (
     <div className="min-h-screen pt-20 pb-12">
       <div className="container mx-auto px-4 max-w-2xl">
@@ -126,6 +257,13 @@ export default function FlashcardsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8"
         >
+          <Button
+            variant="ghost"
+            onClick={() => setViewMode('selection')}
+            className="mb-4"
+          >
+            ← Back to Selection
+          </Button>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-6">
             <Layers className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium">{flashcardWords.length} Cards</span>
@@ -208,17 +346,19 @@ export default function FlashcardsPage() {
                   }}
                 >
                   <div className="space-y-4">
-                    {/* Meaning */}
-                    <div>
-                      <h3 className="text-sm font-semibold text-primary mb-2">Definition</h3>
-                      <p className="text-foreground">{currentWord?.smartMeaning}</p>
-                    </div>
-
-                    {/* Bangla */}
+                    {/* Bangla Meaning */}
                     {currentWord?.banglaMeaning && (
                       <div>
                         <h3 className="text-sm font-semibold text-accent mb-2">বাংলা অর্থ</h3>
-                        <p className="text-foreground">{currentWord.banglaMeaning}</p>
+                        <p className="text-foreground text-lg">{currentWord.banglaMeaning}</p>
+                      </div>
+                    )}
+
+                    {/* Meaning */}
+                    {currentWord?.smartMeaning && (
+                      <div>
+                        <h3 className="text-sm font-semibold text-primary mb-2">Definition</h3>
+                        <p className="text-foreground">{currentWord?.smartMeaning}</p>
                       </div>
                     )}
 
