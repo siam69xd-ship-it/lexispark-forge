@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Brain, CheckCircle, XCircle, RotateCcw, Trophy, ArrowRight, Shuffle, Target, Settings, Minus, Plus } from 'lucide-react';
+import { Brain, CheckCircle, XCircle, RotateCcw, Trophy, ArrowRight, Shuffle, Target, Settings, Minus, Plus, Type } from 'lucide-react';
 import { useWords } from '@/context/WordContext';
 import { Word } from '@/lib/wordParser';
 import { Button } from '@/components/ui/button';
@@ -19,6 +19,8 @@ interface Question {
   blankSentence?: string;
 }
 
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
 export default function QuizPage() {
   const { words } = useWords();
   
@@ -35,14 +37,57 @@ export default function QuizPage() {
   const [questionCount, setQuestionCount] = useState(10);
   const [useDifficulty, setUseDifficulty] = useState(false);
   const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium');
-  const [showConfig, setShowConfig] = useState(false);
+  const [useLetterFilter, setUseLetterFilter] = useState(false);
+  const [selectedLetters, setSelectedLetters] = useState<Set<string>>(new Set());
+
+  // Get available letters from words
+  const availableLetters = useMemo(() => {
+    const letters = new Set(words.map(w => w.firstLetter));
+    return ALPHABET.filter(l => letters.has(l));
+  }, [words]);
+
+  // Get letter counts
+  const letterCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    words.forEach(w => {
+      counts[w.firstLetter] = (counts[w.firstLetter] || 0) + 1;
+    });
+    return counts;
+  }, [words]);
+
+  const toggleLetter = (letter: string) => {
+    setSelectedLetters(prev => {
+      const updated = new Set(prev);
+      if (updated.has(letter)) {
+        updated.delete(letter);
+      } else {
+        updated.add(letter);
+      }
+      return updated;
+    });
+  };
+
+  const selectAllLetters = () => {
+    setSelectedLetters(new Set(availableLetters));
+  };
+
+  const clearAllLetters = () => {
+    setSelectedLetters(new Set());
+  };
 
   const maxQuestions = useMemo(() => {
+    let filtered = [...words];
+    
     if (useDifficulty) {
-      return words.filter(w => w.difficulty === selectedDifficulty).length;
+      filtered = filtered.filter(w => w.difficulty === selectedDifficulty);
     }
-    return words.length;
-  }, [words, useDifficulty, selectedDifficulty]);
+    
+    if (useLetterFilter && selectedLetters.size > 0) {
+      filtered = filtered.filter(w => selectedLetters.has(w.firstLetter));
+    }
+    
+    return filtered.length;
+  }, [words, useDifficulty, selectedDifficulty, useLetterFilter, selectedLetters]);
 
   const incrementCount = () => {
     setQuestionCount(prev => Math.min(prev + 5, maxQuestions));
@@ -58,6 +103,11 @@ export default function QuizPage() {
     // Filter by difficulty if enabled
     if (useDifficulty) {
       availableWords = availableWords.filter(w => w.difficulty === selectedDifficulty);
+    }
+    
+    // Filter by letters if enabled
+    if (useLetterFilter && selectedLetters.size > 0) {
+      availableWords = availableWords.filter(w => selectedLetters.has(w.firstLetter));
     }
     
     // Shuffle and select based on count
@@ -239,6 +289,70 @@ export default function QuizPage() {
               </div>
             </div>
 
+            {/* Letter Filter */}
+            <div className="border-t border-border/50 pt-6 mb-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <Type className="w-4 h-4 text-primary" />
+                  <Label className="text-sm">Filter by Letter</Label>
+                </div>
+                <Switch
+                  checked={useLetterFilter}
+                  onCheckedChange={setUseLetterFilter}
+                />
+              </div>
+              
+              {useLetterFilter && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  className="space-y-3"
+                >
+                  <div className="flex gap-2 mb-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={selectAllLetters}
+                      className="rounded-lg text-xs"
+                    >
+                      Select All
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={clearAllLetters}
+                      className="rounded-lg text-xs"
+                    >
+                      Clear All
+                    </Button>
+                    {selectedLetters.size > 0 && (
+                      <span className="text-xs text-muted-foreground self-center ml-2">
+                        {selectedLetters.size} selected
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {availableLetters.map(letter => (
+                      <button
+                        key={letter}
+                        onClick={() => toggleLetter(letter)}
+                        className={`w-10 h-10 rounded-lg border text-sm font-bold transition-all ${
+                          selectedLetters.has(letter)
+                            ? 'bg-primary text-primary-foreground border-primary'
+                            : 'border-border/50 text-muted-foreground hover:border-primary/30 hover:text-foreground'
+                        }`}
+                      >
+                        {letter}
+                        <span className="block text-[10px] font-normal opacity-70">
+                          {letterCounts[letter] || 0}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </div>
+
             {/* Difficulty Filter */}
             <div className="border-t border-border/50 pt-6">
               <div className="flex items-center justify-between mb-4">
@@ -282,7 +396,8 @@ export default function QuizPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
                 onClick={() => startQuiz(type)}
-                className="group p-6 rounded-2xl glass border border-border/50 hover:border-primary/30 text-left transition-all"
+                disabled={maxQuestions < 10}
+                className="group p-6 rounded-2xl glass border border-border/50 hover:border-primary/30 text-left transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <motion.div
                   whileHover={{ scale: 1.05, rotate: 5 }}
@@ -297,6 +412,16 @@ export default function QuizPage() {
               </motion.button>
             ))}
           </div>
+          
+          {maxQuestions < 10 && (
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-center text-destructive mt-4 text-sm"
+            >
+              Not enough words with current filters. Need at least 10 words.
+            </motion.p>
+          )}
         </div>
       </div>
     );
@@ -390,10 +515,15 @@ export default function QuizPage() {
             className="glass rounded-3xl p-6 md:p-8 border border-border/50"
           >
             {/* Question Type Badge */}
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex flex-wrap items-center gap-2 mb-6">
               <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium capitalize">
                 {currentQuestion.type}
               </span>
+              {useLetterFilter && selectedLetters.size > 0 && (
+                <span className="px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-medium">
+                  {Array.from(selectedLetters).sort().join(', ')}
+                </span>
+              )}
               {useDifficulty && (
                 <span className={`px-3 py-1 rounded-full text-sm font-medium capitalize ${
                   difficultyOptions.find(d => d.value === selectedDifficulty)?.color
