@@ -157,19 +157,19 @@ export default function QuizPage() {
         };
       }
 
-      // Default: definition question - use Bangla meaning
+      // Default: definition question - use English smart meaning
       const wrongMeanings = words
-        .filter(w => w.id !== word.id && w.banglaMeaning)
-        .map(w => w.banglaMeaning.slice(0, 80))
+        .filter(w => w.id !== word.id && w.smartMeaning)
+        .map(w => w.smartMeaning.slice(0, 100))
         .sort(() => Math.random() - 0.5)
         .slice(0, 3);
       
       return {
         type: 'definition',
         word,
-        question: `"${word.word}" এর অর্থ কী?`,
-        options: [...wrongMeanings, word.banglaMeaning.slice(0, 80)].sort(() => Math.random() - 0.5),
-        correctAnswer: word.banglaMeaning.slice(0, 80),
+        question: `What is the meaning of "${word.word}"?`,
+        options: [...wrongMeanings, word.smartMeaning.slice(0, 100)].sort(() => Math.random() - 0.5),
+        correctAnswer: word.smartMeaning.slice(0, 100),
       };
     });
   };
