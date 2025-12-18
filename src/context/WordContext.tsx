@@ -29,14 +29,19 @@ export function WordProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     async function loadWords() {
       try {
-        // Load both files in parallel
+        // Load both files in parallel with timeout
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 30000); // 30s timeout
+        
         const [englishResponse, banglaResponse] = await Promise.all([
-          fetch('/data/words_english.txt'),
-          fetch('/data/words_bangla.txt')
+          fetch('/data/words_english.txt', { signal: controller.signal }),
+          fetch('/data/words_bangla.txt', { signal: controller.signal })
         ]);
         
-        if (!englishResponse.ok) throw new Error('Failed to load English words file');
-        if (!banglaResponse.ok) throw new Error('Failed to load Bangla words file');
+        clearTimeout(timeout);
+        
+        if (!englishResponse.ok) throw new Error(`Failed to load English words (${englishResponse.status})`);
+        if (!banglaResponse.ok) throw new Error(`Failed to load Bangla words (${banglaResponse.status})`);
         
         const [englishText, banglaText] = await Promise.all([
           englishResponse.text(),
@@ -63,8 +68,17 @@ export function WordProvider({ children }: { children: ReactNode }) {
           setMemorized(new Set(JSON.parse(savedMemorized)));
         }
       } catch (e) {
-        setError(e instanceof Error ? e.message : 'Failed to load words');
-        console.error('Error loading words:', e);
+        const errorMsg = e instanceof Error ? e.message : 'Failed to load words';
+        setError(errorMsg);
+        console.error('Error loading words:', errorMsg);
+        // Retry after 5 seconds on network error
+        if (errorMsg.includes('Failed') || errorMsg.includes('AbortError')) {
+          setTimeout(() => {
+            setError(null);
+            setLoading(true);
+            loadWords();
+          }, 5000);
+        }
       } finally {
         setLoading(false);
       }

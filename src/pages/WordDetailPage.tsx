@@ -68,7 +68,7 @@ export default function WordDetailPage() {
 
   return (
     <div className="min-h-screen pt-20 pb-12">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-3 sm:px-4 max-w-4xl">
         {/* Back Button */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -89,55 +89,55 @@ export default function WordDetailPage() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="glass rounded-3xl p-6 md:p-8 border border-border/50 mb-6"
+          className="glass rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-border/50 mb-6"
         >
           {/* Header */}
-          <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
-            <div>
-              <div className="flex items-center gap-3 mb-2">
-                <h1 className="text-4xl md:text-5xl font-bold font-display gradient-text">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4 mb-6">
+            <div className="min-w-0 flex-1">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display gradient-text break-words">
                   {word.word}
                 </h1>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={speak}
-                  className="p-2 rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                  className="p-2 rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-colors flex-shrink-0"
                 >
-                  <Volume2 className="w-6 h-6" />
+                  <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
                 </motion.button>
               </div>
               {word.pronunciation && (
-                <p className="text-lg text-muted-foreground">
+                <p className="text-base sm:text-lg text-muted-foreground break-words">
                   /{word.pronunciation}/
                 </p>
               )}
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
               <Button
                 variant="outline"
                 size="sm"
                 onClick={copyWord}
-                className="rounded-xl gap-2"
+                className="rounded-xl gap-2 flex-1 sm:flex-initial"
               >
                 {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                {copied ? 'Copied' : 'Copy'}
+                <span className="hidden sm:inline">{copied ? 'Copied' : 'Copy'}</span>
               </Button>
               <Button
                 variant={isInFlashcards ? 'default' : 'outline'}
                 size="sm"
                 onClick={toggleFlashcard}
-                className="rounded-xl gap-2"
+                className="rounded-xl gap-2 flex-1 sm:flex-initial"
               >
                 {isInFlashcards ? (
                   <>
                     <BookmarkCheck className="w-4 h-4" />
-                    In Flashcards
+                    <span className="hidden sm:inline">In Flashcards</span>
                   </>
                 ) : (
                   <>
                     <BookmarkPlus className="w-4 h-4" />
-                    Add to Flashcards
+                    <span className="hidden sm:inline">Add</span>
                   </>
                 )}
               </Button>
@@ -146,94 +146,137 @@ export default function WordDetailPage() {
 
           {/* Tags */}
           <div className="flex flex-wrap items-center gap-2 mb-8">
-            <Badge variant="secondary" className="text-sm">
-              {word.partOfSpeech}
-            </Badge>
-            <Badge variant="outline" className={`text-sm ${difficultyColor[word.difficulty]}`}>
-              {word.difficulty}
-            </Badge>
-            <Badge variant="outline" className="text-sm">
-              {word.firstLetter} section
-            </Badge>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1 }}
+            >
+              <Badge variant="secondary" className="text-xs sm:text-sm">
+                {word.partOfSpeech}
+              </Badge>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.15 }}
+            >
+              <Badge variant="outline" className={`text-xs sm:text-sm ${difficultyColor[word.difficulty]}`}>
+                {word.difficulty}
+              </Badge>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Badge variant="outline" className="text-xs sm:text-sm">
+                {word.firstLetter} section
+              </Badge>
+            </motion.div>
           </div>
 
           {/* Smart Meaning */}
           {word.smartMeaning && (
-            <div className="mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+            <motion.div 
+              className="mb-8"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25 }}
+            >
+              <h2 className="text-base sm:text-lg font-semibold mb-3 flex items-center gap-2">
                 <span className="w-1 h-5 bg-primary rounded-full" />
                 Definition
               </h2>
-              <p className="text-lg text-foreground leading-relaxed">
+              <p className="text-base sm:text-lg text-foreground leading-relaxed">
                 {word.smartMeaning}
               </p>
-            </div>
+            </motion.div>
           )}
 
           {/* Bangla Meaning */}
           {word.banglaMeaning && (
-            <div className="mb-8 p-4 rounded-2xl bg-muted/30 border border-border/50">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+            <motion.div 
+              className="mb-8 p-3 sm:p-4 rounded-2xl bg-muted/30 border border-border/50"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <h2 className="text-base sm:text-lg font-semibold mb-3 flex items-center gap-2">
                 <span className="w-1 h-5 bg-accent rounded-full" />
                 বাংলা অর্থ
               </h2>
-              <p className="text-foreground leading-relaxed text-lg">
+              <p className="text-foreground leading-relaxed text-base sm:text-lg">
                 {word.banglaMeaning}
               </p>
               {word.detailedBanglaMeaning && (
-                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                <p className="text-muted-foreground mt-2 text-xs sm:text-sm leading-relaxed">
                   {word.detailedBanglaMeaning}
                 </p>
               )}
-            </div>
+            </motion.div>
           )}
 
           {/* Synonyms & Antonyms */}
           {(word.synonyms.length > 0 || word.antonyms.length > 0) && (
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <motion.div 
+              className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-8"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35 }}
+            >
               {word.synonyms.length > 0 && (
                 <div>
-                  <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                  <h2 className="text-base sm:text-lg font-semibold mb-3 flex items-center gap-2">
                     <span className="w-1 h-5 bg-green-500 rounded-full" />
                     Synonyms
                   </h2>
                   <div className="flex flex-wrap gap-2">
                     {word.synonyms.map((syn, i) => (
-                      <span
+                      <motion.span
                         key={i}
-                        className="px-3 py-1.5 rounded-lg bg-green-500/10 text-green-400 text-sm border border-green-500/20"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.35 + i * 0.02 }}
+                        className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg bg-green-500/10 text-green-400 text-xs sm:text-sm border border-green-500/20"
                       >
                         {syn}
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
                 </div>
               )}
               {word.antonyms.length > 0 && (
                 <div>
-                  <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                  <h2 className="text-base sm:text-lg font-semibold mb-3 flex items-center gap-2">
                     <span className="w-1 h-5 bg-red-500 rounded-full" />
                     Antonyms
                   </h2>
                   <div className="flex flex-wrap gap-2">
                     {word.antonyms.map((ant, i) => (
-                      <span
+                      <motion.span
                         key={i}
-                        className="px-3 py-1.5 rounded-lg bg-red-500/10 text-red-400 text-sm border border-red-500/20"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.35 + i * 0.02 }}
+                        className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg bg-red-500/10 text-red-400 text-xs sm:text-sm border border-red-500/20"
                       >
                         {ant}
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
                 </div>
               )}
-            </div>
+            </motion.div>
           )}
 
           {/* Examples */}
           {word.examples.length > 0 && (
-            <div>
-              <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+            >
+              <h2 className="text-base sm:text-lg font-semibold mb-4 flex items-center gap-2">
                 <span className="w-1 h-5 bg-primary rounded-full" />
                 Examples
               </h2>
@@ -243,15 +286,15 @@ export default function WordDetailPage() {
                     key={i}
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.1 }}
-                    className="flex gap-3 p-4 rounded-xl bg-muted/20 border border-border/30"
+                    transition={{ delay: 0.4 + i * 0.08 }}
+                    className="flex gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl bg-muted/20 border border-border/30"
                   >
-                    <span className="text-primary font-bold">{i + 1}.</span>
-                    <p className="text-foreground leading-relaxed">{example}</p>
+                    <span className="text-primary font-bold flex-shrink-0">{i + 1}.</span>
+                    <p className="text-foreground leading-relaxed text-sm sm:text-base">{example}</p>
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           )}
         </motion.div>
 

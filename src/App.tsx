@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { WordProvider } from "@/context/WordContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import Navbar from "@/components/Navbar";
 import HomePage from "@/pages/HomePage";
 import WordsPage from "@/pages/WordsPage";
@@ -15,32 +16,43 @@ import ReadAndLearnPage from "@/pages/ReadAndLearnPage";
 import AboutPage from "@/pages/AboutPage";
 import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5 minutes
+      gcTime: 1000 * 60 * 10, // 10 minutes (was cacheTime)
+      retry: 1,
+      retryDelay: 1000,
+    },
+  },
+});
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider>
-      <WordProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/words" element={<WordsPage />} />
-              <Route path="/word/:id" element={<WordDetailPage />} />
-              <Route path="/quiz" element={<QuizPage />} />
-              <Route path="/flashcards" element={<FlashcardsPage />} />
-              <Route path="/read-and-learn" element={<ReadAndLearnPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
-      </WordProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
+  <ErrorBoundary>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <WordProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <BrowserRouter>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/words" element={<WordsPage />} />
+                <Route path="/word/:id" element={<WordDetailPage />} />
+                <Route path="/quiz" element={<QuizPage />} />
+                <Route path="/flashcards" element={<FlashcardsPage />} />
+                <Route path="/read-and-learn" element={<ReadAndLearnPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </TooltipProvider>
+        </WordProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
+  </ErrorBoundary>
 );
 
 export default App;
