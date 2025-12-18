@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@300;400;500;600;700;800&display=swap&_v=1');
 
 @layer base {
   :root {
@@ -139,6 +139,14 @@
     scroll-behavior: smooth;
   }
 
+  /* Optimize body rendering */
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   /* Hardware acceleration for smooth animations */
   .will-change-transform {
     will-change: transform;
@@ -146,11 +154,6 @@
 
   .will-change-auto {
     will-change: auto;
-  }
-
-  /* Smooth transitions */
-  * {
-    @apply transition-colors duration-200;
   }
   
   .gradient-text {

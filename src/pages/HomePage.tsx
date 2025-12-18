@@ -54,7 +54,7 @@ export default function HomePage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.3, delay: 0 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-8"
             >
               <Sparkles className="w-4 h-4 text-primary" />
@@ -67,7 +67,7 @@ export default function HomePage() {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
+              transition={{ duration: 0.4, delay: 0.08, ease: "easeOut" }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight mb-6"
             >
               Master Every Word.{' '}
@@ -78,7 +78,7 @@ export default function HomePage() {
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.12, ease: "easeOut" }}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
             >
               Build an unshakeable vocabulary with smart definitions, Bangla translations, 
@@ -89,7 +89,7 @@ export default function HomePage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.16, ease: "easeOut" }}
               className="max-w-2xl mx-auto mb-8"
             >
               <SearchBar size="large" />
