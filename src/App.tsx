@@ -11,6 +11,7 @@ import WordsPage from "@/pages/WordsPage";
 import WordDetailPage from "@/pages/WordDetailPage";
 import QuizPage from "@/pages/QuizPage";
 import FlashcardsPage from "@/pages/FlashcardsPage";
+import ReadAndLearnPage from "@/pages/ReadAndLearnPage";
 import AboutPage from "@/pages/AboutPage";
 import NotFound from "./pages/NotFound";
 
@@ -31,6 +32,7 @@ const App = () => (
               <Route path="/word/:id" element={<WordDetailPage />} />
               <Route path="/quiz" element={<QuizPage />} />
               <Route path="/flashcards" element={<FlashcardsPage />} />
+              <Route path="/read-and-learn" element={<ReadAndLearnPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
