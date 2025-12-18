@@ -73,6 +73,7 @@ export default function WordDetailPage() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="mb-6"
         >
           <Button
@@ -89,6 +90,7 @@ export default function WordDetailPage() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="glass rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-border/50 mb-6"
         >
           {/* Header */}
@@ -303,7 +305,7 @@ export default function WordDetailPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
           >
             <h2 className="text-xl font-semibold mb-4">Related Words</h2>
             <div className="grid sm:grid-cols-2 gap-3">

@@ -31,28 +31,34 @@ export default function WordTooltip({ word, isOpen, onClose }: WordTooltipProps)
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-0 bg-background/80 backdrop-blur-md z-50"
             onClick={onClose}
           />
           
           {/* Modal - Draggable */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.85, y: 40 }}
+            initial={{ opacity: 0, scale: 0.9, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.85, y: 40 }}
-            transition={{ type: 'spring', damping: 20, stiffness: 300 }}
+            exit={{ opacity: 0, scale: 0.9, y: 30 }}
+            transition={{ 
+              type: 'spring', 
+              damping: 25, 
+              stiffness: 350,
+              mass: 0.5,
+            }}
             drag
             dragMomentum={false}
-            dragElastic={0.1}
+            dragElastic={0.08}
             onDragEnd={(event, info) => {
               setPosition({ x: info.offset.x, y: info.offset.y });
             }}
             style={{ x: position.x, y: position.y }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[95vw] sm:w-[90vw] md:w-[85vw] max-w-2xl max-h-[90vh] cursor-grab active:cursor-grabbing"
+            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[95vw] sm:w-[90vw] md:w-[85vw] max-w-2xl max-h-[90vh] cursor-grab active:cursor-grabbing will-change-transform"
           >
-            <div className="glass-strong rounded-2xl sm:rounded-3xl border border-primary/30 shadow-elevated overflow-hidden flex flex-col h-full">
+            <div className="glass-strong rounded-2xl sm:rounded-3xl border border-primary/30 shadow-elevated overflow-hidden flex flex-col h-full transition-shadow duration-300 will-change-auto">
               {/* Header with gradient - Draggable area */}
-              <div className="relative bg-gradient-to-r from-primary/20 via-accent/10 to-primary/20 p-4 sm:p-6 pb-3 sm:pb-4 flex-shrink-0 select-none">
+              <div className="relative bg-gradient-to-r from-primary/20 via-accent/10 to-primary/20 p-4 sm:p-6 pb-3 sm:pb-4 flex-shrink-0 select-none transition-colors duration-300">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary" />
                 
                 {/* Drag Handle & Close button */}
@@ -112,10 +118,10 @@ export default function WordTooltip({ word, isOpen, onClose }: WordTooltipProps)
                 {/* Bangla Meaning - Primary */}
                 {word.banglaMeaning && (
                   <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 }}
-                    className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-r from-primary/15 to-primary/5 border border-primary/20"
+                    transition={{ delay: 0.08, duration: 0.4, ease: "easeOut" }}
+                    className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-r from-primary/15 to-primary/5 border border-primary/20 transition-all duration-300"
                   >
                     <div className="flex items-center gap-2 mb-2">
                       <h3 className="text-xs sm:text-sm font-semibold text-primary">🇧🇩 বাংলা অর্থ</h3>
@@ -129,10 +135,10 @@ export default function WordTooltip({ word, isOpen, onClose }: WordTooltipProps)
                 {/* English Meaning */}
                 {word.smartMeaning && (
                   <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.15 }}
-                    className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-r from-accent/15 to-accent/5 border border-accent/20"
+                    transition={{ delay: 0.12, duration: 0.4, ease: "easeOut" }}
+                    className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-r from-accent/15 to-accent/5 border border-accent/20 transition-all duration-300"
                   >
                     <div className="flex items-center gap-2 mb-2">
                       <h3 className="text-xs sm:text-sm font-semibold text-accent">🇬🇧 English Meaning</h3>
@@ -159,10 +165,10 @@ export default function WordTooltip({ word, isOpen, onClose }: WordTooltipProps)
                       {word.synonyms.slice(0, 12).map((syn, i) => (
                         <motion.span
                           key={i}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.2 + i * 0.03 }}
-                          className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors cursor-default"
+                          initial={{ opacity: 0, scale: 0.8, y: 8 }}
+                          animate={{ opacity: 1, scale: 1, y: 0 }}
+                          transition={{ delay: 0.16 + i * 0.025, duration: 0.35, ease: "easeOut" }}
+                          className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors duration-200 cursor-default"
                         >
                           {syn}
                         </motion.span>
@@ -187,10 +193,10 @@ export default function WordTooltip({ word, isOpen, onClose }: WordTooltipProps)
                       {word.antonyms.slice(0, 8).map((ant, i) => (
                         <motion.span
                           key={i}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.25 + i * 0.03 }}
-                          className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-red-500/10 text-red-400 rounded-lg border border-red-500/20 hover:bg-red-500/20 transition-colors cursor-default"
+                          initial={{ opacity: 0, scale: 0.8, y: 8 }}
+                          animate={{ opacity: 1, scale: 1, y: 0 }}
+                          transition={{ delay: 0.20 + i * 0.025, duration: 0.35, ease: "easeOut" }}
+                          className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-red-500/10 text-red-400 rounded-lg border border-red-500/20 hover:bg-red-500/20 transition-colors duration-200 cursor-default"
                         >
                           {ant}
                         </motion.span>
@@ -214,10 +220,10 @@ export default function WordTooltip({ word, isOpen, onClose }: WordTooltipProps)
                       {word.examples.slice(0, 3).map((example, i) => (
                         <motion.div
                           key={i}
-                          initial={{ opacity: 0, x: -10 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.3 + i * 0.05 }}
-                          className="p-2.5 sm:p-3 rounded-lg sm:rounded-xl bg-blue-500/5 border-l-3 border-blue-400/50"
+                          initial={{ opacity: 0, x: -12, y: 8 }}
+                          animate={{ opacity: 1, x: 0, y: 0 }}
+                          transition={{ delay: 0.24 + i * 0.06, duration: 0.4, ease: "easeOut" }}
+                          className="p-2.5 sm:p-3 rounded-lg sm:rounded-xl bg-blue-500/5 border-l-3 border-blue-400/50 transition-all duration-200"
                         >
                           <p className="text-xs sm:text-sm text-foreground/90 italic leading-relaxed">
                             "{example}"

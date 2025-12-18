@@ -133,6 +133,25 @@
   .glass-strong {
     @apply backdrop-blur-2xl bg-card/80 border border-border/60;
   }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hardware acceleration for smooth animations */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .will-change-auto {
+    will-change: auto;
+  }
+
+  /* Smooth transitions */
+  * {
+    @apply transition-colors duration-200;
+  }
   
   .gradient-text {
     @apply bg-clip-text text-transparent;

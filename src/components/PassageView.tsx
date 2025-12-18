@@ -148,6 +148,7 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-8 text-center"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-4">
@@ -167,7 +168,7 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.1, duration: 0.4, ease: "easeOut" }}
           className="flex flex-wrap justify-center gap-6 mb-8 p-4 rounded-2xl bg-card/50 border border-border/50"
         >
           <div className="flex items-center gap-2">
@@ -194,7 +195,7 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
             initial={{ opacity: 0, x: showEnglish ? 50 : -50 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: showEnglish ? -50 : 50 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
             className="glass rounded-3xl p-6 md:p-8 border border-border/50 shadow-card"
           >
             <div className="mb-4 flex items-center gap-2">
@@ -226,7 +227,7 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
           className="mt-8 p-6 rounded-3xl bg-card/50 border border-border/50"
         >
           <h3 className="text-lg font-semibold mb-4 text-foreground flex items-center gap-2">
