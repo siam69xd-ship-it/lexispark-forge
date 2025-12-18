@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Home, Brain, Layers, Info, Menu, X, Sun, Moon } from 'lucide-react';
+import { BookOpen, Home, Brain, Layers, Info, Menu, X, Sun, Moon, FileText } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { Button } from '@/components/ui/button';
 
 const navItems = [
   { path: '/', label: 'Home', icon: Home },
   { path: '/words', label: 'Words', icon: BookOpen },
+  { path: '/read-and-learn', label: 'Read & Learn', icon: FileText },
   { path: '/quiz', label: 'Quiz', icon: Brain },
   { path: '/flashcards', label: 'Flashcards', icon: Layers },
   { path: '/about', label: 'About', icon: Info },
