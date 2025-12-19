@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { WordProvider } from "@/context/WordContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { AuthProvider } from "@/context/AuthContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import Navbar from "@/components/Navbar";
 import HomePage from "@/pages/HomePage";
@@ -18,6 +19,8 @@ const QuizPage = lazy(() => import("@/pages/QuizPage"));
 const FlashcardsPage = lazy(() => import("@/pages/FlashcardsPage"));
 const ReadAndLearnPage = lazy(() => import("@/pages/ReadAndLearnPage"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
+const AuthPage = lazy(() => import("@/pages/AuthPage"));
+const DashboardPage = lazy(() => import("@/pages/DashboardPage"));
 
 const LoadingFallback = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -40,27 +43,30 @@ const App = () => (
   <ErrorBoundary>
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <WordProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner />
-            <BrowserRouter>
-              <Navbar />
-              <Suspense fallback={<LoadingFallback />}>
-                <Routes>
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/words" element={<WordsPage />} />
-                  <Route path="/word/:id" element={<WordDetailPage />} />
-                  <Route path="/quiz" element={<QuizPage />} />
-                  <Route path="/flashcards" element={<FlashcardsPage />} />
-                  <Route path="/read-and-learn" element={<ReadAndLearnPage />} />
-                  <Route path="/about" element={<AboutPage />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </Suspense>
-            </BrowserRouter>
-          </TooltipProvider>
-        </WordProvider>
+        <AuthProvider>
+          <WordProvider>
+            <TooltipProvider>
+              <Toaster />
+              <Sonner />
+              <BrowserRouter>
+                <Suspense fallback={<LoadingFallback />}>
+                  <Routes>
+                    <Route path="/" element={<><Navbar /><HomePage /></>} />
+                    <Route path="/words" element={<><Navbar /><WordsPage /></>} />
+                    <Route path="/word/:id" element={<><Navbar /><WordDetailPage /></>} />
+                    <Route path="/quiz" element={<><Navbar /><QuizPage /></>} />
+                    <Route path="/flashcards" element={<><Navbar /><FlashcardsPage /></>} />
+                    <Route path="/read-and-learn" element={<><Navbar /><ReadAndLearnPage /></>} />
+                    <Route path="/about" element={<><Navbar /><AboutPage /></>} />
+                    <Route path="/auth" element={<AuthPage />} />
+                    <Route path="/dashboard" element={<DashboardPage />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </Suspense>
+              </BrowserRouter>
+            </TooltipProvider>
+          </WordProvider>
+        </AuthProvider>
       </ThemeProvider>
     </QueryClientProvider>
   </ErrorBoundary>
