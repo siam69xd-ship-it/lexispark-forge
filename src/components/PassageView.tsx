@@ -1,9 +1,11 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Languages, BookOpen, Info } from 'lucide-react';
+import { ArrowLeft, Languages, BookOpen, Info, CheckCircle, Star } from 'lucide-react';
 import { Passage } from '@/lib/passageParser';
 import { Word } from '@/lib/wordParser';
 import { useWords } from '@/context/WordContext';
+import { useAuth } from '@/context/AuthContext';
+import { useProgress } from '@/hooks/useProgress';
 import WordTooltip from '@/components/WordTooltip';
 import { Button } from '@/components/ui/button';
 
@@ -16,6 +18,8 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
   const [showEnglish, setShowEnglish] = useState(false);
   const [selectedWord, setSelectedWord] = useState<Word | null>(null);
   const { words } = useWords();
+  const { user } = useAuth();
+  const { trackWordView, markWordAsLearned, toggleFavorite, isWordLearned, isWordFavorite } = useProgress();
 
   // Create a map of passage words to their Word objects with better matching
   const passageWordMap = useMemo(() => {
