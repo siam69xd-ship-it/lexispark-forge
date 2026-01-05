@@ -1,181 +1,183 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Brain, Layers, Target, Users, Sparkles, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { useWords } from '@/context/WordContext';
+import { ArrowRight, BookOpen, Brain, Target, Users, Heart } from 'lucide-react';
+import Footer from '@/components/Footer';
 
 export default function AboutPage() {
-  const { words } = useWords();
+  const philosophy = [
+    'Words make sense only in context',
+    'Meaning is shaped by tone, usage, and contrast',
+    'True vocabulary mastery improves reading, writing, and thinking',
+  ];
 
-  const features = [
-    {
-      icon: BookOpen,
-      title: 'Comprehensive Word Library',
-      description: 'Access thousands of carefully curated vocabulary words with detailed definitions, pronunciations, and contextual examples.',
-    },
-    {
-      icon: Brain,
-      title: 'Smart Quizzes',
-      description: 'Auto-generated quizzes including MCQs, matching tests, and fill-in-the-blanks to test and reinforce your learning.',
-    },
-    {
-      icon: Layers,
-      title: 'Interactive Flashcards',
-      description: 'Swipe through flashcards with smooth animations. Mark words as memorized and track your progress.',
-    },
-    {
-      icon: Target,
-      title: 'Bilingual Support',
-      description: 'Every word includes detailed Bangla meanings and translations alongside English definitions.',
-    },
+  const whoWeBuiltFor = [
+    { icon: Users, text: 'Students preparing for English-based exams' },
+    { icon: BookOpen, text: 'Learners transitioning from Bangla to academic English' },
+    { icon: Target, text: 'Writers seeking precision and clarity' },
+    { icon: Heart, text: 'Anyone who wants to truly understand language' },
+  ];
+
+  const whatMakesUsDifferent = [
+    'Prioritizes context over definitions',
+    'Explains why a word fits, not just what it means',
+    'Connects Bangla thinking to English expression',
+    'Focuses on long-term retention, not short-term recall',
   ];
 
   return (
-    <div className="min-h-screen pt-20 pb-12">
-      <div className="container mx-auto px-4 max-w-4xl">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-6">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">About VocaForge</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
-            Built for <span className="gradient-text">Vocabulary Mastery</span>
-          </h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            VocaForge is the ultimate platform for building an unshakeable vocabulary. 
-            Whether you're preparing for exams or expanding your word power, we've got you covered.
-          </p>
-        </motion.div>
+    <div className="min-h-screen flex flex-col pt-14">
+      {/* Hero */}
+      <section className="section-spacing">
+        <div className="container-narrow">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center"
+          >
+            <h1 className="text-4xl md:text-5xl font-semibold mb-6">
+              About ShobdoHub
+            </h1>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              ShobdoHub was created to solve a simple but widespread problem: students know many words, but struggle to use them correctly.
+            </p>
+            <p className="text-muted-foreground">
+              Traditional vocabulary learning relies on memorization. ShobdoHub focuses on <span className="text-foreground font-medium">understanding</span>.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
-        >
-          {[
-            { value: words.length.toLocaleString(), label: 'Words' },
-            { value: '4+', label: 'Quiz Types' },
-            { value: '2', label: 'Languages' },
-            { value: '∞', label: 'Practice' },
-          ].map((stat, i) => (
-            <div key={i} className="p-6 rounded-2xl glass border border-border/50 text-center">
-              <div className="text-3xl font-bold gradient-text mb-1">{stat.value}</div>
-              <div className="text-muted-foreground text-sm">{stat.label}</div>
+      {/* Philosophy */}
+      <section className="section-spacing bg-secondary/30">
+        <div className="container-narrow">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+              Our Philosophy
+            </h2>
+            <p className="text-center text-muted-foreground mb-8">We believe:</p>
+            <div className="space-y-4 max-w-md mx-auto">
+              {philosophy.map((item, index) => (
+                <div 
+                  key={index}
+                  className="p-4 bg-card rounded-lg border border-border text-center"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
-          ))}
-        </motion.div>
+            <p className="text-center text-muted-foreground mt-8">
+              That's why ShobdoHub teaches words through Bangla stories, English passages, real usage, and thought-based explanations.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* Features */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-16"
-        >
-          <h2 className="text-2xl font-bold font-display text-center mb-8">
-            Why Choose VocaForge?
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {features.map((feature, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 + i * 0.1 }}
-                className="p-6 rounded-2xl glass border border-border/50"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-primary" />
+      {/* Who We Built This For */}
+      <section className="section-spacing">
+        <div className="container-narrow">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+              Who We Built This For
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {whoWeBuiltFor.map((item, index) => (
+                <div 
+                  key={index}
+                  className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border"
+                >
+                  <item.icon className="w-5 h-5 text-primary shrink-0" />
+                  <span>{item.text}</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground text-sm">{feature.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+              ))}
+            </div>
+            <p className="text-center text-muted-foreground mt-8">
+              We are exam-neutral by design, because strong vocabulary works everywhere.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* How It Works */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="mb-16"
-        >
-          <h2 className="text-2xl font-bold font-display text-center mb-8">
-            How It Works
-          </h2>
-          <div className="space-y-6">
-            {[
-              { step: '1', title: 'Browse Words', desc: 'Explore our comprehensive word library with filters for difficulty, part of speech, and alphabetical order.' },
-              { step: '2', title: 'Learn & Save', desc: 'Click on any word to see detailed definitions, examples, synonyms, and Bangla meanings. Save words to your flashcard deck.' },
-              { step: '3', title: 'Practice', desc: 'Use flashcards for active recall practice. Swipe through cards and mark words as memorized.' },
-              { step: '4', title: 'Test Yourself', desc: 'Take auto-generated quizzes to test your knowledge with various question types.' },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 + i * 0.1 }}
-                className="flex gap-4 items-start"
-              >
-                <div className="w-10 h-10 rounded-xl bg-gradient-accent flex items-center justify-center text-primary-foreground font-bold shrink-0">
-                  {item.step}
+      {/* What Makes Us Different */}
+      <section className="section-spacing bg-secondary/30">
+        <div className="container-narrow">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+              What Makes Us Different
+            </h2>
+            <p className="text-center text-muted-foreground mb-8">
+              Unlike typical vocabulary platforms, ShobdoHub:
+            </p>
+            <div className="space-y-3 max-w-md mx-auto">
+              {whatMakesUsDifferent.map((item, index) => (
+                <div 
+                  key={index}
+                  className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border"
+                >
+                  <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
+                  <span>{item}</span>
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="text-center p-8 rounded-3xl glass border border-primary/20"
-        >
-          <Heart className="w-10 h-10 text-primary mx-auto mb-4" />
-          <h2 className="text-2xl font-bold mb-3">Ready to Start Learning?</h2>
-          <p className="text-muted-foreground mb-6">
-            Begin your vocabulary journey today with thousands of words at your fingertips.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link to="/words">
-              <Button size="lg" className="rounded-xl bg-gradient-button glow">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Browse Words
+      {/* Mission */}
+      <section className="section-spacing">
+        <div className="container-narrow text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+              Our Mission
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              To help learners understand words deeply, so they can communicate clearly, confidently, and accurately in any academic or professional setting.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Looking Ahead */}
+      <section className="section-spacing bg-secondary/30">
+        <div className="container-narrow text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+              Looking Ahead
+            </h2>
+            <p className="text-muted-foreground mb-8">
+              ShobdoHub is continuously evolving. We are committed to building tools that make language learning smarter, more human, and more effective.
+            </p>
+            <Link to="/auth">
+              <Button size="lg">
+                Start Learning
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
-            <Link to="/quiz">
-              <Button size="lg" variant="outline" className="rounded-xl">
-                <Brain className="w-5 h-5 mr-2" />
-                Start Quiz
-              </Button>
-            </Link>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* Footer Credit */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="text-center mt-12 text-muted-foreground text-sm"
-        >
-          <p>Built with ❤️ for vocabulary enthusiasts</p>
-          <p className="mt-1">Data sourced from Ultimate Job Solutions</p>
-        </motion.div>
-      </div>
+      <Footer />
     </div>
   );
 }

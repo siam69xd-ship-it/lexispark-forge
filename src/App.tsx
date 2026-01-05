@@ -21,6 +21,10 @@ const ReadAndLearnPage = lazy(() => import("@/pages/ReadAndLearnPage"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
 const AuthPage = lazy(() => import("@/pages/AuthPage"));
 const DashboardPage = lazy(() => import("@/pages/DashboardPage"));
+const TermsPage = lazy(() => import("@/pages/TermsPage"));
+const PrivacyPage = lazy(() => import("@/pages/PrivacyPage"));
+const FAQPage = lazy(() => import("@/pages/FAQPage"));
+const ContactPage = lazy(() => import("@/pages/ContactPage"));
 
 const LoadingFallback = () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -58,8 +62,12 @@ const App = () => (
                     <Route path="/flashcards" element={<><Navbar /><FlashcardsPage /></>} />
                     <Route path="/read-and-learn" element={<><Navbar /><ReadAndLearnPage /></>} />
                     <Route path="/about" element={<><Navbar /><AboutPage /></>} />
+                    <Route path="/terms" element={<><Navbar /><TermsPage /></>} />
+                    <Route path="/privacy" element={<><Navbar /><PrivacyPage /></>} />
+                    <Route path="/faq" element={<><Navbar /><FAQPage /></>} />
+                    <Route path="/contact" element={<><Navbar /><ContactPage /></>} />
                     <Route path="/auth" element={<AuthPage />} />
-                    <Route path="/dashboard" element={<DashboardPage />} />
+                    <Route path="/dashboard" element={<><Navbar /><DashboardPage /></>} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </Suspense>
