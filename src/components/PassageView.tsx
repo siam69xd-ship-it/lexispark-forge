@@ -1,6 +1,6 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Languages, BookOpen, Info, CheckCircle, Star } from 'lucide-react';
+import { ArrowLeft, Languages, BookOpen, Info } from 'lucide-react';
 import { Passage } from '@/lib/passageParser';
 import { Word } from '@/lib/wordParser';
 import { useWords } from '@/context/WordContext';
@@ -21,15 +21,12 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
   const { user } = useAuth();
   const { trackWordView, markWordAsLearned, toggleFavorite, isWordLearned, isWordFavorite } = useProgress();
 
-  // Create a map of passage words to their Word objects with better matching
   const passageWordMap = useMemo(() => {
     const map = new Map<string, Word>();
     
     passage.words.forEach(passageWord => {
-      // Normalize the word for matching
       const normalizedWord = passageWord.toLowerCase().replace(/[^a-z]/g, '');
       
-      // Try to find the word in our database
       const found = words.find(dbWord => {
         const dbNormalized = dbWord.id.toLowerCase();
         return dbNormalized === normalizedWord || 
@@ -37,7 +34,6 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
       });
       
       if (found) {
-        // Store with multiple keys for easier lookup
         map.set(passageWord.toUpperCase(), found);
         map.set(passageWord.toLowerCase(), found);
         map.set(normalizedWord, found);
@@ -47,7 +43,6 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
     return map;
   }, [passage.words, words]);
 
-  // Find word data by text
   const findWordData = useCallback((text: string): Word | null => {
     const normalized = text.toLowerCase().replace(/[^a-z]/g, '');
     return passageWordMap.get(text.toUpperCase()) || 
@@ -55,18 +50,14 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
            passageWordMap.get(normalized) || null;
   }, [passageWordMap]);
 
-  // Highlight words in text
   const renderHighlightedText = useCallback((text: string, isEnglish: boolean) => {
     if (!text) return null;
 
-    // For English text, remove the inline translations (stuff in parentheses with Bangla)
     let processedText = text;
     if (isEnglish) {
-      // Remove Bangla meanings in parentheses like (প্রশমিত হওয়া)
       processedText = text.replace(/\s*\([^)]*[\u0980-\u09FF][^)]*\)/g, '');
     }
 
-    // Create regex pattern for all passage words
     const wordPatterns = passage.words.map(w => 
       w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
     ).join('|');
@@ -80,23 +71,22 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
       const wordData = findWordData(part);
       
       if (wordData) {
-        const difficultyColors = {
-          easy: 'text-green-400 bg-green-500/10 hover:bg-green-500/25 border-green-500/30',
-          medium: 'text-yellow-400 bg-yellow-500/10 hover:bg-yellow-500/25 border-yellow-500/30',
-          hard: 'text-red-400 bg-red-500/10 hover:bg-red-500/25 border-red-500/30',
+        const difficultyStyles = {
+          easy: 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-500/10 border-green-200 dark:border-green-500/30 hover:bg-green-100 dark:hover:bg-green-500/20',
+          medium: 'text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/10 border-amber-200 dark:border-amber-500/30 hover:bg-amber-100 dark:hover:bg-amber-500/20',
+          hard: 'text-red-700 dark:text-red-400 bg-red-50 dark:bg-red-500/10 border-red-200 dark:border-red-500/30 hover:bg-red-100 dark:hover:bg-red-500/20',
         };
         
         return (
           <motion.span
             key={index}
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
             onClick={() => setSelectedWord(wordData)}
             className={`
-              inline-block cursor-pointer font-bold px-1.5 py-0.5 mx-0.5 rounded-md 
+              inline-block cursor-pointer font-semibold px-1.5 py-0.5 mx-0.5 rounded-md 
               border transition-all duration-200
-              ${difficultyColors[wordData.difficulty]}
-              shadow-sm hover:shadow-md
+              ${difficultyStyles[wordData.difficulty]}
             `}
           >
             {part}
@@ -107,113 +97,109 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
     });
   }, [passage.words, findWordData]);
 
-  // Count matched words
   const matchedWordsCount = useMemo(() => {
     return passage.words.filter(w => findWordData(w)).length;
   }, [passage.words, findWordData]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-20">
       {/* Header */}
-      <div className="sticky top-16 z-40 glass-strong border-b border-border/50">
-        <div className="max-w-4xl mx-auto px-4 py-4">
+      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">
             <Button
               variant="ghost"
               onClick={onBack}
-              className="gap-2"
+              className="gap-2 text-muted-foreground hover:text-foreground"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back
+              Back to Passages
             </Button>
             
-            {/* Language Toggle */}
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+            <button
               onClick={() => setShowEnglish(!showEnglish)}
               className={`
-                flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold transition-all duration-300
+                flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all duration-200
                 ${showEnglish 
-                  ? 'bg-accent text-accent-foreground shadow-lg shadow-accent/30' 
-                  : 'bg-primary text-primary-foreground shadow-lg shadow-primary/30'}
+                  ? 'bg-primary text-primary-foreground' 
+                  : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'}
               `}
             >
               <Languages className="w-4 h-4" />
               {showEnglish ? 'English' : 'বাংলা'}
-            </motion.button>
+            </button>
           </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
         {/* Title */}
-        <motion.div
+        <motion.header
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mb-8 text-center"
+          transition={{ duration: 0.4 }}
+          className="mb-10 text-center"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-4">
-            <BookOpen className="w-4 h-4" />
-            <span className="text-sm font-medium">Passage {passage.id}</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card mb-4">
+            <BookOpen className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-foreground">Passage {passage.id}</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold gradient-text mb-4">
+          <h1 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4 tracking-tight">
             {passage.title}
           </h1>
-          <p className="text-muted-foreground flex items-center justify-center gap-2">
+          <p className="text-muted-foreground flex items-center justify-center gap-2 text-sm">
             <Info className="w-4 h-4" />
-            Click on highlighted words to see their meanings
+            Click on highlighted words to explore their meanings
           </p>
-        </motion.div>
+        </motion.header>
 
-        {/* Word Legend */}
+        {/* Difficulty Legend */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.4, ease: "easeOut" }}
-          className="flex flex-wrap justify-center gap-6 mb-8 p-4 rounded-2xl bg-card/50 border border-border/50"
+          transition={{ delay: 0.1 }}
+          className="flex flex-wrap justify-center items-center gap-6 mb-10 p-4 rounded-xl bg-card border border-border"
         >
           <div className="flex items-center gap-2">
-            <span className="w-4 h-4 rounded-full bg-green-400 shadow-lg shadow-green-400/50"></span>
-            <span className="text-sm font-medium text-foreground">Easy</span>
+            <span className="w-3 h-3 rounded-full bg-green-500"></span>
+            <span className="text-sm text-foreground">Easy</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-4 h-4 rounded-full bg-yellow-400 shadow-lg shadow-yellow-400/50"></span>
-            <span className="text-sm font-medium text-foreground">Medium</span>
+            <span className="w-3 h-3 rounded-full bg-amber-500"></span>
+            <span className="text-sm text-foreground">Medium</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-4 h-4 rounded-full bg-red-400 shadow-lg shadow-red-400/50"></span>
-            <span className="text-sm font-medium text-foreground">Hard</span>
+            <span className="w-3 h-3 rounded-full bg-red-500"></span>
+            <span className="text-sm text-foreground">Hard</span>
           </div>
           <div className="text-sm text-muted-foreground">
-            {matchedWordsCount}/{passage.words.length} words matched
+            {matchedWordsCount} of {passage.words.length} words matched
           </div>
         </motion.div>
 
         {/* Passage Text */}
         <AnimatePresence mode="wait">
-          <motion.div
+          <motion.article
             key={showEnglish ? 'english' : 'bangla'}
-            initial={{ opacity: 0, x: showEnglish ? 50 : -50 }}
+            initial={{ opacity: 0, x: showEnglish ? 30 : -30 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: showEnglish ? -50 : 50 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="glass rounded-3xl p-6 md:p-8 border border-border/50 shadow-card"
+            exit={{ opacity: 0, x: showEnglish ? -30 : 30 }}
+            transition={{ duration: 0.3 }}
+            className="rounded-xl bg-card border border-border p-6 md:p-8 mb-10"
           >
-            <div className="mb-4 flex items-center gap-2">
-              <span className={`px-4 py-1.5 rounded-full text-sm font-semibold ${
+            <div className="mb-4">
+              <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium ${
                 showEnglish 
-                  ? 'bg-accent/20 text-accent' 
-                  : 'bg-primary/20 text-primary'
+                  ? 'bg-primary/10 text-primary' 
+                  : 'bg-secondary text-secondary-foreground'
               }`}>
                 {showEnglish ? '🇬🇧 English Version' : '🇧🇩 বাংলা সংস্করণ'}
               </span>
             </div>
             
             <div 
-              className="text-lg md:text-xl leading-loose text-foreground"
+              className="text-lg md:text-xl text-foreground leading-loose"
               style={{ 
                 fontFamily: showEnglish ? 'inherit' : "'Noto Sans Bengali', 'Hind Siliguri', sans-serif",
                 lineHeight: '2.2'
@@ -224,39 +210,39 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
                 showEnglish
               )}
             </div>
-          </motion.div>
+          </motion.article>
         </AnimatePresence>
 
-        {/* Words in this passage */}
-        <motion.div
+        {/* Vocabulary Words */}
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
-          className="mt-8 p-6 rounded-3xl bg-card/50 border border-border/50"
+          transition={{ delay: 0.2 }}
+          className="p-6 rounded-xl bg-card border border-border"
         >
-          <h3 className="text-lg font-semibold mb-4 text-foreground flex items-center gap-2">
+          <h2 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
             <BookOpen className="w-5 h-5 text-primary" />
             Vocabulary Words ({passage.words.length})
-          </h3>
+          </h2>
           <div className="flex flex-wrap gap-2">
             {passage.words.map((word, i) => {
               const wordData = findWordData(word);
-              const difficultyColors = wordData ? {
-                easy: 'bg-green-500/15 text-green-400 border-green-500/30 hover:bg-green-500/25',
-                medium: 'bg-yellow-500/15 text-yellow-400 border-yellow-500/30 hover:bg-yellow-500/25',
-                hard: 'bg-red-500/15 text-red-400 border-red-500/30 hover:bg-red-500/25',
-              }[wordData.difficulty] : 'bg-muted/50 text-muted-foreground border-muted';
+              const difficultyStyles = wordData ? {
+                easy: 'bg-green-50 dark:bg-green-500/10 text-green-700 dark:text-green-400 border-green-200 dark:border-green-500/30 hover:bg-green-100 dark:hover:bg-green-500/20',
+                medium: 'bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-500/30 hover:bg-amber-100 dark:hover:bg-amber-500/20',
+                hard: 'bg-red-50 dark:bg-red-500/10 text-red-700 dark:text-red-400 border-red-200 dark:border-red-500/30 hover:bg-red-100 dark:hover:bg-red-500/20',
+              }[wordData.difficulty] : 'bg-muted text-muted-foreground border-transparent';
               
               return (
                 <motion.button
                   key={i}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={() => wordData && setSelectedWord(wordData)}
                   disabled={!wordData}
                   className={`
-                    px-4 py-2 rounded-xl text-sm font-semibold transition-all border
-                    ${difficultyColors}
+                    px-4 py-2 rounded-lg text-sm font-medium transition-all border
+                    ${difficultyStyles}
                     ${wordData ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}
                   `}
                 >
@@ -265,7 +251,7 @@ export default function PassageView({ passage, onBack }: PassageViewProps) {
               );
             })}
           </div>
-        </motion.div>
+        </motion.section>
       </div>
 
       {/* Word Tooltip Modal */}

@@ -1,10 +1,9 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, X, BookOpen, ChevronDown } from 'lucide-react';
+import { Search, Filter, X, BookOpen, ChevronDown, Library, GraduationCap } from 'lucide-react';
 import { useSearchParams } from 'react-router-dom';
 import { useWords } from '@/context/WordContext';
 import WordCard from '@/components/WordCard';
-import SearchBar from '@/components/SearchBar';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -71,7 +70,6 @@ export default function WordsPage() {
 
   const hasActiveFilters = selectedLetter || selectedPos.length > 0 || selectedDifficulty.length > 0 || searchQuery;
 
-  // Get letter counts
   const letterCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     words.forEach(w => {
@@ -81,32 +79,35 @@ export default function WordsPage() {
   }, [words]);
 
   return (
-    <div className="min-h-screen pt-20 pb-12">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <motion.div
+    <div className="min-h-screen bg-background pt-20 pb-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* Academic Header */}
+        <motion.header
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-12 pt-8"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-6">
-            <BookOpen className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">{words.length.toLocaleString()} Words Available</span>
+          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-border bg-card mb-6">
+            <Library className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-foreground tracking-wide">
+              {words.length.toLocaleString()} Words in Collection
+            </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">
-            Word <span className="gradient-text">Library</span>
+          
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 tracking-tight">
+            Word Library
           </h1>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Explore our comprehensive vocabulary collection with detailed meanings, examples, and translations.
+          <p className="text-muted-foreground max-w-xl mx-auto text-lg leading-relaxed">
+            Explore our comprehensive vocabulary collection with detailed meanings, contextual examples, and translations.
           </p>
-        </motion.div>
+        </motion.header>
 
         {/* Search & Filters */}
-        <motion.div
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-8 space-y-4"
+          className="mb-10 space-y-6"
         >
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto">
@@ -120,12 +121,12 @@ export default function WordsPage() {
                   setDisplayCount(ITEMS_PER_PAGE);
                 }}
                 placeholder="Search words, meanings, synonyms..."
-                className="w-full h-12 pl-12 pr-12 rounded-xl glass border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all bg-transparent"
+                className="w-full h-14 pl-12 pr-12 rounded-xl bg-card border border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-sans text-base"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-lg hover:bg-muted"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 p-1.5 rounded-lg hover:bg-muted transition-colors"
                 >
                   <X className="w-4 h-4 text-muted-foreground" />
                 </button>
@@ -135,16 +136,15 @@ export default function WordsPage() {
 
           {/* Filter Row */}
           <div className="flex flex-wrap items-center justify-center gap-3">
-            {/* Part of Speech Filter */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="rounded-xl gap-2">
+                <Button variant="outline" className="rounded-lg gap-2 h-10 px-4 font-medium">
                   <Filter className="w-4 h-4" />
                   Part of Speech
                   {selectedPos.length > 0 && (
-                    <Badge variant="secondary" className="ml-1">{selectedPos.length}</Badge>
+                    <Badge variant="secondary" className="ml-1 h-5 px-1.5 text-xs">{selectedPos.length}</Badge>
                   )}
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown className="w-4 h-4 opacity-60" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48">
@@ -160,22 +160,23 @@ export default function WordsPage() {
                       }
                       setDisplayCount(ITEMS_PER_PAGE);
                     }}
+                    className="capitalize"
                   >
-                    {pos.charAt(0).toUpperCase() + pos.slice(1)}
+                    {pos}
                   </DropdownMenuCheckboxItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Difficulty Filter */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="rounded-xl gap-2">
+                <Button variant="outline" className="rounded-lg gap-2 h-10 px-4 font-medium">
+                  <GraduationCap className="w-4 h-4" />
                   Difficulty
                   {selectedDifficulty.length > 0 && (
-                    <Badge variant="secondary" className="ml-1">{selectedDifficulty.length}</Badge>
+                    <Badge variant="secondary" className="ml-1 h-5 px-1.5 text-xs">{selectedDifficulty.length}</Badge>
                   )}
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown className="w-4 h-4 opacity-60" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-40">
@@ -191,28 +192,28 @@ export default function WordsPage() {
                       }
                       setDisplayCount(ITEMS_PER_PAGE);
                     }}
+                    className="capitalize"
                   >
-                    {diff.charAt(0).toUpperCase() + diff.slice(1)}
+                    {diff}
                   </DropdownMenuCheckboxItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {/* Clear Filters */}
             {hasActiveFilters && (
               <Button
                 variant="ghost"
                 onClick={clearFilters}
-                className="rounded-xl text-destructive hover:text-destructive"
+                className="rounded-lg text-muted-foreground hover:text-foreground gap-2"
               >
-                <X className="w-4 h-4 mr-2" />
+                <X className="w-4 h-4" />
                 Clear All
               </Button>
             )}
           </div>
 
-          {/* Alphabet Filter */}
-          <div className="flex flex-wrap justify-center gap-1.5 pt-2">
+          {/* Alphabet Filter - Academic Style */}
+          <div className="flex flex-wrap justify-center gap-1 pt-2 max-w-4xl mx-auto">
             {ALPHABET.map(letter => {
               const count = letterCounts[letter] || 0;
               const isSelected = selectedLetter === letter;
@@ -224,13 +225,15 @@ export default function WordsPage() {
                     setDisplayCount(ITEMS_PER_PAGE);
                   }}
                   disabled={count === 0}
-                  className={`w-9 h-9 rounded-lg text-sm font-medium transition-all ${
-                    isSelected
-                      ? 'bg-primary text-primary-foreground shadow-glow'
+                  className={`
+                    w-9 h-9 rounded-lg text-sm font-serif font-medium transition-all duration-200
+                    ${isSelected
+                      ? 'bg-primary text-primary-foreground shadow-sm'
                       : count > 0
-                      ? 'bg-muted/50 hover:bg-muted text-foreground'
-                      : 'bg-muted/20 text-muted-foreground/50 cursor-not-allowed'
-                  }`}
+                      ? 'bg-card border border-border text-foreground hover:border-primary hover:text-primary'
+                      : 'bg-muted/30 text-muted-foreground/40 cursor-not-allowed'
+                    }
+                  `}
                 >
                   {letter}
                 </button>
@@ -248,28 +251,28 @@ export default function WordsPage() {
                 className="flex flex-wrap items-center justify-center gap-2"
               >
                 {selectedLetter && (
-                  <Badge variant="secondary" className="gap-1">
+                  <Badge variant="secondary" className="gap-1.5 py-1 px-3 text-sm font-medium">
                     Letter: {selectedLetter}
                     <X
-                      className="w-3 h-3 cursor-pointer"
+                      className="w-3.5 h-3.5 cursor-pointer hover:text-foreground"
                       onClick={() => setSelectedLetter(null)}
                     />
                   </Badge>
                 )}
                 {selectedPos.map(pos => (
-                  <Badge key={pos} variant="secondary" className="gap-1">
+                  <Badge key={pos} variant="secondary" className="gap-1.5 py-1 px-3 text-sm font-medium capitalize">
                     {pos}
                     <X
-                      className="w-3 h-3 cursor-pointer"
+                      className="w-3.5 h-3.5 cursor-pointer hover:text-foreground"
                       onClick={() => setSelectedPos(selectedPos.filter(p => p !== pos))}
                     />
                   </Badge>
                 ))}
                 {selectedDifficulty.map(diff => (
-                  <Badge key={diff} variant="secondary" className="gap-1">
+                  <Badge key={diff} variant="secondary" className="gap-1.5 py-1 px-3 text-sm font-medium capitalize">
                     {diff}
                     <X
-                      className="w-3 h-3 cursor-pointer"
+                      className="w-3.5 h-3.5 cursor-pointer hover:text-foreground"
                       onClick={() => setSelectedDifficulty(selectedDifficulty.filter(d => d !== diff))}
                     />
                   </Badge>
@@ -277,44 +280,45 @@ export default function WordsPage() {
               </motion.div>
             )}
           </AnimatePresence>
-        </motion.div>
+        </motion.section>
 
         {/* Results Count */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-center mb-6 text-muted-foreground"
+          className="text-center mb-8"
         >
-          Showing {displayedWords.length} of {filteredWords.length} words
+          <p className="text-muted-foreground text-sm tracking-wide">
+            Showing <span className="font-medium text-foreground">{displayedWords.length}</span> of <span className="font-medium text-foreground">{filteredWords.length}</span> words
+          </p>
         </motion.div>
 
         {/* Words Grid */}
         {loading ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className="h-48 rounded-2xl bg-muted/30 animate-pulse" />
+              <div key={i} className="h-52 rounded-xl bg-muted/40 animate-pulse" />
             ))}
           </div>
         ) : displayedWords.length > 0 ? (
           <>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {displayedWords.map((word, index) => (
                 <WordCard key={word.id} word={word} index={index % ITEMS_PER_PAGE} />
               ))}
             </div>
 
-            {/* Load More */}
             {hasMore && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="flex justify-center mt-8"
+                className="flex justify-center mt-12"
               >
                 <Button
                   variant="outline"
                   size="lg"
                   onClick={() => setDisplayCount(prev => prev + ITEMS_PER_PAGE)}
-                  className="rounded-xl"
+                  className="rounded-lg px-8 h-12 font-medium"
                 >
                   Load More Words
                 </Button>
@@ -325,16 +329,16 @@ export default function WordsPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center py-16"
+            className="text-center py-20"
           >
-            <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-muted/50 flex items-center justify-center">
-              <Search className="w-10 h-10 text-muted-foreground" />
+            <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-muted flex items-center justify-center">
+              <Search className="w-8 h-8 text-muted-foreground" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">No Words Found</h3>
-            <p className="text-muted-foreground mb-4">
+            <h3 className="text-xl font-semibold text-foreground mb-2">No Words Found</h3>
+            <p className="text-muted-foreground mb-6">
               Try adjusting your filters or search term
             </p>
-            <Button onClick={clearFilters} variant="outline" className="rounded-xl">
+            <Button onClick={clearFilters} variant="outline" className="rounded-lg">
               Clear Filters
             </Button>
           </motion.div>

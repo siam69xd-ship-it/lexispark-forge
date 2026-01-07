@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Search, Filter, Grid, List } from 'lucide-react';
+import { BookOpen, Search, Grid, List, FileText, GraduationCap } from 'lucide-react';
 import { parsePassages, Passage } from '@/lib/passageParser';
 import PassageCard from '@/components/PassageCard';
 import PassageView from '@/components/PassageView';
@@ -35,6 +35,8 @@ export default function ReadAndLearnPage() {
     p.words.some(w => w.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
+  const totalWords = passages.reduce((acc, p) => acc + p.words.length, 0);
+
   if (selectedPassage) {
     return (
       <PassageView
@@ -45,30 +47,31 @@ export default function ReadAndLearnPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <div className="min-h-screen bg-background pt-20 pb-16">
       {/* Hero Section */}
-      <section className="relative py-12 md:py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
-        <div className="max-w-7xl mx-auto px-4 relative">
-          <motion.div
+      <section className="py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <motion.header
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-10"
+            className="text-center mb-12"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
-              <BookOpen className="w-4 h-4" />
-              <span className="text-sm font-medium">Read & Learn</span>
+            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-border bg-card mb-6">
+              <BookOpen className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-foreground tracking-wide">
+                Contextual Learning
+              </span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="gradient-text">Learn Words</span>
-              <span className="text-foreground"> in Context</span>
+            
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 tracking-tight">
+              Read & Learn
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Read engaging passages and learn vocabulary naturally. Click on highlighted words to see their meanings, synonyms, and examples.
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+              Master vocabulary through engaging passages. Click on highlighted words to explore their meanings, usage, and context.
             </p>
-          </motion.div>
+          </motion.header>
 
-          {/* Search and Filters */}
+          {/* Search and View Toggle */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -79,18 +82,18 @@ export default function ReadAndLearnPage() {
               <div className="relative flex-1">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                 <Input
-                  placeholder="Search passages or words..."
+                  placeholder="Search passages or vocabulary..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-12 h-12 bg-card border-border/50 rounded-xl"
+                  className="pl-12 h-14 bg-card border-border text-foreground placeholder:text-muted-foreground rounded-xl text-base"
                 />
               </div>
-              <div className="flex gap-1 p-1 bg-card rounded-xl border border-border/50">
+              <div className="flex gap-1 p-1.5 bg-card rounded-xl border border-border">
                 <Button
                   variant={viewMode === 'grid' ? 'secondary' : 'ghost'}
                   size="icon"
                   onClick={() => setViewMode('grid')}
-                  className="rounded-lg"
+                  className="rounded-lg h-10 w-10"
                 >
                   <Grid className="w-4 h-4" />
                 </Button>
@@ -98,7 +101,7 @@ export default function ReadAndLearnPage() {
                   variant={viewMode === 'list' ? 'secondary' : 'ghost'}
                   size="icon"
                   onClick={() => setViewMode('list')}
-                  className="rounded-lg"
+                  className="rounded-lg h-10 w-10"
                 >
                   <List className="w-4 h-4" />
                 </Button>
@@ -111,41 +114,54 @@ export default function ReadAndLearnPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.15 }}
-            className="flex justify-center gap-8 mb-10"
+            className="flex justify-center gap-12 mb-12"
           >
             <div className="text-center">
-              <p className="text-3xl font-bold gradient-text">{passages.length}</p>
-              <p className="text-sm text-muted-foreground">Passages</p>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <FileText className="w-5 h-5 text-primary" />
+                <p className="text-3xl font-semibold text-foreground">{passages.length}</p>
+              </div>
+              <p className="text-sm text-muted-foreground tracking-wide">Passages</p>
             </div>
+            <div className="w-px h-12 bg-border" />
             <div className="text-center">
-              <p className="text-3xl font-bold gradient-text">
-                {passages.reduce((acc, p) => acc + p.words.length, 0)}
-              </p>
-              <p className="text-sm text-muted-foreground">Words to Learn</p>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <GraduationCap className="w-5 h-5 text-primary" />
+                <p className="text-3xl font-semibold text-foreground">{totalWords}</p>
+              </div>
+              <p className="text-sm text-muted-foreground tracking-wide">Vocabulary Words</p>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Passages Grid */}
-      <section className="max-w-7xl mx-auto px-4 pb-20">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6">
         {loading ? (
           <div className="flex items-center justify-center py-20">
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 1, ease: 'linear' }}
-              className="w-10 h-10 border-2 border-primary border-t-transparent rounded-full"
+              className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full"
             />
           </div>
         ) : filteredPassages.length === 0 ? (
-          <div className="text-center py-20">
-            <p className="text-muted-foreground">No passages found</p>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center py-20"
+          >
+            <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-muted flex items-center justify-center">
+              <Search className="w-8 h-8 text-muted-foreground" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground mb-2">No Passages Found</h3>
+            <p className="text-muted-foreground">Try a different search term</p>
+          </motion.div>
         ) : (
           <div className={
             viewMode === 'grid' 
-              ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'
-              : 'space-y-4'
+              ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'
+              : 'space-y-4 max-w-3xl mx-auto'
           }>
             {filteredPassages.map((passage, index) => (
               <PassageCard
@@ -153,6 +169,7 @@ export default function ReadAndLearnPage() {
                 passage={passage}
                 onClick={() => setSelectedPassage(passage)}
                 index={index}
+                isListView={viewMode === 'list'}
               />
             ))}
           </div>
