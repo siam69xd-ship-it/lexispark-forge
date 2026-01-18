@@ -125,6 +125,11 @@
     @apply font-semibold tracking-tight leading-tight;
   }
 
+  /* Serif headings for academic feel */
+  .font-serif {
+    font-family: 'IBM Plex Serif', 'Georgia', serif;
+  }
+
   /* Bengali font support */
   .font-bengali {
     font-family: 'Noto Sans Bengali', sans-serif;
