@@ -32,42 +32,72 @@ export default function WordCard({ word, index = 0 }: WordCardProps) {
     }
   };
 
-  const difficultyStyles = {
-    easy: 'bg-green-50 dark:bg-green-500/10 text-green-700 dark:text-green-400 border-green-200 dark:border-green-500/30',
-    medium: 'bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-500/30',
-    hard: 'bg-red-50 dark:bg-red-500/10 text-red-700 dark:text-red-400 border-red-200 dark:border-red-500/30',
+  const difficultyConfig = {
+    easy: { 
+      label: 'Beginner',
+      bg: 'bg-emerald-50 dark:bg-emerald-950/40',
+      text: 'text-emerald-700 dark:text-emerald-400',
+      border: 'border-emerald-200 dark:border-emerald-800',
+      dot: 'bg-emerald-500'
+    },
+    medium: { 
+      label: 'Intermediate',
+      bg: 'bg-amber-50 dark:bg-amber-950/40',
+      text: 'text-amber-700 dark:text-amber-400',
+      border: 'border-amber-200 dark:border-amber-800',
+      dot: 'bg-amber-500'
+    },
+    hard: { 
+      label: 'Advanced',
+      bg: 'bg-rose-50 dark:bg-rose-950/40',
+      text: 'text-rose-700 dark:text-rose-400',
+      border: 'border-rose-200 dark:border-rose-800',
+      dot: 'bg-rose-500'
+    },
   };
+
+  const difficulty = difficultyConfig[word.difficulty];
 
   return (
     <motion.article
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.03, duration: 0.3 }}
-      whileHover={{ y: -4 }}
+      whileHover={{ y: -6 }}
       className="h-full"
     >
       <Link to={`/word/${word.id}`} className="block h-full">
-        <div className="h-full p-5 rounded-xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-md flex flex-col group cursor-pointer">
+        <div className="h-full p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 flex flex-col group cursor-pointer relative overflow-hidden">
+          {/* Decorative gradient */}
+          <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl from-primary/5 to-transparent rounded-bl-full" />
+          
           {/* Header */}
-          <div className="flex items-start justify-between mb-3">
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-1">
-                <h3 className="font-display text-xl font-semibold text-foreground group-hover:text-primary transition-colors truncate">
+          <div className="flex items-start justify-between mb-4 relative">
+            <div className="flex items-start gap-4">
+              {/* Initial Letter */}
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-xl font-serif font-bold text-primary">
+                  {word.word[0].toUpperCase()}
+                </span>
+              </div>
+              
+              <div className="min-w-0 flex-1">
+                <h3 className="font-serif text-xl font-semibold text-foreground group-hover:text-primary transition-colors truncate">
                   {word.word}
                 </h3>
+                {word.pronunciation && (
+                  <p className="text-sm text-muted-foreground font-mono mt-0.5">
+                    /{word.pronunciation}/
+                  </p>
+                )}
               </div>
-              {word.pronunciation && (
-                <p className="text-sm text-muted-foreground font-mono">
-                  /{word.pronunciation}/
-                </p>
-              )}
             </div>
             
             <div className="flex items-center gap-0.5 flex-shrink-0">
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity rounded-full"
                 onClick={speak}
               >
                 <Volume2 className="w-4 h-4" />
@@ -75,7 +105,7 @@ export default function WordCard({ word, index = 0 }: WordCardProps) {
               <Button
                 variant="ghost"
                 size="icon"
-                className={`h-8 w-8 transition-all ${
+                className={`h-8 w-8 transition-all rounded-full ${
                   isInFlashcards 
                     ? 'text-primary opacity-100' 
                     : 'opacity-0 group-hover:opacity-100'
@@ -88,49 +118,52 @@ export default function WordCard({ word, index = 0 }: WordCardProps) {
                   <BookmarkPlus className="w-4 h-4" />
                 )}
               </Button>
-              <ArrowRight className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all ml-1" />
             </div>
           </div>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="px-2.5 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-md capitalize">
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            <span className="px-3 py-1.5 text-xs font-semibold bg-secondary text-secondary-foreground rounded-full capitalize">
               {word.partOfSpeech}
             </span>
-            <span className={`px-2.5 py-1 text-xs font-medium rounded-md border capitalize ${difficultyStyles[word.difficulty]}`}>
-              {word.difficulty}
+            <span className={`px-3 py-1.5 text-xs font-semibold rounded-full border flex items-center gap-1.5 ${difficulty.bg} ${difficulty.text} ${difficulty.border}`}>
+              <span className={`w-1.5 h-1.5 rounded-full ${difficulty.dot}`} />
+              {difficulty.label}
             </span>
           </div>
 
           {/* Meaning */}
-          <p className="text-sm text-foreground leading-relaxed line-clamp-2 mb-3 flex-1">
+          <p className="text-sm text-foreground leading-relaxed line-clamp-2 mb-4 flex-1">
             {word.smartMeaning}
           </p>
 
           {/* Bangla */}
           {word.banglaMeaning && (
-            <p className="text-sm text-muted-foreground line-clamp-1 mb-3 font-bengali">
+            <p className="text-sm text-muted-foreground line-clamp-1 mb-4 font-bengali">
               {word.banglaMeaning}
             </p>
           )}
 
-          {/* Synonyms */}
+          {/* Footer - Synonyms */}
           {word.synonyms?.length > 0 && (
-            <div className="pt-3 border-t border-border">
-              <div className="flex flex-wrap gap-1.5">
-                {word.synonyms.slice(0, 3).map((syn, i) => (
-                  <span
-                    key={i}
-                    className="px-2 py-0.5 text-xs bg-muted text-muted-foreground rounded"
-                  >
-                    {syn}
-                  </span>
-                ))}
-                {word.synonyms.length > 3 && (
-                  <span className="px-2 py-0.5 text-xs text-muted-foreground">
-                    +{word.synonyms.length - 3}
-                  </span>
-                )}
+            <div className="pt-4 border-t border-border mt-auto">
+              <div className="flex items-center justify-between">
+                <div className="flex flex-wrap gap-1.5 flex-1">
+                  {word.synonyms.slice(0, 3).map((syn, i) => (
+                    <span
+                      key={i}
+                      className="px-2.5 py-1 text-xs bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 rounded-lg"
+                    >
+                      {syn}
+                    </span>
+                  ))}
+                  {word.synonyms.length > 3 && (
+                    <span className="px-2.5 py-1 text-xs text-muted-foreground">
+                      +{word.synonyms.length - 3}
+                    </span>
+                  )}
+                </div>
+                <ArrowRight className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all flex-shrink-0 ml-2" />
               </div>
             </div>
           )}
