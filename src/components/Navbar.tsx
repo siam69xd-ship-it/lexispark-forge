@@ -7,11 +7,11 @@ import { useAuth } from '@/context/AuthContext';
 import { Button } from '@/components/ui/button';
 
 const navItems = [
-  { path: '/words', label: 'Learn' },
+  { path: '/words', label: 'Words' },
   { path: '/read-and-learn', label: 'Passages' },
-  { path: '/quiz', label: 'Practice' },
+  { path: '/grammar', label: 'Grammar' },
+  { path: '/quiz', label: 'Quiz' },
   { path: '/about', label: 'About' },
-  { path: '/faq', label: 'FAQ' },
 ];
 
 export default function Navbar() {

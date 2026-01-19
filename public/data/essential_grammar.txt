@@ -1,0 +1,2293 @@
+Chapter-1ফ্রিহ্যান্ড রাইটিং ব্যাসিকযে কোন ইংরেজি বাক্য তৈরির জন্য মূলতঃ প্রধান দুটি বিষয় জানা অপরিহার্য। তা হল- Verb ও subject. 1উদাহরণস্বরুপঃ সুমি স্যুপ রান্না করেছে। 2এখানে subject বের করার জন্য যদি প্রশ্ন করা হয়- 'কে' রান্না করেছে?'উত্তরঃ সুমি। অর্থাৎ, subject- সুমি। 3একইভাবে Verb বের করার জন্য যদি প্রশ্ন করা হয়- 'সুমি কি করেছে?'উত্তরঃ রান্না করেছে (Verb). 4কিন্তু অনেক ক্ষেত্রে ইংরেজি বড় বাক্য তৈরি করতে বিশেষ করে জটিল বাক্যের subject বের করা কঠিন হয়ে পড়ে। এজন্য, বড় বড় জটিল বাক্য থেকে subject বের করার কৌশল আয়ত্ব করতে হবে। 5নিম্নের উদাহরণগুলি লক্ষ্য করুনঃউদাহরণ-১ঃ গ্রামের অনেক এলাকার পানিতে আর্সেনিকের পরিমান স্বাভাবিক মাত্রার চেয়ে বেশি। 6subject বের করার জন্য যদি প্রশ্ন করা হয় 'কি বেশি'?উত্তরঃ আর্সেনিকের পরিমান (The amount of arsenic) 7+1The amount of arsenic in water in many areas of the village is more than the normal level. 8উদাহরণ-২ঃ ঢাকা শহরের খাবারের পানির মান অত্যন্ত খারাপ।লক্ষ্য করুন, বাক্যটিতে verb নেই, এক্ষেত্রে যে বাক্যে verb নেই সেক্ষেত্রে যে ব্যক্তি, বস্তু, বিষয় সম্পর্কে বর্ণনা করা হয় সেটাই subject. 9যেমনঃ এখানে 'খাবারের পানির মান' এটি (বিষয়) সম্পর্কে আলোচনা করা হয়েছে। 10অতএব, এটি subject (খাবারের পানির মান- The quality of drinking water) 11+2ঢাকা শহরের খাবারের পানির মান অত্যন্ত খারাপ।The quality of drinking water in Dhaka City is very harmful. 12উদাহরণ-৩ঃ বাংলাদেশের আবহাওয়া পরিস্থিতি সুবিধাজনক নয়।এখানেও verb না থাকায় 'আবহাওয়া পরিস্থিতি- The weather conditions' subject হিসাবে গন্য হবে। 13বাংলাদেশের আবহাওয়া পরিস্থিতি সুবিধাজনক নয়।The weather conditions in Bangladesh are not convenient. 14উপরোক্ত আলোচনার প্রেক্ষিতে বলা যায় যে, ইংরেজি বড় বাক্য তৈরি বা ফ্রিহ্যান্ড রাইটিং এ দক্ষ হতে বাক্যের subject ও verb চিহ্নিত করা জানতে হবে। 15Chapter-2Subject Verb Agreement এর গুরুত্বপূর্ন রুল (শর্টকাট টেকনিক সহ)রিটেন ইংলিশে দক্ষ হতে গ্রামারের একটি গুরুত্বপূর্ণ টপিকস Subject verb agreement সম্পর্কে বিস্তারিত জানা আবশ্যক। নিম্নে এ সম্পর্কিত গুরুত্বপূর্ণ রুলসমূহ প্রদত্ত হল এবং রুলগুলোর শেষে Subject verb agreement ব্যবহার করে ইংরেজি বড় বাক্য তৈরি করে দেখানো হয়েছে। 16Rule- 1বাক্যে Subject যদি Singular হয় তাহলে Verb টিও Singular হবে, একইভাবে Subject টি Plural হলে Verb টি Plural হবে। এটি Subject verb agreement এর কমন একটি রুল। 17ExampleSohel is the leader of our team. (সোহেল আমাদের দলের নেতা।)The boys are running in the field (ছেলেরা মাঠে দৌড়াচ্ছে।) 18Rule- 2দুটি Singular Noun যদি ‘and’ দ্বারা সংযুক্ত থাকে তবে Auxiliary Verb হিসেবে ‘are’ বসবে। 19ExampleTuhin and Rafiq are working very well. (তুহিন এবং রফিক খুব ভালো কাজ করছে।) 20And দ্বারা যুক্ত হয়েও যদি Noun গুলি একটি মাত্র ভাব প্রকাশ করে তবে Auxiliary Verb Singular হয়।Bread and butter is my favorite breakfast. (পাওরুটি এবং মাখন আমার পছন্দের নাস্তা।) 21Rule- 3With, as well as, together with, along with, accompanied by, in addition to দ্বারা বাক্যে কোন Noun বা Pronoun যুক্ত হলে দুটি subject এর মধ্যে প্রথম subject অনুযায়ী verb ব্যবহার হবে। 22ExampleTipu as well as his friends is going to Cox'sbazar. (টিপু সেই সাথে তার বন্ধুরাও কক্সবাজার যাচ্ছে।) 23He along with his business partners has attended the meeting. (তিনি তার ব্যবসায়িক অংশীদারদের সাথে বৈঠকে উপস্থিত ছিলেন।) 24Mr. Azad accompanied by his children has attended the party. (জনাব আজাদ তার ছেলেমেয়েদের সাথে পার্টিতে উপস্থতি হয়েছিলেন।) 25Rule- 4a) Either- or, neither.....nor, not only/but also দুটি Subject দ্বারা যুক্ত হলে দ্বিতীয় বা শেষের Subject অনুযায়ী Verb Singular বা Plural হবে। 26ExampleEither he or his brother is guilty. (হয় সে অথবা তার ভাই অপরাধী।) 27Not only ... but also you are coming today. (শুধু আমি নয় তুমিও আজ আসছো।) 28২৯ তম বিসিএস পরীক্ষাNeither Rini nor Simi.....qualified for the job.a) are b) is c) were d) hadAns: b) is 29Rule- 5কোন Sentence যদি Gerund, Infinitive দ্বারা শুরু হয় তবে সেক্ষেত্রে অবশ্যই Singular Verb ব্যবহার হবে। 30ExampleWalking is a good exercise. (হাটা খুব ভাল ব্যয়াম।)Being honest is a great virtues (সৎ হওয়া একটা মহৎ গুণ।) 31Smoking is forbidden in the public place. (পাবলিক প্লেসে ধুমপান করা নিষেধ।) 32To collect Islamic books is my hobby (Infinitive) (ইসলামী বই সংগ্রহ করা আমার শখ।) 33Rule- 6One of the এর পরে verb singular হয়। 34ExampleOne of the villagers was literate. (গ্রামবাসীদের মধ্যে একজন শিক্ষিত ছিলেন।) 35২৪ তম বিসিএস (বাতিল) পরীক্ষাAt least one of the students.....full marks every time.a) get b) are getting c) gets d) have got.Ans: c) gets 36Rule- 7News, politics, mathematics ইত্যাদি দেখতে plural হলেও singular হওয়ায় verb ও singular হবে। 37Example: Mathematics is my favorite subject. 38Rule- 8Subject এর headword যদি singular হয় verb ও singular যদি plural হয় verb ও plural হবে। 39যেমনঃ The mangoes of Rajshahi are popular. 40+1Rule- 9Noun এর পূর্বে সংখ্যাবাচক শব্দ যেমনঃ dozen, hundred, thousand, pair ইত্যাদি থাকলে verb singular হয়। 41Example: One dozen of oranges is sufficient. 42+1Rule- 10সময় ও পরিমাপ উল্লেখ থাকলে singular verb বসবে। 43যেমনঃ Two hours is required to cook the recipe. 44+1Rule- 11Percentage ও fraction থাকলে পরবর্তী noun অনুযায়ী verb হবে। 45যেমনঃ One third of the report has been written. 46+1Rule- 12একই দৈর্ঘ্য, পরিমাণ বা স্থান বুঝালে subject দেখতে plural হলেও verb singular হয়। 47Example40 miles is a long way - ৪০ মাইল দীর্ঘ পথ। 4810 Minutes is enough to explain this topic (এই বিষয়টি ব্যাখ্যা করবার জন্য ১০ মিনিট সময়ই যথেষ্ট।) 49Rule- 13Subject এর আগে যদি "each", "every" বা "no" থাকে তবে Auxiliary verb টি Singular হবে। 50ExampleEvery student is present today. (প্রত্যেক শিক্ষার্থী আজ উপস্থিত।)No smoking is allowed. (ধূমপান অনুমোদিত নয়।) 51Rule- 14বই/দেশের নাম দেখতে plural হলেও তাদের পরে singular verb বসে। 52Example“The hundreds” is a famous book. (“দা হানড্রেডস” একটি বিখ্যাত বই।)The United States of America is a rich country. (যুক্তরাষ্ট্র একটি ধনী দেশ।) 53Rule- 15Collective Noun গুলি সাধারণত singular এবং এদের পরে verb singular হয়। 54ExampleBangladesh Army is doing a great job for Rohinga refugees. (বাংলাদেশ সেনাবাহিনী রোহিঙ্গা শরনার্থীদের জন্য ভাল কাজ করছে।) 55Rule- 16Information, knowledge, advice, deer ইত্যাদি সর্বদা singular হিসাবে এদের পরের verb singular হবে। 56Example: Your Information was totally wrong. 57Shortcut Tips- 1নিচের শব্দগুলো থাকলেই Verb (singular) হবে:One/body/thing...Someone, anyone, everyone, each oneSomebody, anybody, everybody, nobodySomething, anything, everything, nothingVerb (singular) 58Example:Someone wants you on the phone.Something is better than nothing.Everything has been taken care of. 59Shortcut Tips- 2নিচের Phrase গুলো থাকলেই Verb (singular) হবেVerb (singular)ExampleEach of  One of  either of  Neither of  everyone ofVerb (singular)Noun (plural)  One of the villagers was literate.  Each of the Students was present.  Neither of the two brothers was present in the class.60606060+1Shortcut Tips- 3With, as well as, together with, along with, accompanied byEither- or, neither.....nor, not only/but also1st Subject অনুযায়ী Verb2nd Subject অনুযায়ী VerbExample: Sima as well as his friends is going to coxbazar.Example: Neither the captain nor the players are present.61Subject verb agreement অনুযায়ী ইংরেজি বড় বাক্য তৈরি (ফ্রিহ্যান্ড রাইটিং)জনাব হাবিব ঔষধ প্রস্তুতকারী প্রতিষ্ঠান সেবা ফার্মাসিটিউক্যালস এর একজন পরিচালক। তিনি তার ব্যবসায়িক অংশীদারগণসহ মিটিংএ উপস্থিত হয়েছিলেন। মিটিং এর প্রধান এজেন্ডা ছিল- ঔষধের গুণগত মান নিশ্চিত করা। জনাব আসিফ যিনি হলেন বাংলাদেশের বিখ্যাত কেমিষ্টদের অন্যতম উক্ত মিটিংএ এ বিষয়ে তার গুরুত্বপূর্ণ মতামত উপস্থাপন করেছেন। 62Mr. Habib is a Director of medicine manufacturer firm “Seba pharmaceuticals”. He along with his business partners attended the meeting. The main issue of the meeting was to ensure the quality of the drag. Mr Habib, who is one of famous chemists of Bangladesh has presented important opinion about the topic. 63Chapter-3Relative pronounযে Pronoun পূর্বে উল্লেখিত কোন noun এর পরে বসে তার সাথে সম্পর্ক স্থাপন পূর্বক দুটি sentence কে যুক্ত করে তাকে Relative pronoun বলে। 64Relative pronoun গুলো হচ্ছে- Who, which, whom, that, what ইত্যাদি। এগুলো ছাড়াও But ও As Relative pronoun হিসাবে ব্যবহার হয়। 65+1WhoPronoun যদি ব্যক্তিবাচক তথা মানুষের পরিবর্তে (I, you, we, they, he) ব্যবহৃত হয় তবে তার পরিবর্তে Who বসে। 66যেমনঃ I met a girl. She is a student.I met a girl who is a student. 67Whom কখন বসে?Pronoun যদি হয় objective (me, him, her, them ইত্যাদি) হয় সেক্ষেত্রে whom বসবে। 68যেমনঃ Humayun Ahmed is a renowned writer. I met him Bangla Academy premises. 69+1Humayun Ahmed whom I met in Bangla Academy premises is a renowned writer. (হুমায়ুন আহমেদ, যিনি একজন প্রখ্যাত লেখক যার সাথে আমার দেখা হয়েছিল বাংলা একাডেমি প্রাঙ্গনে) 70WhichPronoun যদি বস্তু বা অব্যক্তিবাচক হয় তবে তার পরিবর্তে which ব্যবহৃত হয়। 71যেমনঃ This is the mobile which I wanted to buy. (এটি সেই মোবাইল যা আমি কিনতে চেয়েছিলাম) 72+1The book which is out of stock now has all the information you need. 73Thatব্যক্তি বা বস্তু উভয় ক্ষেত্রে that ব্যবহার হয়। কখনো কখনো Who, which/whom এর পরিবর্তে that ব্যবহার হয়। 74উদাহরণঃThis is the man that (who) lost his camera.This is the book (Smart English) that everyone is talking about. 75Whatশুধুমাত্র বস্তুকে নির্দেশ করতে What ব্যবহৃত হয়। এটা মূলতঃ that ও which একত্রে যে অর্থ প্রকাশ করে What ব্যবহারে একই অর্থ প্রকাশ করে।যেমনঃ I know what he will do (সে যা করবে আমি জানি) 76Relative pronoun অনুযায়ী ইংরেজি বড় বাক্য তৈরিযে শিক্ষার্থীরা নিয়মিত বিশ্ববিদ্যালয়ে যায় না, ফেসবুকিং করে অহেতুক সময় নষ্ট করে, ঘুম থেকে দেরিতে উঠে, ক্লাসের সময় আড্ডা দিয়ে সময় কাটায় এবং শিক্ষকদের মান্য করে না, জীবনে সফলতা লাভ করতে পারে না। 77The students who don't go to the university regularly, waste time using Facebook, get up from bed tardily, spend time with gossiping during the class time and disobey their teachers can't get success in life. 78যে বিনোদন পার্কটি ঢাকা শহরের প্রাণকেন্দ্রে অবস্থিত (সেটা) অনেক দূর থেকে মানুষদেরকে নিয়ে আসে এবং প্রতিদিন অনেক আগন্তুককে আকর্ষণ করে। 79The amusement park, which is located in the heart of Dhaka City, brings the people from far away and attracts many visitors every day. 80উপরের উদাহরণগুলো ফলো করে Relative pronoun ব্যবহার করে নিজে নতুন নতুন বড় বাক্য তৈরি করুন, দেখবেন দ্রুত আপনার দক্ষতা বাড়ছে। 81Chapter-4Passive voice & Freehand writingফ্রিহ্যান্ড রাইটিং এ Passive sentence এর ভূমিকা অত্যন্ত গুরুত্বপূর্ণ। কারণ, যে কোন রিপোর্ট তৈরি, বই, সংবাদপত্র ইত্যাদি যে কোন ধরনের Written English এর অধিকাংশ Passive sentence দ্বারাই হয়ে থাকে। 82যদিও Passive voice এর ক্ষেত্রে অনেকেই by এর ব্যবহারকে প্রাধান্য দিয়ে থাকে। কিন্তু বাস্তবে, বিশেষ করে ফ্রিহ্যান্ড রাইটিং এ by ছাড়া Passive sentence এর ব্যবহার তুলনামূলক বেশি। 83মূলতঃ যে sentence এ subject অনুপস্থিত সেক্ষেত্রে by ব্যবহার হয় না। 84+2যেমনঃ রিপোর্টটি যথাসময়ে তৈরি হয়েছে- The report has been prepared on time. 85এখানে 'কে' রিপোর্ট তৈরি করেছে তা উল্লেখ নেই, এজন্য by ব্যবহার হয়নি। 86+1আরও একটি উদাহরণঃরিপোর্টটি যথাসময়ে তৈরি হয়েছে এবং ম্যানেজারের দ্বারা অনুমোদিত হয়েছে।The report has been prepared on time & it has been approved by the manager. 87লক্ষ্য করুন, বাক্যের প্রথম অংশে 'কে তৈরি করেছে' তার উল্লেখ নেই। আবার দ্বিতীয় অংশে ম্যানেজারের দ্বারা অনুমোদিত হয়েছে, অর্থাৎ, এখানে subject (manager) রয়েছে, তাই পরবর্তী অংশে by হয়েছে। 88+1নিচের উদাহরণগুলো ভাল করে লক্ষ্য করুনঃPresent Indefinite (am/is/are + Vp.p.)বিক্রি করা হয়- is/are sold.বই বিক্রি করা হয়- books are sold.এই দোকানে বই বিক্রি করা হয় - Books are sold in this shop. 89আয়োজন করা হয়- is/are arranged.মেলার আয়োজন করা হয়- The fair is arranged.প্রতি বছর এখানে মেলার আয়োজন করা হয়- The fair is arranged here in every year. 90একটি পূর্ণাঙ্গ বাক্যঃমে মাসের প্রথম দিন সারা বিশ্বে "মে দিবস" হিসেবে পালন/উদযাপন করা হয়।The first day of May is observed as "May Day" all over the world. 91Continuous (Present, past, future)(am/is/are + being + Vp.p.)(was/were + being + Vp.p.)(will be + being + Vp.p.)শেখানো হচ্ছে- is/are being taught.ইংরেজি শেখানো হচ্ছে- is being taught English.শিক্ষার্থীদের ইংরেজি শেখানো হচ্ছে- The students are being taught English. 92পূর্ণাঙ্গ Passive বাক্যঃস্বাধীনতা দিবস উপলক্ষ্যে প্রধানমন্ত্রীকে গার্ড অফ অনার দেওয়া হচ্ছিল।The prime minister was being given guard of honor on the occasion of the independent day. 93দুর্নীতি বন্ধে বাংলাদেশে কোন কার্যকর পদক্ষেপ নেওয়া হচ্ছে না।No effective steps are being taken to stop the corruption of Bangladesh. 94গার্মেন্টস এর পণ্যগুলো নিয়মিত বিদেশে রপ্তানী হতে থাকবে।The goods of garments will be being exported abroad regularly. 95Present perfect (...been + v.p.p)জানানো হয়েছে - have/has + been informed.আমদানী করা হয়েছে - have/has + been imported. 96পুলিশকে এ বিষয়ে জানানো হয়েছে।The police has been informed about this matter. 97এ বছর ভারত থেকে প্রচুর চাল আমদানী করা হয়েছে।A huge amount of rice has been imported from India this year. 98Note: লক্ষ্য করুন, বাক্যটিতে 'কে আমদানী করেছে' নেই, অর্থাৎ, subject না থাকায় 'by' হয়নি। 99+1একটি পূর্ণাঙ্গ বাক্যের উদাহরণঃবিশিষ্ট আইটি প্রফেশনাল তারিক মাহমুদকে ২০১৯- ২০২০ সালের জন্য বাংলাদেশ কম্পিউটার সমিতির সভাপতি নির্বাচিত করা হয়েছে।Renowned IT professional Tarik Mahmood has been elected president of the Bangladesh Computer Society for the fiscal year 2019-2020. 100Past Indefinite (was/were + Vp.p.)উদাহরণঃপরীক্ষা সময়মত শেষ হয়েছিল।The exam was finished on time. 101মসজিদটি কখন তৈরি হয়েছিল?When was the mosque built?সড়ক দুর্ঘটনায় ১০ জন লোক মারা গিয়েছিল।Ten people were killed on the road accident. 102Future Indefinite (will be + Vp.p.)উদাহরণঃবইটি প্রকাশিত হবে।The book will be published. 103ইন্টারভিউর ফলাফল তোমাকে পরে জানানো হবে।You will be informed later the result of the interview. 104একটি পূর্ণাঙ্গ বাক্যের উদাহরণঃইসলামী ব্যাংক বাংলাদেশ লিঃ এর বার্ষিক সম্মেলন- ২০১৯ আজ বিকাল ৩টায় বঙ্গবন্ধু সম্মেলন কেন্দ্রে অনুষ্ঠিত হবে।The annual conference- 2019 of Islami Bank Bangladesh Ltd will be held at 3 pm today in the Bangobandhu Conference center. 105Modal AuxiliariesCan, could, shall, should, will, would, may, might, must, ought to, ইত্যাদি Modal verb এর passive structure: modal + be + v.p.p (Past participle) 106উদাহরণঃপবিত্র কোরআন শেখা উচিৎ।The Holy Quran should be learnt. 107যানজট নিরসনে বহুমূখী পদক্ষেপ নেওয়া যেতে পারে।Multiple steps can be taken to solve the traffic jam. 108এ সম্পর্কে আরো তথ্য ল্যাব এইডের তথ্য কেন্দ্র থেকে পাওয়া যেতে পারে।Further information about this can be obtained from information center of Lab Aid. 109নোটঃ লক্ষ্য করুন, এখানে subject নেই, অর্থাৎ 'কে তথ্য পাবে?' উল্লেখ নেই। ফলে 'by' হয়নি। 110+1একটি পূর্ণাঙ্গ বাক্যের উদাহরণঃএটা এখানে উল্লেখ হতে পারে যে, ‘cool water’ ব্রান্ডের পানি দুষিত হওয়ার বিষয়টি বিভিন্ন গণমাধ্যমে প্রকাশিত হয়েছে।It may be mentioned here, the matter of polluted water of ‘cool water’ brand has been published in various mass media. 111Passive sentence হিসাবে ‘To-be’ (To be + Vp.p.)কোন বাক্যে To- be এর পরে verb এর past participle হলে বাক্যটি passive sentence হিসাবে বিবেচনা করা হবে। 112যেমনঃ The report is to be submitted soon. (রিপোর্টটি শীঘ্রই সাবমিট করা হবে) 113+1আরো উদাহরণঃধূমপান প্রতিরোধ করতে হবে - Smoking is to be prevented. 114ফেসবুক আসক্তি কমাতে হবে - Facebook addiction is to be reduced. 115নিরক্ষরতা দূর করতে হবে - Illiteracy is to be removed. 116মেহমানকে আপ্যায়ন করতে হবে - The guest is to be entertained. 117Passive sentence ব্যবহার করে ফ্রিহ্যান্ড রাইটিংআধুনিক বিশ্বের প্রায় সকল কর্মকান্ডে তথ্য প্রযুক্তির ব্যবহার হয়। তথ্য প্রযুক্তির ব্যবহারের মাধ্যমে জটিল কাজকে সহজভাবে সম্পাদন করা যায়। যে ব্যক্তি তথ্য প্রযুক্তিতে দক্ষ তাকে বিশেষভাবে মূল্যায়ন করা হয়। সর্বক্ষেত্রে তথ্য প্রযুক্তির ব্যবহার বাড়াতে বিভিন্ন পদক্ষেপ নেওয়া হচ্ছে। সরকার কর্তৃক আইসিটি উন্নয়নে দীর্ঘমেয়াদী পরিকল্পনার আলোকে অনেক কার্যকর পদক্ষেপ নেওয়া হয়েছে। দক্ষ মানব সম্পদের অভাব তথ্য প্রযুক্তি বিকাশের অন্তরায় হিসাবে বিবেচনা করা হয়। এ কারনেই, প্রয়োজনীয় প্রশিক্ষনের ব্যবস্থা নিতে হবে। 118Information technology is used in almost all activities of modern world. Complicated task is performed easily using the Information technology. The person who skilled in ICT are specially evaluated/appreciated. Various steps are being taken to increase the use of ICT. Many effective steps have been taken In the light of long term plan to develop ICT by the government. 119119119119(লক্ষ্য করুনঃ 'কে পদক্ষেপ নিয়েছে' উত্তর- সরকার। এখানে subject (Govt) থাকায় by ব্যবহার করা হয়েছে।) 120+2Lack of skilled human resource is considered as a barrier to expand ICT. That is why, necessary training should be taken. 121Chapter- 5Verb + ing হওয়ার কমন ও গুরুত্বপূর্ণ কারণসমূহরিটেন ইংলিশে verb+ing এর ব্যবহার অত্যন্ত গুরুত্বপূর্ণ। কখন/কোথায় verb+ing ব্যবহার হয় তার কমন কারনসমূহ নিম্নে প্রদত্ত হল। 122Continuous Tense এর ক্ষেত্রেPreposition এর ক্ষেত্রেGerund এর ক্ষেত্রেPresent participle এর ক্ষেত্রেTo verb এর ক্ষেত্রে 123Continuous Tense এর ক্ষেত্রেI am studying in the library. (আমি লাইব্রেরীতে পড়াশোনা করছি।) 124They are playing cricket. (তারা ক্রিকেট খেলছে।) 125He was reciting the Holy Quran. (সে পবিত্র কোরআন তেলাওয়াত করতেছিল।) 126Tomal will be doing this work. (তমাল কাজটি করতে থাকবে।) 127উপরের উদাহরণগুলো লক্ষ্য করলে Present, past, future প্রতিটি Continuous Tense এর ক্ষেত্রে verb+ing ব্যবহার হয়েছে। 128+1Preposition এর ক্ষেত্রেসাধারণ ক্ষেত্রে Preposition এর পর verb থাকলে verb+ing হয়। যেমনঃ He is capable of solving the problem. 129কিন্তু to এক্ষেত্রে ব্যতিক্রম, অর্থাৎ, Preposition “to" এর পরে verb+ing হয় না। তবে বিশেষ কতিপয় ক্ষেত্রে to এর পরেও verb+ing হবে। যেমনঃ look forward to, with a view to, used to ইত্যাদি। 130+1উদাহরণঃI look forward to talking with you. (আমি তোমার সাথে কথা বলতে অধীর আগ্রহে অপেক্ষা করি)Many people of Bangladesh are used to smoking. (বাংলাদেশের অনেক মানুষ ধুমপানে অভ্যস্ত)I’m learning English with a view to going abroad. (আমি বিদেশে যাওয়ার উদ্দেশ্যে ইংরেজি শিখছি) 131Gerund এর ক্ষেত্রেGerund verb এর পরবর্তী সাধারণতঃ verb+ing হবে। Gerund verb গুলো হলো- Keep, stop, enjoy, avoid, consider, complete, can’t help ইত্যাদি। 132উদাহরণঃYou should stop smoking. (তোমার ধুমপান বন্ধ করা উচিৎ) 133I enjoyed swimming. (আমি সাঁতার কাটা উপভোগ করেছিলাম) 134Keep praying, you’ll get solution of all problems. (নামাজ পড়তে থাক, সকল সমস্যার সমাধান পাবে) 135Fahim tries to avoid traveling by air. (ফাহিম বিমানে ভ্রমন এড়াতে চেষ্টা করে) 136I can’t help smiling when I see you. (আমি যখন তোমাকে দেখি না হেসে পারি না) 137উপরের উদাহরণগুলো লক্ষ্য করলে পর্যায়ক্রমে stop, keep, avoid, can’t help হওয়ায় তার পরবর্তী verb+ing হয়েছে। 138+1Gerund বিষয়ক বড় বাক্যI started eating healthier food and added physical exercise for keeping sound health.(আমি স্বাস্থ্য ঠিক রাখার জন্য স্বাস্থ্যকর খাবার ও শরীরচর্চা শুরু করেছি।) 139নোটঃ এখানে start যেহেতু gerund ফর্মে রয়েছে, সেহেতু রুল অনুযায়ী তার পরবর্তী verb+ing হয়েছে। কিন্তু, ক্ষেত্র বিশেষে start এর পরে to-verb ও হতে পারে। 140যেমনঃ Nipa started to anticipate the arrival of his father a week before Eid.(নিপা ঈদের এক সপ্তাহ আগে থেকে তার বাবার পৌছানোর জন্য অপেক্ষা শুরু করেছে।) 141+2Present participle এর ক্ষেত্রেPresent participle এর কমন স্ট্রাকচার হল verb+ing. 142উদাহরণঃI saw a walking boy. (আমি একজন বালককে হাটতে দেখেছিলাম) 143Fahad came running towards me. (ফাহাদ আমার দিকে দৌড়ে এসেছিল) 144We saw the fisherman catching a big fish. (আমরা একজন জেলেকে একটি বড় মাছ ধরতে দেখেছিলাম) 145এছাড়া, অনেক বাক্যে Subject নিজে মূল verb এর কাজ সম্পাদন করে।যেমনঃ People living in city are very busy. (শহরে বসবাসকারী লোকজন খুব ব্যস্ত) 146একটি বড় বাক্য দেখুন...Many people working in govt. Office in Bangladesh earn a lot of money by corruption.(বাংলাদেশের সরকারী অফিসে কাজ করে অনেকেই দুর্নীতি করার মাধ্যমে প্রচুর অর্থ উপার্জন করে।) 147To verb এর পরিবর্তে verb+ingউদাহরণঃTo talk the matter seriously. -> Talking the matter seriously. (বিষয়টি নিয়ে গুরুত্বের সাথে কথা বলা) 148To take effective steps. -> Taking effective steps. (কার্যকর পদক্ষেপ নেওয়া) 149To recite the Holy Quran every day. -> Reciting the Holy Quran every day. (প্রতিদিন পবিত্র কোরআন তেলওয়াত করা) 150To eat healthy food for keeping sound health. -> Eating healthy food for keeping sound health. (স্বাস্থ্য ভাল রাখতে স্বাস্থ্যকর খাবার খাওয়া) 151To learn English is essential for career. -> Learning English is essential for career. (ক্যারিয়ারের জন্য ইংরেজি শেখা প্রয়োজন) 152Verb+ing সম্বলিত একটি বড় বাক্যঃদুষণমুক্ত পরিবেশ একটি দেশের জন্য অত্যন্ত গুরুত্বপূর্ণ। আমরা বিভিন্নভাবে পরিবেশকে দূষিত করছি। আমাদের উচিৎ পরিবেশ দূষণ বন্ধ করা। বাংলাদেশের অনেকেই ধূমপানে অভ্যস্ত। পরিবেশ দূষণের অন্যতম একটি কারণ ধুমপান। ধূমপায়ীর সিগারেটের মাধ্যমে যে ধোয়া নির্গত হয় তা পরিবেশকে দারুনভাবে ক্ষতিগ্রস্থ করে। গাড়ীর ধোঁয়াও পরিবেশের জন্য বিপদজনক। গাড়ীর বিষাক্ত ধোঁয়ার কারনে শহরের পরিবেশ ক্রমশঃ দূষিত হচ্ছে। 153Pollution free Environment is very important for a country. We are polluting this environment in various ways. We should stop polluting the environment. Many people of Bangladesh are used to smoking. Smoking is the significant reason for environmental pollution. Smoke emitted from the cigarette of a smoker terribly damaged the environment. Ejected smoke from cars is also unhealthy for environment. The city life gradually made polluted for the poisonous smoke of the vehicle. 154নোটঃ উপরের বাক্যগুলো সঠিকভাবে ট্রান্সলেট করতে কিছু গুরুত্বপূর্ণ গ্রামাটিক্যাল রুল জেনে নেই। বিশেষ করে এ টপিকসে verb + (ing) এর ব্যবহার লক্ষ্যনীয়। 155Continuous tense এর ক্ষেত্রে verb + (ing) ব্যবহার হয়। যেমনঃ উপরের বাক্যে লক্ষ্য করুনঃ We are polluting this environment in various ways. (আমরা বিভিন্নভাবে পরিবেশকে দুষিত করছি) 156Gerund verb এর ক্ষেত্রে verb + (ing). যেমনঃ We should stop polluting the environment. (আমাদের উচিৎ পরিবেশ দূষণ বন্ধ করা). এখানে stop একটি Gerund verb তাই তার পরবর্তী verb এর সাথে ing (polluting) হয়েছে। 157Preposition এর ক্ষেত্রে verb + (ing). যেমনঃ Many people of Bangladesh are used to smoking (বাংলাদেশের অনেকেই ধুমপানে অভ্যস্ত)। এখানে Preposition (used to) এর পরে রুল অনুযায়ী verb এর সাথে ing (smoking) হয়েছে। 158Chapter- 6রিটেন ইংলিশে Linking Words এর ব্যবহাররিটেন ইংলিশে Connector/Linking Words এর ভুমিকা অত্যন্ত গুরত্বপূর্ণ। কারণ, বড় বড় বাক্য তৈরিতে Linking Word যুক্ত করেই বাক্যের পূর্ণতা দেওয়া সম্ভব। 159যেমনঃ He works hard, however, he doesn’t earn a lot of money. (সে কঠোর পরিশ্রম করে, তথাপি, সে প্রচুর উপার্জন করে না) 160এখানে, however (তথাপি) একটি Linking Word, এটি যুক্ত করেই কিন্তু বাক্যটিকে পরিপূর্ণ ও সঠিক ভাবার্থ দিয়ে লেখা সম্ভব হয়েছে। নিম্নে গুরুত্বপূর্ণ Connector/Linking Word এর ব্যবহার উদাহরণ সহকারে আলোচনা করা হল। 161+2Connector/Linking Words-1অতিরিক্ত তথ্য প্রদান করতে তথা আগের বক্তব্যের সাথে আরও বক্তব্য সংযুক্ত করতে যে word সমূহ Linkers হিসাবে ব্যবহার হয়-in addition to- তদুপরি/তাছাড়াও, furthermore- তাছাড়া, moreover- আরো/তাছাড়া, besides- তাছাড়া, by the way, by the by, Anyway (কথা প্রসংগে, প্রসংগক্রমে), not only, but also (শুধু এটা নয়........ওটাও) 162উদাহরণঃOur manager is totally incompetent. Furthermore/moreover, he always arrives late for work. (আমাদের ম্যানেজার পুরোপুরি অযোগ্য। তাছাড়া, সর্বদা সে কাজে দেরীতে আসে।) 163By the way/ by the by/Anyway, could you please make the dinner for all of us today? (প্রসংগক্রমে বলছি, তুমি কি আমাদের সবার জন্য আজ রাতের খাবার প্রস্তুত করতে পারবে?) 164I improved not only my speaking but also my writing through the course. (এ কোর্সের মাধ্যমে আমি শুধু আমার কথা বলাই উন্নত করিনি আমার লিখাও (উন্নত করেছি)।) 165Connector/Linking Words-2কারণে, ফলে, ফলশ্রুতিতে, এভাবে, এ কারনেই ইত্যাদি বোঝাতে As a result/for this reason/thus/that is why/consequently/therefore/so/hence ব্যবহৃত হয়। 166উদাহরণঃThere was no fighting and consequently no casualties at all. (সেখানে কোন মারামারি হয়নি ফলশ্রুতিতে কোন হতাহতের ঘটনাও নেই।) 167It’s already very late at night; hence you must go to bed. (অনেক রাত হয়েছে; অতপর/এবার তুমি শুতে যাও।) 168Nuha hardly study. That is why; she failed to pass the exam. (নুহা খুবই কম পড়াশোনা করে। এই কারনে, পরীক্ষায় উত্তীর্ণ হতে ব্যর্থ হয়।) 169Connector/Linking Words-3উদাহরণ প্রদান করতে যে সমস্ত word Linkers হিসাবে ব্যবহৃত হয় তার তালিকা:that is- এটা/ইহা হয় (i.e), for example- উদাহরণসরূপ (e.g), for instance- উদাহরণসরূপ, namely- উদাহরণসরূপ, such as- যেমন, in other words- অন্য কথায়, like- মত/যেমন। 170উদাহরণঃWhen I go camping, I bring lots of things. For example/ for instance/ namely/ such as/ like a fishing rod, matches, and a sleeping bag. (যখন আমি ক্যাম্পিং করতে যাই আমি অনেক কিছু নিয়ে যাই। উদাহরণস্বরূপ/যেমন, মাছ ধরার বড়শি, দিয়াশলাই এবং ঘুমানোর ব্যাগ।) 171They’re letting him go. In other words, He’s been sacked. (তাহারা তাকে যেতে দিচ্ছে। অন্য কথায়, তাকে পদচ্যুত করা হয়েছে।) 172Connector/Linking Words- 4অপ্রত্যাশিত/আশ্চর্যমূলক কোন কিছু নির্দেশ করতে নিচের শব্দগুলো হিসাবে Linkers ব্যবহৃত হয়ঃAnyhow- যেভাবেই হোক, anyway- যে কোন উপায়ে, besides- তাছাড়া/ব্যতীত, else- আর, however- যাহোক, nevertheless- তা স্বত্ত্বেও, still- তবুও/এখনো, though- যদিও, although- যদিও, yet- তবুও/এখনো/তথাপি, in any case- যেভাবেই হোক/যেকোন উপায়ে, inspite of that- তা স্বত্ত্বেও, after all- সর্বোপরি, all the same- তা সবই এক/একই। 173উদাহরণঃHowever, they reached unharmed. (যাহোক তারা ভালয় ভালমতই পৌছে গিয়েছিল।) 174The situation is unfair however you look at it. (আপনি যেভাবেই অবলোকন করেন না কেন পরিস্থিতি ভাল না।) 175Nevertheless the experiment succeeded. (তা স্বত্ত্বেও/তবুও পরীক্ষা সফল হয়েছে।) 176I’m sorry to disappoint you, but I’m afraid, I can’t come after all. (আমি তোমাকে হতাশ করার জন্য দুঃখিত, কিন্তু আমার আশংকা হচ্ছে আমি হয়তো শেষ পর্যন্ত আসতে পারব না।) 177Connector/Linking Words-5চিন্তা-ভাবনা এক পর্যায় থেকে অন্য পর্যায় উত্তরণের জন্য নিচের Phrase গুলো Linkers হিসাবে ব্যবহৃত হতে পারে: With reference to- রেফারেন্স সহ, with respect to- সন্মানের সাথে, wirh regard to- ব্যাপরে, incidentally- অকস্মাৎ/ দৈবাৎ/by the way- প্রসংগক্রমে, let us now turn to- চলুন.... যাক, regarding- প্রসংগে/ সংক্রান্ত, talking/speaking of.... বলতে গেলে। 178উদাহরণঃLet us now turn to a brief summary of each chapter. (চলুন আমরা প্রতিটি অধ্যায়ের সংক্ষিপ্ত সার একটু দেখে নেই।) 179I’ve nothing to say with regard to your complaints. (আপনার অভিযোগের ব্যাপারে আসলে আমার কিছুই বলার নেই।) 180Incidentally/by the way, I’m not going this week. (প্রসংগক্রমে বলছি, আমি এ সপ্তাহে যাচ্ছি না।) 181Incidentally, I met one of my boyhood friends in the interview board. (ইন্টারভিউ বোর্ডে আমি দৈবাৎ আমার এক ছোট বেলার বন্ধুর সাক্ষাৎ পেয়ে গিয়ে ছিলাম।) 182Connector/Linking Words-6পূর্বে আলোচিত কোন বক্তব্যের ইতি টানতে বা উপসংহার/সারসংক্ষেপ প্রদান করতে word হিসাবে এ Linkers গুলো ব্যবহৃত হয়।যেমনঃ In brief - সংক্ষেপে, in all- মোট/সাকুল্যে, to sum up- এক কথায়, to summarize- সংক্ষেপে, in short- সংক্ষেপে, on the whole- সামগ্রিকভাবে, in a nutshell- এক কথায় 183উদাহরণঃTo sum up the book in one word, I would say ‘the best book ever’! (বইটি সম্পর্কে এক কথায় বলতে গেলে, আমি বলবো ‘আমার পড়া সবচেয়ে ভাল বই’!) 184The weather has been so far good on the whole. (সামগ্রিকভাবে এপর্যন্ত আবহাওয়া ভালই ছিল।) 185Linking Words/Connector ব্যবহার করে ইংরেজি বড় বাক্য তৈরিOn the whole, we are going through a horrendous situation because of corona pandemic now. It drags down almost every achievement and developing contribution that raised up rapidly before the corona claws on us. For instance we can say, it causes lethal damages to our economy, education, transportation, health including daily livings. On the other hand, it has a better impact on the technology sector, mainly on online based business that increases the involvement of youth heavily to this sector. To sum up the whole situation, the increasing technology sector is making a good impact on the world economy. Furthermore, Telemedicine has taken an extensive area in this technological sector that helps us to maintain social distance needed this time. However it also has a bad impact like it reduces our emotions, thinking powers, manual performance. After all, it could be light in the pandemic darkness. Hence, we should be careful in using technology based opportunities. 186অনুবাদ:সামগ্রিকভাবে, এখন আমরা করোনার মহামারীর কারণে এক ভয়াবহ পরিস্থিতির মধ্য দিয়ে যাচ্ছি। এটি প্রায় প্রতিটি অর্জন এবং উন্নয়নকে টেনে নিচে নামায় যা করোনার থাবা আমাদের উপরে পড়ার আগেই দ্রুত উন্নতি করেছিল। উদাহরণস্বরূপ, আমরা বলতে পারি, এটি আমাদের অর্থনীতি, শিক্ষা, পরিবহন, দৈনন্দিন জীবনযাত্রাসহ স্বাস্থ্যের জন্য মারাত্মক ক্ষতির কারণ হয়ে দাঁড়ায়। অন্যদিকে, প্রযুক্তি খাতের উপর এটির আরও ভাল প্রভাব রয়েছে, মূলত অনলাইন ভিত্তিক ব্যবসায় যা এই খাতে যুবকদের ব্যাপকভাবে জড়িত করছে। পুরো পরিস্থিতি বিবেচনা করে বলা যায় যে, ক্রমবর্ধমান প্রযুক্তি খাত বিশ্ব অর্থনীতিতে ভাল প্রভাব ফেলছে। তদুপরি, টেলিমেডিসিন এই প্রযুক্তিগত খাতে একটি বিশাল জায়গা নিয়েছে যা আমাদের এই সময়ের প্রয়োজন সামাজিক দূরত্ব বজায় রাখতে সহায়তা করে। তবে এটির একটি খারাপ প্রভাব আছে, যেমন এটি আমাদের আবেগ, চিন্তাভাবনা, সাধারণ কর্মদক্ষতাকে হ্রাস করে। সর্বোপরি, এটি মহামারী অন্ধকারে আলোর ছটা। তাই, প্রযুক্তিভিত্তিক সুযোগ ব্যবহারের প্রতি আমাদের সতর্ক হওয়া উচিত।
+
+Chapter- 7
+
+ফ্রিহ্যান্ড রাইটিং (রিয়েল লাইফ প্রজেক্ট) 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১) 
+
+যে কোন বাক্য তৈরির সাধারণ স্ট্রাকচার হল- Subject + verb + object. রিটেন ইংলিশে বড় বড় বাক্য তৈরির ক্ষেত্রে কয়েকটি ফর্মূলা বিশেষ গুরুত্ব বহন করে। ফর্মুলাগুলো step by step আলোচনা করা হলঃ  ১. প্রথমেই Subject বের করতে হবে। কে/কারা/কাদের দিয়ে প্রশ্ন করলে যে উত্তর পাওয়া যাবে তাই Subject.  ২. Verb বের করার সহজ নিয়ম হল “কি করছে”? উত্তর= verb.  (যেমনঃ রিপন ফুটবল খেলছে। যদি প্রশ্ন করা হয় রিপন “কি করছে?”, উত্তরঃ 'খেলছে (playing), verb = play.  ৩. Object বের করার জন্য (কি/কাকে?) দিয়ে প্রশ্ন করলে যে উত্তর পাওয়া যাবে তাই object.  ৪. Object না থাকলে বাকি অংশ adverb.  ৫. সবশেষে যা থাকবে conjunction/connector বা adverbial clause. 
++4
+
+উপরোক্ত সিকোয়েন্স অনুসারে নিচের বাক্যটিকে স্টেপ বাই স্টেপ অনুবাদ করবো... দেশের উন্নয়নের প্রতিটি ক্ষেত্রে নারীরা তাদের যোগ্যতা ও দক্ষতার স্বাক্ষর রাখছে। (রুপালী ব্যংক অফিসার পদের পরীক্ষা- ২০১৮) 
++1
+
+Step-1: Subject বের করার জন্য প্রশ্ন করুন 'কে রাখছে', উত্তরঃ মহিলারা (woman) Step-2: Verb – keeping (রাখছে) Step-3: Object বের করার জন্য (কি/কাকে?) দিয়ে প্রশ্ন করুনঃ মহিলারা কি রাখছে? উত্তরঃ তাদের যোগ্যতা ও দক্ষতার স্বাক্ষর= their signs of skill and qualification. 
++3
+
+উপরের ৩টি ফর্মুলা ব্যবহার করে বাক্যটি পেলাম... women are keeping their signs of skill and qualifications. 
+
+পরবর্তী ধাপগুলো হলো- adverb বা adverbial phrase বা prepositional phrase. সর্বশেষ এ ধাপে বাক্যের ধরন অনুসারে প্রয়োজন মোতাবেক Extension (adverb, adverbial phrase, prepositional phrase) বসাতে হবে। 
++1
+
+Extension... প্রতিটি ক্ষেত্রে - in every sector দেশের উন্নয়নের - of the country’s development 
++2
+
+
+সম্পূর্ণ অনুবাদঃ দেশের উন্নয়নের প্রতিটি ক্ষেত্রে নারীরা তাদের যোগ্যতা ও দক্ষতার স্বাক্ষর রাখছে। 
++1
+
+Women are keeping their signs of skill and qualification in every sector of the country’s development. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২) 
+
+প্রশাসনে সঠিক জবাবদিহিতা না থাকায় অধিকাংশ সরকারী প্রতিষ্ঠানে কর্মচারীগন তাদের দায়িত্ব সঠিকভাবে পালন করে না। ► এখানে subject বের করার জন্য যদি প্রশ্ন করা হয় ‘কে/কারা দায়িত্ব পালন করে না?’ উত্তরঃ কর্মচারীগণ Verb = দায়িত্ব পালন করা 
++3
+
+আসুন বাক্যটি ভেঙ্গে ভেঙ্গে সাজাই... 
+
+কর্মচারীগন তাদের দায়িত্ব সঠিকভাবে পালন করে না। The employees do not perform their responsibilities properly. 
++1
+
+অধিকাংশ সরকারী প্রতিষ্ঠানে = in most government organizations. 
+
+সঠিক জবাবদিহিতা না থাকায় = due to lack of proper accountability. 
+
+প্রশাসনে = in administration. 
+
+
+সম্পূর্ণ বাক্যের অনুবাদ প্রশাসনে সঠিক জবাবদিহিতা না থাকায় অধিকাংশ সরকারী প্রতিষ্ঠানে কর্মচারীগন তাদের দায়িত্ব সঠিকভাবে পালন করে না। 
++1
+
+The employees in most government organizations do not perform their responsibilities properly due to lack of proper accountability in the administration. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৩) 
+
+চাকুরির বাজার মন্দা থাকায় আমি ব্যবসা করে স্বাবলম্বী হতে চাই। 
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... ► আমি চাই- I would like to স্বাবলম্বী হওয়া- self dependent আমি স্বাবলম্বী হতে চাই- I would like to be self dependent ব্যবসা করে- doing business কারনে- due to মন্দা থাকায়/কারনে - due to bad ► চাকুরির বাজার- job market 
++4
+
+
+সম্পূর্ণ বাক্যঃ চাকুরির বাজার মন্দা থাকায় আমি ব্যবসা করে স্বাবলম্বী হতে চাই। 
++1
+
+I would like to be self dependent, doing business due to bad job market 
+
+নোটঃ উপরের বাক্যটিতে “I would like to be self dependent” অংশটুকুর পর 'by', 'and' or comma (,) দিয়ে বাক্যের পরবর্তী অংশ সম্পন্ন করতে হবে। যেমন: নিচের ৩টি বাক্যই গ্রামাটিক্যালি সঠিক। “I would like to be self dependent, doing business due to bad job market” “I would like to be self dependent by doing business due to bad job market” “I would like to be self dependent and doing business due to bad job market” 
++4
+
+
+সম্পূর্ণ বাক্যঃ চাকুরির বাজার মন্দা থাকায় আমি ব্যবসা করে স্বাবলম্বী হতে চাই। 
++1
+
+I would like to be self dependent, doing business due to bad job market. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৪) 
+
+সকালে ঘুম থেকে উঠা একটি ভাল অভ্যাস। ভোরের আবহাওয়া থাকে নির্মল ও বিশুদ্ধ। যে ব্যক্তি খুব সকালে ঘুম থেকে উঠে সে সময়ও বেশি পায়।  যে ভোরে উঠে সে তার সব কাজ সময়মত শেষ করতে পারে। মনোযোগ দিয়ে দৈনন্দিন কাজ সম্পাদন করা যায়। বিশেষ করে, ফজরের নামাজ আদায় করে হাটা স্বাস্থ্যের জন্য খুবই ভাল। 
++3
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... 
+
+সকালে ঘুম থেকে উঠা - Early rising from the bed 
+
+একটি ভাল অভ্যাস – a good habit 
+
+সকালে ঘুম থেকে উঠা একটি ভাল অভ্যাস।
+
+Early rising from bed is a good habit. 
+
+ভোরের আবহাওয়া থাকে নির্মল ও বিশুদ্ধ।
+
+The weather of dawn remains fresh and pure. 
+
+যে ব্যক্তি খুব সকালে ঘুম থেকে উঠে - The person who rises early 
+
+সে সময় বেশি পায় – gets enough time as well 
+
+যে ব্যক্তি খুব সকালে ঘুম থেকে উঠে সে সময়ও বেশি পায়।
+
+The person who rises early gets enough time as well. 
+
+Note: বাক্যে যখন যে/সে থাকবে, সে বাক্যে একটি Relative pronoun ব্যবহার করতে হবে, এবং এখানে Relative pronoun হল- Who, যা Subject এর পরে ব্যবহার করতে হবে। এবং Relative pronoun দিয়ে একটি বাক্যংশ তৈরি করতে হবে যাকে আমরা Clause বলে থাকি। 
++1
+
+এ ধরনের আরো বাক্যঃ 
+
+যে নিয়মিত পড়াশোনা করে সে ভাল ফলাফল প্রত্যাশা করতে পারে। 
+
+He who studies regularly can expect good results. 
+
+যে দেশকে ভালবাসে সে একজন দেশপ্রেমিক। 
+
+He who loves the country is a patriot. 
+
+যে ভোরে উঠে সে তার সব কাজ সময়মত শেষ করতে পারে। 
+
+He who gets up early can finish all his work in time. 
+
+দৈনন্দিন কাজ - Daily activities 
+
+সম্পাদন করা যায়- can be performed 
+
+মনোযোগ দিয়ে – with keen concentration 
+
+মনোযোগ দিয়ে দৈনন্দিন কাজ সম্পাদন করা যায়।
+
+Daily activities can be performed with keen concentration.  (Note: এখানে Subject না থাকায় passive voice দ্বারা বাক্যটি করা হয়েছে।) 
++1
+
+বিশেষ করে – Specially 
+
+ফজরের নামাজ আদায় করে – after performing Fajar Salat 
+
+হাটা স্বাস্থ্যের জন্য খুবই ভাল – walking is very good for health. 
+
+বিশেষ করে, ফজরের নামাজ আদায় করে হাটা স্বাস্থ্যের জন্য খুবই ভাল। 
+
+Specially, after performing Fajar Salat walking is very good for health. Note: এখানে Preposition (after) এর পরে রুল অনুযায়ী verb+ing (performing) হয়েছে। 
++1
+
+
+সম্পূর্ণ বাক্যঃ  সকালে ঘুম থেকে উঠা একটি ভাল অভ্যাস। ভোরের আবহাওয়া থাকে নির্মল ও বিশুদ্ধ। যে ব্যক্তি খুব সকালে ঘুম থেকে উঠে সে সময়ও বেশি পায়।  যে ভোরে উঠে সে তার সব কাজ সময়মত শেষ করতে পারে। মনোযোগ দিয়ে দৈনন্দিন কাজ সম্পাদন করা যায়। বিশেষ করে, ফজরের নামাজ আদায় করে হাটা স্বাস্থ্যের জন্য খুবই ভাল। 
++4
+
+Early rising from the bed is a good habit. The weather of dawn remains fresh and pure.  He who rises early gets enough time as well. He who gets up early can finish all his work in time.  Daily activities can be performed with keen concentration. Specially, after performing Fajar Salat walking is very good for health. 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৫) 
+
+গত মাসে আমি আমার একমাত্র ছেলের জন্ম দিন পালন করেছিলাম। জন্মদিন উপলক্ষ্যে ড্রইং রুমটি পরিস্কার করার প্রয়োজন হয়। আমার ড্রইং রুম পরিচ্ছন্ন করার পরে কেক কেনার উদ্দেশ্যে আমি স্থানীয় কনফেকশনারীতে গিয়েছিলাম। যখন কেক কিনে ফিরে আসছিলাম, তখন আমি বহুদিনের পুরনো এক বন্ধুর সাক্ষাত পেয়েছিলাম যে আমার বাড়ির দিকে আসছিল। 
++2
+
+আসুন ভেঙ্গে ট্রান্সলেট করি... 
+
+গত মাসে আমি আমার একমাত্র ছেলের জন্ম দিন পালন করেছিলাম। 
+
+গত মাসে - Last month 
+
+আমি পালন করেছিলাম – I observed 
+
+আমার একমাত্র ছেলের জন্ম দিন – my only son’s Birthday. 
+
+Last month I observed my only son’s Birthday. 
+
+Note: Last month থাকায় Verb এর past form হয়েছে। রুল অনুযায়ী Sentence-এ last, yesterday, ago, previously, before প্রভৃতি থাকলে verb এর past form হয়। 
+
+জন্মদিন উপলক্ষ্যে ড্রইং রুমটি পরিস্কার করার প্রয়োজন হয়। 
+
+জন্মদিন উপলক্ষ্যে - on the occasion of birthday. 
+
+ড্রইং রুমটি পরিস্কার করার প্রয়োজন হয় – The drawing room needed to be cleaned. 
+
+আমার ড্রইং রুম পরিচ্ছন্ন করার পরে কেক কেনার উদ্দেশ্যে আমি স্থানীয় কনফেকশনারীতে গিয়েছিলাম। 
+
+পরিচ্ছন্ন করার পরে - After having cleaned 
+
+আমার ড্রইং রুম - my drawing Room 
+
+আমি স্থানীয় কনফেকশনারীতে গিয়েছিলাম - I went to the local confectionary 
+
+কেক কেনার উদ্দেশ্যে - in order to purchase cake 
+
+After having cleaned my drawing Room, I went to the local confectionary in order to purchase Cake. 
+
+► Note: having এর পরে verb এর past participle form ব্যবহার হয়। বিশেষ করে যখন বাক্যে "কিছু করিয়া, শিখিয়া বা করার পরে” থাকে সেক্ষেত্রে এ রুলটি ব্যবহার হবে।  এজন্য এখানে clean এর past participle form ‘cleaned’ হয়েছে। এরকম আরো উদাহরণঃ কম্পিউটার শিখিয়া আমি আমেরিকা যাব - Having learnt computer I will go to America. 
++3
+
+এ রুল অনুযায়ী একটি বড় বাক্য দেখুন.... আমি পিপাসা নিবারনের জন্য বিসমিল্লাহ্ বলে পানি পান করি এবং পান করার পর মহান আল্লাহর শোকরিয়া আদায় করে বলি আলহামদুলিল্লাহ্। 
++1
+
+By saying Bismillah I drink water to quench my thirst and after having done thanking to the Almighty/great Allah, express Alhamdullah. 
+
+যখন কেক কিনে ফিরে আসছিলাম, তখন আমি বহুদিনের পুরনো এক বন্ধুর সাক্ষাত পেয়েছিলাম যে আমার বাড়ির দিকে আসছিল। 
+
+যখন কেক কিনে ফিরে আসছিলাম - While returning with the cake 
+
+আমি বহুদিনের পুরনো এক বন্ধুর সাক্ষাত পেয়েছিলাম - I met a Friend from my old days. 
+
+যে আমার বাড়ির দিকে আসছিল – coming towards my home. 
+
+While returning with the cake, I met a friend from my old days coming towards my home. 
+
+Note: While এর পরে Verb এর সাথে ing হয় (While returning). পরবর্তী অংশে “met” একটি Verb এবং come আর একটি Verb, এজন্য রুল অনুযায়ী পরবর্তী Verb এর সাথে ing যুক্ত হয়ে “coming” হয়েছে। 
++2
+
+
+সম্পূর্ণ বাক্যঃ  গত মাসে আমি আমার একমাত্র ছেলের জন্ম দিন পালন করেছিলাম। জন্মদিন উপলক্ষ্যে ড্রইং রুমটি পরিস্কার করার প্রয়োজন হয়। আমার ড্রইং রুম পরিচ্ছন্ন করার পরে কেক কেনার উদ্দেশ্যে আমি স্থানীয় কনফেকশনারীতে গিয়েছিলাম। যখন কেক কিনে ফিরে আসছিলাম, তখন আমি বহুদিনের পুরনো এক বন্ধুর সাথে সাক্ষাত পেয়েছিলাম যে আমার বাড়ির দিকে আসছিল 
++3
+
+Last month I observed my only son’s Birthday. The drawing room needed to be cleaned on the occasion of birthday. After having cleaned my drawing Room, I went to the local confectionary in order to purchase cake. While returning with the cake I met a friend from my old days coming towards my home. 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৬) 
+
+মোবাইল ফোন এখন বহুমূখী সুবিধা নিয়ে। দৈনন্দিন বিভিন্ন প্রয়োজনে নগদ টাকার চাহিদা মেটাচ্ছে মোবাইল ফোন। প্রযুক্তির এ অবদানকে আমরা স্বীকার না করে পারি না। 
++1
+
+মোবাইল ফোন এখন বহুমুখী সুবিধা নিয়ে। ► মোবাইল ফোন - Mobile phone ► বহুমূখী - multiple/versatile সুবিধা – benefits/facilities বহুমূখী সুবিধা নিয়ে - with multiple benefits/facilities. মোবাইল ফোন এখন বহুমূখী সুবিধা নিয়ে – Mobile phone is with multiple benefits/facilities now. 
++4
+
+দৈনন্দিন বিভিন্ন প্রয়োজনে নগদ টাকার চাহিদা মেটাচ্ছে মোবাইল ফোন। ► দৈনন্দিন – daily বিভিন্ন - various প্রয়োজনে - needs বিভিন্ন প্রয়োজনে - for various needs দৈনন্দিন বিভিন্ন প্রয়োজনে - for various daily needs নগদ টাকা - cash নগদ টাকার - of cash চাহিদা - demand নগদ টাকার চাহিদা – demand of cash মেটানো – fulfill /meet/capture / cover মেটাচ্ছে - is meeting চাহিদা মেটাচ্ছে - is meeting demand নগদ টাকার চাহিদা মেটাচ্ছে - is meeting the demand of cash 
++4
+
+দৈনন্দিন বিভিন্ন প্রয়োজনে নগদ টাকার চাহিদা মেটাচ্ছে মোবাইল ফোন। 
+
+Mobile phone is meeting the demand of cash for various daily needs. 
+
+প্রযুক্তির এ অবদানকে আমরা স্বীকার না করে পারি না। স্বীকার না করে পারি না – cannot but confess আমরা স্বীকার না করে পারি না – We cannot but confess এ অবদানকে - the contribution প্রযুক্তি - technology প্রযুক্তির - of technology প্রযুক্তির এ অবদানকে আমরা স্বীকার না করে পারি না। 
++4
+
+We cannot but confess the contribution of technology. 
+
+Note: cannot but (এটি idiom), অর্থ- কিছু না করে পারি না। আমরা স্বীকার না করে পারি না – We cannot but confess এ ধরনের আরো বাক্য আমরা ভাত না খেয়ে পারি না (We cannot but eat rice) আমি তোমার তারিফ না করে পারি না (I cannot but admire you) 
++3
+
+
+সম্পূর্ণ বাক্য  মোবাইল ফোন এখন বহুমূখী সুবিধা নিয়ে। দৈনন্দিন বিভিন্ন প্রয়োজনে নগদ টাকার চাহিদা মেটাচ্ছে মোবাইল ফোন। প্রযুক্তির এ অবদানকে আমরা স্বীকার না করে পারি না। 
++2
+
+Mobile phone is with multiple benefits/facilities now. Mobile phone is fulfilling demand of cash for various daily needs. We cannot but confess the contribution of technology. 
++1
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৭) 
+
+শরীরচর্চা একটি ভাল অভ্যাস। সত্যি কথা বলতে কি, এর কোন বিকল্প নেই। স্বাস্থ্য ভাল রাখতে হলে নিয়মিত শরীরচর্চা করতে হবে। 
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... 
+
+শরীরচর্চা একটি ভাল অভ্যাস – Physical exercise is a good habit. 
+
+সত্যি কথা বলতে কি – To be honest, 
+
+এর কোন বিকল্প নেই – there is no alternative to it. 
+
+নিয়মিত শরীরচর্চা করতে হবে - One has to do physical exercise regularly. 
+
+স্বাস্থ্য ভাল রাখতে হলে – for keeping sound health. 
+
+► Note: লক্ষ্য করুন, বাক্যটিতে “কাকে শরীরচর্চা করতে হবে” উল্লেখ নেই, অর্থাৎ কোন subject নেই, এজন্য এখানে One অথবা anyone কে subject হিসাবে কল্পনা করে বাক্য তৈরি করতে হবে। এবং রুল অনুযায়ী for এর পরে verb+ing (keeping) হয়েছে। 
++1
+
+
+সম্পূর্ণ বাক্যঃ  শরীরচর্চা একটি ভাল অভ্যাস। সত্যি কথা বলতে কি, এর কোন বিকল্প নেই। স্বাস্থ্য ভাল রাখতে হলে নিয়মিত শরীরচর্চা করতে হবে। 
++1
+
+Physical exercise is a good habit. To be honest, there is no alternative to it. One has to do physical exercise regularly for keeping sound health. 
++1
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৮) 
+
+বিজ্ঞান অনেক জিনিস আবিষ্কার করেছে। বিজ্ঞানের অবদানকে স্বীকার না করে পারি না। কম্পিউটার এগুলোর মধ্যে একটি।  এটি আধুনিক প্রযুক্তির সবচেয়ে বিস্ময়কর আবিষ্কারগুলোর মধ্যে একটি। এটি আমাদের আধুনিক জীবনে একটি নতুন মাত্রা যোগ করেছে।  এটি আমাদের জীবনকে সহজ ও আরামদায়ক করেছে। কম্পিউটারের মাধ্যমে আমরা খুব দ্রুত ও নিখুঁতভাবে আমাদের দৈনন্দিন কাজ সম্পাদন করতে পারি। 
++2
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... 
+
+বিজ্ঞান অনেক জিনিস আবিষ্কার করেছে। 
+
+বিজ্ঞান আবিষ্কার করেছে = Science has invented 
+
+অনেক জিনিস = Many things. 
+
+Science has invented many things. 
+
+Note: Discover = অজানা কোন কিছুকে খুঁজে পাওয়া। Example: America was discovered by Columbus. Invent = পূর্বে ছিল না তা তৈরি করা। Example: Edison invented the gramophone. 
++4
+
+► বিজ্ঞানের অবদানকে স্বীকার না করে পারি না। 
+
+We cannot but confess the contribution of science. 
+
+কম্পিউটার এগুলোর মধ্যে একটি। 
+
+কম্পিউটার = Computer 
+
+হয় একটি = is one 
+
+এগুলোর মধ্যে = of them. 
+
+Computer is one of them. 
+
+এটি আধুনিক প্রযুক্তির সবচেয়ে বিস্ময়কর আবিষ্কারগুলোর মধ্যে একটি। 
+
+এটি এগুলোর মধ্যে একটি = It is one of the most 
+
+বিস্ময়কর আবিষ্কার = Wonderful inventions 
+
+আধুনিক প্রযুক্তির = of modern technology. 
+
+It is one of the most wonderful inventions of modern technology. 
+
+এটি আমাদের আধুনিক জীবনে একটি নতুন মাত্রা যোগ করেছে। 
+
+এটা যোগ করেছে = it has added 
+
+একটি নতুন মাত্রা = a new dimension 
+
+আমাদের আধুনিক জীবনে = to our modern life. 
+
+it has added a new dimension to our modern life. 
+
+এটি আমাদের জীবনকে সহজ ও আরামদায়ক করেছে। 
+
+এটি করেছে = It has made 
+
+আমাদের জীবনকে = our life 
+
+সহজ ও আরামদায়ক = easy and comfortable. 
+
+it has made our life easy and comfortable. 
+
+কম্পিউটারের মাধ্যমে আমরা খুব দ্রুত ও নিখুঁতভাবে আমাদের দৈনন্দিন কাজ সম্পাদন করতে পারি। 
+
+আমরা সম্পাদন করতে পারি = we can perform 
+
+আমাদের দৈনন্দিন কাজ = of our daily activities 
+
+খুব দ্রুত ও নিখুঁতভাবে = very fast and flawlessly 
+
+কম্পিউটারের মাধ্যমে = by using computer. 
+
+We can perform of our daily activities very fast and flawlessly by using computer. 
+
+
+সম্পূর্ণ বাক্য  বিজ্ঞান অনেক জিনিস আবিষ্কার করেছে। বিজ্ঞানের অবদানকে স্বীকার না করে পারি না। কম্পিউটার এগুলোর মধ্যে একটি।  এটি আধুনিক প্রযুক্তির সবচেয়ে বিস্ময়কর আবিষ্কারগুলোর মধ্যে একটি। এটি আমাদের আধুনিক জীবনে একটি নতুন মাত্রা যোগ করেছে।  এটি আমাদের জীবনকে সহজ ও আরামদায়ক করেছে। কম্পিউটারের মাধ্যমে আমরা খুব দ্রুত ও নিখুঁতভাবে আমাদের দৈনন্দিন কাজ সম্পাদন করতে পারি। 
++3
+
+Science has invented many things. We cannot but confess the contribution of science. Computer is one of them. It is one of the most wonderful inventions of modern technology. It has added a new dimension to our modern life. it has made our life easy and comfortable. We can perform of our daily activities very fast and flawlessly by using computer. 
++3
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৯) 
+
+২৬ শে মার্চ আমরা আমাদের বিশ্ববিদ্যালয় সংলগ্ন মাঠে স্বাধীনতা দিবস পালন করেছিলাম।  আমরা এই অনুষ্ঠানের জন্য গত ৩ দিন ধরে প্রস্তুতি নিচ্ছিলাম। আমরা পতাকা, ফেষ্টুন, ও ফুল দিয়ে আমাদের মাঠকে সাজিয়েছিলাম।  অনুষ্ঠানে স্টেজের নামকরণ করা হয়েছিল বঙ্গবন্ধু শেখ মুজিবর রহমানের নামে। অনুষ্ঠানের সভাপতিত্ব করেন বিশ্ববিদ্যালয়ের উপাচার্য। অনুষ্ঠান শেষে একটি মনোজ্ঞ সাংস্কৃতিক অনুষ্ঠানের আয়োজন করা হয়েছিল। 
++3
+
+১ম বাক্যঃ ২৬ শে মার্চ আমরা আমাদের বিশ্ববিদ্যালয় সংলগ্ন মাঠে স্বাধীনতা দিবস পালন করেছিলাম। আমরা স্বাধীনতা দিবস পালন করেছিলাম = We celebrated the independent day ২৬ শে মার্চ = on 26th March আমাদের বিশ্ববিদ্যালয় সংলগ্ন মাঠে = in our University campus field. 
++4
+
+বাক্যটিকে এবার Passive voice এ লিখবো, পূর্বেই উল্লেখ করেছি রিপোর্ট, নিউজ, তথা Written English এর অধিকাংশ Passive sentence এ হয়ে থাকে। Passive voice সম্পর্কিত ফ্রিহ্যান্ড রাইটিং বিস্তারিত দেখুন ১৭নং পৃষ্ঠায়। Passive sentence এ বাংলা হবে নিম্নরুপঃ ২৬ শে মার্চ আমাদের বিশ্ববিদ্যালয় সংলগ্ন মাঠে স্বাধীনতা দিবস পালন করা হয়েছিল। 
++3
+
+Active voice: We celebrated the independent day on 26th March in our University campus field. 
++1
+
+Passive voice: The independent day was celebrated on 26th March in our University campus field. Voice change এর বিস্তারিত নিয়মাবলী জানতে দেখুন ১৩৮নং পৃষ্ঠায় 
++2
+
+২য় বাক্যঃ  আমরা এই অনুষ্ঠানের জন্য গত ৩ দিন ধরে প্রস্তুতি নিচ্ছিলাম। (Past perfect continuous tense) We had been preparing for this program for last 3 days. এটিকে Passive এ করলে বাক্যটি দ্বারাবে নিম্নরুপ: This program had been being prepared by us for last 3 days. স্মার্ট ফ্রিহ্যান্ড রাইটিং এ ‘by us’ উহ্য রাখাই মানসন্মত রাইটিং স্টাইল। সুতরাং, This program had been being prepared for last 3 days. 
++4
+
+৩য় বাক্যঃ আমরা পতাকা, ফেষ্টুন, ও ফুল দিয়ে আমাদের মাঠকে সাজিয়েছিলাম। We decorated the field premises with flag, festoon & flowers.  (Simple past indefinite tense) 
++2
+
+৪র্থ বাক্যঃ অনুষ্ঠানে স্টেজের নামকরণ করা হয়েছিল বঙ্গবন্ধু শেখ মুজিবর রহমানের নামে। The stage of program was named after the name of Bangobandhu Sheikh Mujibur Rahman. 
++2
+
+নোটঃ লক্ষ্য করুন, এ বাক্যটি অলরেডি Passive এ রয়েছে। কারণ, 'কে/কারা নামকরণ করেছিল' নেই, অর্থাৎ, কর্তা নেই বা উহ্য। এখানে আর একটি বিষয় হল- 'কারো নামে নামকরণ করা' থাকলে after the name of..... হবে। শেখ মুজিবর রহমানের নামে = after the name of Sheikh Mujibur Rahman. 
++2
+
+৫ম বাক্যঃ অনুষ্ঠানের সভাপতিত্ব করেন বিশ্ববিদ্যালয়ের উপাচার্য। The Vice chancellor of the University presided over the Function. এটিকে Passive এ পরিবর্তন করলে বাক্যটি হবে নিম্নরুপঃ The function was presided over by the Vice chancellor of University. নোটঃ সভাপতি ইংরেজি- president, সভাপতিত্ব করা- preside over, বাক্যটি past tense থাকায় হবে presided over. 
++4
+
+৬ষ্ঠ বাক্যঃ  অনুষ্ঠান শেষে একটি মনোজ্ঞ সাংস্কৃতিক অনুষ্ঠানের আয়োজন করা হয়েছিল। (বাক্যটি Passive ফরম্যাটেই রয়েছে) A pleasant cultural event was organized at the last of the ceremony. 
++2
+
+
+সম্পূর্ণ বাক্য (অনুবাদ সহ) ২৬ শে মার্চ আমাদের বিশ্ববিদ্যালয় সংলগ্ন মাঠে স্বাধীনতা দিবস পালন করা হয়েছিল।  এই অনুষ্ঠানের জন্য গত ৩ দিন ধরে প্রস্তুতি নেওয়া হচ্ছিল। আমরা পতাকা, ফেষ্টুন, ও ফুল দিয়ে আমাদের মাঠকে সাজিয়েছিলাম।  অনুষ্ঠানে স্টেজের নামকরণ করা হয়েছিল বঙ্গবন্ধু শেখ মুজিবর রহমানের নামে। অনুষ্ঠানের সভাপতিত্ব করেন বিশ্ববিদ্যালয়ের উপাচার্য। অনুষ্ঠান শেষে একটি মনোজ্ঞ সাংস্কৃতিক অনুষ্ঠানের আয়োজন করা হয়েছিল। 
++4
+
+The independent day was celebrated on 26th March in our University campus field.  This program had been being prepared for last 3 days. We decorated the field premises with flag, festoon & flowers. The stage of program was named after the name of Bangobandhu Sheikh Mujibur Rahman. The function was presided over by the Vice chancellor of the University. A pleasant cultural event was organized at the last of the ceremony. 
++3
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১০) 
+
+আমাদের দেশের রাজনীতিবিদগণ গণতন্ত্র রক্ষার চেয়ে নিজেদের স্বার্থকে প্রাধান্য দেয়। গনতন্ত্র রক্ষায় রাজনীতিবিদদের অনেক দায়িত্ব রয়েছে।  সুস্থ্য রাজনীতি দেশের উন্নয়নে গুরুত্বপূর্ণ ভূমিকা রাখে। এ দেশের রাজনৈতিক দলগুলো পর্যায়ক্রমে গণতান্ত্রিক প্রতিষ্ঠানগুলোকে ধ্বংস করে দিচ্ছে। 
++1
+
+আসুন ভেঙ্গে ভেঙ্গে ব্যাখ্যাসহ ট্রান্সলেট করি... 
+
+আমাদের দেশের রাজনীতিবিদগণ গণতন্ত্র রক্ষার চেয়ে নিজেদের স্বার্থকে প্রাধান্য দেয়। বাংলা বাক্যে Subject বের করার জন্য মূল verb টিকে কে/কারা বা কি দিয়ে প্রশ্ন করলে যে উত্তর পাওয়া যায় তাই Subject.  উপরের বাক্যটিতে যদি প্রশ্ন করা হয় ‘কে/কারা প্রাধান্য দেয়?’ উত্তর হবে- রাজনীতিবিদগণ। সুতরাং, Subject - রাজনীতিবিদগণ। Structure: Subject + verb + Compliments Subject = The politicians of our country Verb = give priority Compliments = to their own interest than protect democracy. 
++4
+
+The politicians of our country give priority to their own interest than protect democracy. Note: Subject verb agreement এর রুল অনুযায়ী The politicians (রাজনীতিবিদগণ) plural হওয়ায় give priority (verb) হয়েছে। 
++1
+
+গণতন্ত্র রক্ষায় রাজনীতিবিদদের অনেক দায়িত্ব রয়েছে।
+
+Politicians have many responsibilities in protecting democracy. 
+
+সুস্থ্য রাজনীতি দেশের উন্নয়নে গুরুত্বপূর্ণ ভূমিকা রাখে।
+
+Sound politics plays an important role in the development of the country. Note: politics শব্দটি plural মনে হলেও এটি মূলতঃ singular, এরকম আরো শব্দ- Mathematics, Physics, ফলে politics এর পরে plays হয়েছে। 
++1
+
+এ দেশের রাজনৈতিক দলগুলো পযায়ক্রমে গণতান্ত্রিক প্রতিষ্ঠানগুলোকে ধংস করে দিচ্ছে। 
+
+এ দেশের রাজনৈতিক দলগুলো – Political parties of this country 
+
+পর্যায়ক্রমে ধংস করে দিচ্ছে – are gradually destroying 
+
+গণতান্ত্রিক প্রতিষ্ঠানগুলোকে – democratic institutions 
+
+Political parties of this country are gradually destroying democratic institutions. 
+
+
+সম্পূর্ণ বাক্যঃ  আমাদের দেশের রাজনীতিবিদগণ গণতন্ত্র রক্ষার চেয়ে নিজেদের স্বার্থকে প্রাধান্য দেয়। গণতন্ত্র রক্ষায় রাজনীতিবিদদের অনেক দায়িত্ব রয়েছে।  সুস্থ্য রাজনীতি দেশের উন্নয়নে গুরুত্বপূর্ণ ভূমিকা রাখে। এ দেশের রাজনৈতিক দলগুলো পর্যায়ক্রমে গণতান্ত্রিক প্রতিষ্ঠানগুলোকে ধংস করে দিচ্ছে। 
++2
+
+The politicians of our country give priority to their own interest than protect democracy.  Politicians have many responsibilities in protecting democracy. Sound politics plays an important role in the development of the country. Political parties of this country are gradually destroying democratic institutions. 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১১) 
+
+দেশের প্রবৃদ্ধি বৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখছে নারীরা। বিভিন্ন উন্নয়নমূলক কর্মকান্ডে নারীর অংশগ্রহণ বেড়েছে। 
+
+দেশের প্রবৃদ্ধি বৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখছে নারীরা। দেশের - of the country. ► প্রবৃদ্ধি - growth প্রবৃদ্ধিতে - in the growth গুরুত্বপূর্ণ – significant ভূমিকা - role ভূমিকা রাখছে - playing a role নারীরা - women ভূমিকা রাখছে নারীরা - women are playing a role গুরুত্বপূর্ণ ভূমিকা রাখছে নারীরা - women are playing a significant role প্রবৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখছে নারীরা - women are playing a significant role in growth দেশের প্রবৃদ্ধি বৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখছে নারীরা - women are playing a significant role in growth of the country. 
++4
+
+বিভিন্ন উন্নয়নমূলক কর্মকান্ডে নারীর অংশগ্রহণ বেড়েছে। বিভিন্ন - Various উন্নয়নমূলক কর্মকান্ড - development activities বিভিন্ন উন্নয়নমূলক কর্মকান্ডে – in various development activities বেড়ে যাওয়া/বৃদ্ধি পাওয়া – increase বেড়েছে - has increased নারীর – of women অংশগ্রহণ - participation নারীর অংশগ্রহণ - participation of women বিভিন্ন উন্নয়নমূলক কর্মকান্ডে নারীর অংশগ্রহণ বেড়েছে – The participation of women/women’s participation has increased in various development activities. 
++4
+
+
+সম্পূর্ণ অনুবাদ  দেশের প্রবৃদ্ধি বৃদ্ধিতে গুরুত্বপূর্ণ ভূমিকা রাখছে নারীরা। বিভিন্ন উন্নয়নমূলক কর্মকান্ডে নারীর অংশগ্রহণ বেড়েছে। 
++1
+
+Women are playing a significant role in growth of the country. The participation of women/women’s participation has increased in various development activities. 
++1
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১২) 
+
+একজন দিনমজুর আমাদের দেশে অত্যন্ত পরিচিত ব্যক্তি। সে দিন এনে দিন খায়। তাকে সারাদিন কাজ করতে হয়। সে খুবই পরিশ্রমী।  সে খুব কমই বিশ্রামের সুযোগ পায়। সে খুব সকালে ঘুম থেকে উঠে এবং উপার্জনের উদ্দেশ্যে বেরিয়ে পড়ে।  দিনের আবহাওয়া ভাল না বৈরি তা বিষয় নয়। তার উদ্দেশ্য কিছু উপার্জন করতেই হবে। অন্যথায়, তাকে পরিবারসহ অনাহারে থাকতে হবে। যেদিন তার কিছু বেশি উপার্জন হয়, তখন তার আনন্দের শেষ থাকে না। সুতরাং, আমাদের উচিত দিনমজুরকে সহায়তা করা যাতে সে সুখি জীবন যাপন করতে পারে। 
++4
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি....... 
+
+একজন দিনমজুর আমাদের দেশে অত্যন্ত পরিচিত ব্যক্তি। 
+
+A day labor is a very familiar person in our country. 
+
+সে দিন এনে দিন খায় – He lives from hand to mouth. 
+
+তাকে সারাদিন কাজ করতে হয় - He has to work all day long. 
+
+সে খুবই পরিশ্রমী - He is very industrious. 
+
+He seldom gets the opportunity of rest - সে খুব কমই বিশ্রামের সুযোগ পায়।  (Note: seldom অর্থ কদাচিৎ বা খুবই কম। ‘খুব কমই বিশ্রামের সুযোগ পায়’ এটার অর্থ মূলতঃ ‘সে কদাচিৎ বিশ্রামের সুযোগ পায়’ এজন্য এখানে seldom ব্যবহার হয়েছে।) 
++1
+
+সে খুব সকালে ঘুম থেকে উঠে এবং উপার্জনের উদ্দেশ্যে বেরিয়ে পড়ে। 
+
+He gets up very early in the morning and goes out for earnings. 
+
+দিনের আবহাওয়া ভাল না বৈরি তা বিষয় নয় – It doesn’t matter whether the day weather is good or bad.  (বাক্যে হয় কি হয় না....ভাল না মন্দ এরকম বোঝায় তখন whether ব্যবহার হয়) 
++1
+
+তার উদ্দেশ্য কিছু উপার্জন করতেই হবে - He sets his target to earn something surely. 
+
+অন্যথায়, তাকে পরিবারসহ অনাহারে থাকতে হবে - Otherwise, He along with his family will have to starve. 
+
+যেদিন তার কিছু বেশি উপার্জন হয়, তখন তার আনন্দের শেষ থাকে না। 
+
+Which days he can earn more, his joy knows no bounds.  (Note: “তখন তার আনন্দের শেষ থাকে না” এখানে একটি idiom ব্যবহার হয়েছে Know no bounds যার অর্থ - “যা বলে শেষ করা যায় না”) 
++1
+
+সুতরাং, আমাদের উচিত দিনমজুরকে সহায়তা করা যাতে সে সুখি জীবন যাপন করতে পারে। 
+
+Therefore, we should support the day labor so that he can lead a happy life. 
+
+
+সম্পূর্ণ বাক্য  একজন দিনমজুর আমাদের দেশে অত্যন্ত পরিচিত ব্যক্তি। সে দিন এনে দিন খায়। তাকে সারাদিন কাজ করতে হয়। সে খুবই পরিশ্রমী।  সে খুব কমই বিশ্রামের সুযোগ পায়। সে খুব সকালে ঘুম থেকে উঠে এবং উপার্জনের উদ্দেশ্যে বেরিয়ে পড়ে।  দিনের আবহাওয়া ভাল না বৈরিতা বিষয় নয়। তার উদ্দেশ্য কিছু উপার্জন করতেই হবে। অন্যথায়, তাকে পরিবারসহ অনাহারে থাকতে হবে। যেদিন তার কিছু বেশি উপার্জন হয়, তখন তার আনন্দের শেষ থাকে না। সুতরাং, আমাদের উচিত দিনমজুরকে সহায়তা করা যাতে সে সুখি জীবন যাপন করতে পারে। 
++4
+
+A day labor is a very familiar person in our country. He lives from hand to mouth.  He has to work all day long. He is very industrious. He seldom gets the opportunity of rest. He gets up very early in the morning and goes out for earnings.  It doesn’t matter whether the day weather is good or bad. He sets his target to earn something surely.  He must have to earn some money. Otherwise, He along with his family will have to starve. Which days he can earn more, his joy knows no bounds. Therefore, we should support the day labor so that he can lead a happy life. 
++4
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৩) 
+
+বেকার সমস্যা সমাধানে নতুন কর্মসংস্থান তৈরিতে ৫ হাজার কোটি টাকা ঋণ দিচ্ছে বিশ্বব্যাংক। বেকার সমস্যা - unemployment problem সমাধান - solve সমাধানে/সমাধানের জন্য – for solving বেকার সমস্যা সমাধানে – for solving unemployment problem. কর্মসংস্থান - employment নতুন কর্মসংস্থান - new employment তৈরি - create তৈরিতে -to create /for creating নতুন কর্মসংস্থান তৈরিতে - to create new employment / for creating employment ৫ হাজার কোটি টাকা - 5,000 crore taka ঋণ দেয়া - lend ঋণ দিচ্ছে - is lending বিশ্বব্যাংক - The World Bank ঋণ দিচ্ছে বিশ্বব্যাংক - The World Bank is lending ৫ হাজার কোটি টাকা ঋণ দিচ্ছে বিশ্বব্যাংক - The World Bank- is lending 5,000 crore taka নতুন কর্মসংস্থান তৈরিতে ৫ হাজার কোটি টাকা ঋণ দিচ্ছে বিশ্বব্যাংক - The World Bank- is lending 5,000 crore taka to create new employment 
++4
+
+
+সম্পূর্ণ বাক্যটি হল বেকার সমস্যা সমাধানে নতুন কর্মসংস্থান তৈরিতে ৫ হাজার কোটি টাকা ঋণ দিচ্ছে বিশ্বব্যাংক 
++1
+
+The World Bank is lending 5,000 crore taka to create new employment for solving unemployment problem. নোটঃ Subject + verb + object/extension. Subject- বিশ্বব্যাংক (The world Bank) ঋণ দেয়া (lend) 
++3
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৪) 
+
+বিশ্ববিদ্যালয়ে সেশনজট সমস্যা সমাধানের উপায় কী  দীর্ঘদিন ধরে চলমান করোনা মহামারির কারণে শিক্ষাব্যবস্থা হুমকির সম্মুখীন। দীর্ঘমেয়াদে বেকার সমস্যা প্রকট আকার ধারন করতে পারে। 
++1
+
+বিশ্ববিদ্যালয়ে সেশনজট সমস্যা সমাধানের উপায় কী ► বিশ্ববিদ্যালয় - university ► বিশ্ববিদ্যালয়ে - in the university সেশনজট - session jam সমস্যা সমাধানের – of solving problem উপায় - ways সমস্যা সমাধানের উপায় - ways of solving problem কী - what সমস্যা সমাধানের উপায় কী- what are the ways of solving problem সেশনজট সমস্যা সমাধানের উপায় কী – what are the ways of solving session jam problem বিশ্ববিদ্যালয়ে সেশনজট সমস্যা সমাধানের উপায় কী 
++4
+
+what are the ways of solving session jam problem of the universities. 
+
+দীর্ঘদিন ধরে চলমান করোনা মহামারির কারণে শিক্ষাব্যবস্থা হুমকির সম্মুখীন। ► দীর্ঘদিন - long time দীর্ঘদিন ধরে - for long time চলমান – ongoing করোনা – corona মহামারি - pandemic করোনা মহামারির - corona pandemic চলমান করোনা মহামারির - ongoing corona pandemic কারণ - cause কারণে - cause of/due to চলমান করোনা মহামারির কারণে - due to ongoing corona pandemic ► শিক্ষাব্যবস্থা - education system হুমকি - threat হুমকির - of threat ► সম্মুখীন - facing ► হুমকির সম্মুখীন - is facing threat শিক্ষাব্যবস্থা হুমকির সম্মুখীন – education system is facing threat মহামারির কারণে শিক্ষাব্যবস্থা হুমকির সম্মুখীন - education system is facing threat due to pandemic চলমান কোভিড-১৯ মহামারির কারণে শিক্ষাব্যবস্থা হুমকির সম্মুখীন - education system is in the face of threat due to ongoing corona pandemic 
++4
+
+দীর্ঘদিন ধরে চলমান করোনা মহামারির কারণে শিক্ষাব্যবস্থা হুমকির সম্মুখীন। 
+
+Education system is in the face of threat due to ongoing corona pandemic for long time. 
+
+দীর্ঘমেয়াদে বেকার সমস্যা প্রকট আকার ধারন করতে পারে। বেকার সমস্যা - Unemployment problem ধারন করতে পারে – would be প্রকট আকার/রুপ - an evident form দীর্ঘমেয়াদে - for a long  দীর্ঘমেয়াদে বেকার সমস্যা প্রকট আকার ধারন করতে পারে।
++4
+
+Unemployment problem would be an evident form for a long. 
+
+
+সম্পূর্ণ বাক্য বিশ্ববিদ্যালয়ে সেশনজট সমস্যা সমাধানের উপায় কী  দীর্ঘদিন ধরে চলমান করোনা মহামারির কারণে শিক্ষাব্যবস্থা হুমকির সম্মুখীন। দীর্ঘমেয়াদে বেকার সমস্যা প্রকট আকার ধারন করতে পারে। 
++2
+
+What are the ways of solving session jam problem of the universities? Education system is in the face of threat due to ongoing corona pandemic for long time. Unemployment problem would be an evident form for a long. 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৫) 
+
+বাংলাদেশের পড়াশুনার মান দিন দিন খারাপ হচ্ছে। সেইসাথে খারাপ হচ্ছে পড়াশুনার পরিবেশ। 
+
+বাংলাদেশের পড়াশুনার মান দিন দিন খারাপ হচ্ছে। The standard of education 
++1
+
+দিন দিন – day by day পড়াশুনার মান 
++1
+
+খারাপ/অবনতি হওয়া - worsen/deteriorate 
+
+খারাপ/অবনতি হচ্ছে - worsening/deteriorating 
+
+বাংলাদেশের পড়াশুনার মান খারাপ হচ্ছে – The standard of education in Bangladesh is worsening 
+
+বাংলাদেশের পড়াশুনার মান দিন দিন খারাপ হচ্ছে - The standard of education in Bangladesh is worsening day by day. 
+
+সেইসাথে খারাপ হচ্ছে পড়াশুনার পরিবেশ। ✔ simultaneously - সেইসাথে Environment of education is also deteriorating পড়াশুনার পরিবেশ খারাপ হচ্ছে। 
++3
+
+
+সম্পূর্ণ বাক্যটি হল –  বাংলাদেশের পড়াশুনার মান দিন দিন খারাপ হচ্ছে। সেইসাথে খারাপ হচ্ছে পড়াশুনার পরিবেশ। 
++1
+
+The standard of education in Bangladesh is worsening day by day. Simultaneously the environment of education is also deteriorating 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৬) 
+
+আমি সাকিবকে খুব ভালোবাসি। তার দৃঢ় ব্যক্তিত্ব আছে। সাকিব সবার চাইতে আলাদা। তার বয়স প্রায় ২২ বছর। সে খুবই কর্তব্যপরায়ণ।  সে আমার খোঁজখবর নেয়। এমনকি সে আমার পড়াশোনার ব্যাপারেও খুব তাগিদ দেয়।  সে খুব খুশি হয় যদি আমি পরীক্ষায় ভালো ফলাফল করি। আমার স্বাস্থ্য সম্পর্কেও সে খুব সচেতন।  সে আমাকে নিয়মিত ব্যায়াম করতে উপদেশ দেয়। সে আমাকে ইসলামী জীবন পরিচালনা করতে উপদেশ দেয়। সে বলে ইসলামি জীবন অনুশাসনের মাধ্যমে আমাদের দুনিয়া ও আখিরাতের কল্যাণ নিহিত।  সে আমার কল্যাণের জন্য সর্বদা আল্লাহর নিকট প্রার্থণা করে। সে আমাকে সর্বদা সৎ, সত্যবাদী এবং পরিশ্রমী হতে উপদেশ দেয়।  সে ইসলামী বই এবং টিভি নিউজ দেখা খুব পছন্দ করে। এসব কারনে আমি সাকিবকে খুব পছন্দ করি। 
++4
+
+
+ভোকাবুলারি (শব্দার্থ/ শব্দগুচ্ছের অর্থ) 
+
+Dutiful - কর্তব্যপরায়ণ। 
+
+Looks after - খোঁজখবর নেয়া/ দেখাশোনা করা। 
+
+Conscious - সচেতন। 
+
+Fond of – খুব পছন্দ করা/ অনুরাগী। 
+
+Lead an Islamic life - ইসলামী জীবন পরিচালনা করা বা মেনে চলা। 
+
+Cut a good figure - ভালো ফলাফল করা (এটি idiom) 
+
+আসুন ভেঙে ভেঙে ট্রান্সলেট করি..... 
+
+আমি সাকিবকে খুব ভালোবাসি। 
+
+I like Shakib very much. 
+
+তার দৃঢ় ব্যক্তিত্ব আছে।
+
+He has a strong personality. 
+
+সাকিব সবার চাইতে আলাদা।
+
+Shakib is different all of other’s. 
+
+তার বয়স প্রায় ২২ বছর। 
+
+He is about twenty two years old. 
+
+সে খুবই কর্তব্যপরায়ণ। 
+
+He is very dutiful. 
+
+সে আমার খোঁজখবর নেয়। 
+
+He looks after me. 
+
+এমনকি সে আমার পড়াশোনার ব্যাপারেও খুব তাগিদ দেয়। 
+
+Even, he is aware of my education.  (Aware অর্থ সচেতন, এখানে বাক্যের ভাব অনুযায়ী তাগিদ দেয়া বলা যায়) 
++1
+
+সে খুব খুশি হয় যদি আমি পরীক্ষায় ভালো ফলাফল করি। 
+
+He becomes very happy if I cut a good figure in the examination. 
+
+আমার স্বাস্থ্য সম্পর্কেও সে খুব সচেতন। 
+
+He is also conscious about my physical health. 
+
+সে আমাকে নিয়মিত ব্যায়াম করতে উপদেশ দেয়। 
+
+He advises me to take exercise regularly. 
+
+সে আমাকে ইসলামী জীবন পরিচালনা করতে উপদেশ দেয়। 
+
+He always gives me advice to lead an Islamic life. 
+
+সে বলে ইসলামি জীবন অনুশাসনের মাধ্যমে আমাদের দুনিয়া ও আখিরাতের কল্যাণ নিহিত। 
+
+He says that, blessing of duniya and akhirah indebted in the commandment of Islamic life. 
+
+সে আমার কল্যাণের জন্য সর্বদা আল্লাহর নিকট প্রার্থণা করে। 
+
+He always prays to Allah for my welfare. 
+
+সে আমাকে সর্বদা সৎ, সত্যবাদী এবং পরিশ্রমী হতে উপদেশ দেয়। 
+
+He always advises me to be honest, truthful and industrious. 
+
+সে ইসলামী বই এবং টিভি নিউজ দেখা খুব পছন্দ করে। 
+
+He is very fond of reading Islamic books and watching TV news.  (নোটঃ fond of একটি Prepositional phrase যার পরবর্তী Verb + ing হয়, এ কারনেই, পর্যায়ক্রমে reading ও watching হয়েছে।) 
++1
+
+এসব কারনে আমি সাকিবকে খুব পছন্দ করি। 
+
+For all these reason, I love Shakib very much. 
+
+
+সম্পূর্ণ বাক্য (অনুবাদসহ)ঃ  আমি সাকিবকে খুব ভালোবাসি। তার দৃঢ় ব্যক্তিত্ব আছে। সাকিব সবার চাইতে আলাদা। তার বয়স প্রায় ২২ বছর। সে খুবই কর্তব্যপরায়ণ।  সে আমার খোঁজখবর নেয়। এমনকি সে আমার পড়াশোনার ব্যাপারেও খুব তাগিদ দেয়।  সে খুব খুশি হয় যদি আমি পরীক্ষায় ভালো ফলাফল করি। আমার স্বাস্থ্য সম্পর্কেও সে খুব সচেতন।  সে আমাকে নিয়মিত ব্যায়াম করতে উপদেশ দেয়। সে আমাকে ইসলামী জীবন পরিচালনা করতে উপদেশ দেয়। সে বলে ইসলামি জীবন অনুশাসনের মাধ্যমে আমাদের দুনিয়া ও আখিরাতের কল্যাণ নিহিত।  সে আমার কল্যাণের জন্য সর্বদা আল্লাহর নিকট প্রার্থণা করে। সে আমাকে সর্বদা সৎ, সত্যবাদী এবং পরিশ্রমী হতে উপদেশ দেয়।  সে ইসলামী বই এবং টিভি নিউজ দেখা খুব পছন্দ করে। এসব কারনে আমি সাকিবকে খুব পছন্দ করি। 
++4
+
+I like Shakib very much. He has a strong personality. Shakib is different all of other’s.  He is about twenty two years old. He is very dutiful. He looks after me.  Even, he is aware of my education. He becomes very happy if I cut a good figure in the examination.  He is also conscious about my physical health. He advises me to take exercise regularly. He always gives me advice to lead an Islamic life. He says that, blessing of duniya and akhirah indebted in the commandment of Islamic life.  He always prays to Allah for my welfare. He always advises me to be honest, truthful and industrious. He is very fond of reading Islamic books and watching TV news. For all these reason, I love Shakib very much. 
++4
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৭) 
+
+জলবায়ু পরিবর্তনের চ্যালেঞ্জ মোকাবেলায় ৫০০ বিলিয়ন ডলার বৈশ্বিক জলবায়ু তহবিল পেতে আশাবাদী বাংলাদেশ: পররাষ্ট্রমন্ত্রী 
+
+মোকাবেলা - deal মোকাবেলায় - to deal চ্যালেঞ্জ - challenges জলবায়ু পরিবর্তন - climate change জলবায়ু পরিবর্তনের – of climate change জলবায়ু পরিবর্তনের চ্যালেঞ্জ মোকাবেলায় - to deal with the challenges of climate change ৫০০ বিলিয়ন ডলার - 500 billion dollar ► বৈশ্বিক - global ► জলবায়ু - climate তহবিল - fund বৈশ্বিক জলবায়ু তহবিল - global climate fund বৈশ্বিক জলবায়ু তহবিল পেতে- to get global climate fund আশাবাদী – hopeful/optimistic বাংলাদেশ - Bangladesh পররাষ্ট্রমন্ত্রী - Foreign Minister বৈশ্বিক জলবায়ু তহবিল পেতে আশাবাদী বাংলাদেশ - Bangladesh, hopeful/optimistic to get global climate fund ৫০০ বিলিয়ন ডলার বৈশ্বিক জলবায়ু তহবিল পেতে আশাবাদী বাংলাদেশ - Bangladesh, hopeful to get global climate fund of 500 billion dollar 
++4
+
+জলবায়ু পরিবর্তনের চ্যালেঞ্জ মোকাবেলায় ৫০০ বিলিয়ন ডলার বৈশ্বিক জলবায়ু তহবিল পেতে আশাবাদী বাংলাদেশ: পররাষ্ট্রমন্ত্রী 
+
+Bangladesh, hopeful to get global climate fund of 500 billion dollar to deal with the challenges of climate change: Foreign Minister. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৮) 
+
+সমগ্র বিশ্বে অনলাইনভিত্তিক সামাজিক যোগাযোগ ও ব্যবসা সম্প্রসারণের ফলে অত্যন্ত দ্রুতগতিতে ইন্টারনেট ও ওয়ার্ল্ড ওয়াইড ওয়েব সামাজিক যোগাযোগ ও ব্যবসায়িক কর্মকান্ডের অন্যতম গুরুত্বপূর্ণ প্লাটফর্মে পরিণত হয়েছে। পূর্বেও উল্লেখ করা হয়েছে, Subject বের করার জন্য verb টিকে কে/কারা বা কি দিয়ে প্রশ্ন করলে যে উত্তর পাওয়া যায় তাই Subject.  এখানে verb হচ্ছে- পরিণত হওয়া। যদি প্রশ্ন করা হয় ‘কি পরিণত হয়েছে?’ উত্তরঃ ইন্টারনেট ও ওয়ার্ল্ড ওয়াইড, অর্থাৎ Subject. 
++2
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... 
+
+ইন্টারনেট ও ওয়ার্ল্ড ওয়াইড ওয়েব – Internet and World Wide Web 
++1
+
+পরিণত হয়েছে - have become 
+
+অন্যতম গুরুত্বপূর্ণ প্লাটফর্মে - of the most important platforms 
+
+সামাজিক যোগাযোগ ও ব্যবসায়িক কর্মকান্ডের – of social communication and business activities. 
+
+ইন্টারনেট ও ওয়ার্ল্ড ওয়াইড পরিণত হয়েছে অন্যতম গুরুত্বপূর্ণ প্লাটফর্মে সামাজিক যোগাযোগ ও ব্যবসায়িক কর্মকান্ডের 
+
+Internet and World Wide Web have become of the most important platforms of social communication and business activities. 
+
+এখন প্রশ্ন করুন, কিসের কারনে/ফলে? উত্তরঃ অনলাইনভিত্তিক সামাজিক যোগাযোগ ও ব্যবসা সম্প্রসারণের ফলে (due to online base social interaction and business expansion) 
++1
+
+সমগ্র বিশ্বে অনলাইনভিত্তিক সামাজিক যোগাযোগ ও ব্যবসা সম্প্রসারণের ফলে অত্যন্ত দ্রুতগতিতে (with extreme speed) 
+
+due to online base social interaction and business expansion with extreme speed around the world. 
+
+
+সম্পূর্ণ বাক্যটি অনুবাদ সহঃ সমগ্র বিশ্বে অনলাইনভিত্তিক সামাজিক যোগাযোগ ও ব্যবসা সম্প্রসারণের ফলে অত্যন্ত দ্রুতগতিতে ইন্টারনেট ও ওয়ার্ল্ড ওয়াইড ওয়েব সামাজিক যোগাযোগ ও ব্যবসায়িক কর্মকান্ডের অন্যতম গুরুত্বপূর্ণ প্লাটফর্মে পরিণত হয়েছে। 
++1
+
+Internet and World Wide Web have become of the most important platforms of social communication and business activities due to online base social interaction and business expansion with extreme speed around the world. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-১৯) 
+
+ইংরেজিতে কিভাবে Daily routine বর্ণনা করবেন Daily routine (5 am to 11.00 pm) 
++1
+
+
+ভোকাবুলারি/শব্দসমূহের অর্থ 
+
+Ablution- অজু করা। 
+
+freshen up- হাত মুখ ধোয়া/সতেজ করা 
+
+✔shower- গোসল করা। 
+
+nearby- কাছেই। 
+
+Later on- পরে/তারপর 
+
+সচরাচর আমার দিন শুরু হয় ভোর ৫টায়। আমি ঘুম থেকে উঠি এবং বিছানা ছাড়ি ৫টায়। 
+
+Usually my days start at 5 am. I wake up & get out of bed at 5 am. 
+
+তারপর অজু করে নিজেকে সতেজ করি এবং জামাতে ফজরের নামাজ পড়ি। 
+
+Then I freshen myself up by performing ablution and say dawn prayer in congregation. 
+
+তারপর আমি সেখানে কিছুক্ষণ পবিত্র কোরআন তেলোয়াত করি।
+
+After that, I recite the holly Quran for a while there. 
+
+পরে হাটতে/দৌড়াতে বের হই। কিছু হালকা ব্যায়াম করে সকাল ৮টা নাগাদ গোসল সেরে নেই। 
+
+Later on, I head out for a run/walk. After having done some light exercise I have a shower at around 8 am. 
+
+তারপর সকাল ৮:৩০ মিনিটের দিকে কিছু সিরিয়াল দিয়ে ১টা স্বাস্থ্যকর নাস্তা করে ফেলি। 
+
+Then I have a nice healthy breakfast maybe with some cereals at about 8:30 in the morning. 
+
+তারপর সাধারনতঃ আমি অফিসে/কলেজে/ব্যবসা প্রতিষ্ঠানে যাওয়ার তৈরী করি এবং সেখানে ৫টা পর্যন্ত থাকি। 
+
+Normally, I prepare to go to my office/college/business place afterwards and remain busy there/stay there till 5:00 pm. 
+
+এর মধ্যে আমি কাছেই ১টা মসজিদে জোহরের নামাজ আদায় করে নেই। 
+
+By this time I say my noon prayer at a mosque nearby. 
+
+সাধারনত জোহরের নামাজের পর দুপুরের খাবার খাই। 
+
+Basically, I have my launch following the noon prayer. 
+
+► বিশেষতঃ দুপুরের খাবারের পর বিকেলের দিকে আমি বন্ধু-বান্ধবের সাথে চা/কফি পান করি। 
+
+Moreover, after launch around in the evening, I meet with my friends for a cup of tea/coffee. 
+
+তারপর আছরের নামাজ জামাতের সাথে আদায় করে বাড়ির উদ্দ্যেশ্যে রওনা হই। 
+
+Later on, I pray my afternoon prayer in congregation and set out to get back home. 
+
+বাসায় ফিরে প্রায়শঃই পরিবারের সাথে আড্ডা দেই, চা-টা খাই। 
+
+After returning home, I often have a chat over a snack with my family. 
+
+এশার নামাজের পূর্বে কিছু লেখালেখির কাজ করি বা ই-মেইল চেক করি অথবা পরিবারের সাহায্যার্থে কিছু ছোটখাট কাজ করে দেই। 
+
+Before the night prayer, I often do some writing or check e-mails or do some handy work for my family. 
+
+মূলতঃ আমি ঘুমানোর পূর্বে রাতের খাবার খেয়ে থাকি। 
+
+Basically I have supper before I go to bed. 
+
+আমি আমার দিন শেষ করি সাহাবীদের (রা:) জীবনী থেকে ১টা ঘটনা পড়ে। 
+
+I finish the day up by reading a story from the biography of Sahaba (Ra.). 
+
+এবং পরিশেষে আমি আমার দাঁত ব্রাশ করি, অজু করি এবং রাত এগারোটার মধ্যে বিছানায় যাই। 
+
+And finally, I brush my teeth, take ablution & go to bed by 11:00 pm. 
+
+এভাবে আমি আমার দিন অতিবাহিত করি।
+
+Thus I spend my days. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২০) 
+
+চীন পৃথিবীর পরিবেশ দূষণের জন্য সবচেয়ে বেশি দায়ী। ► চীন- China সবচেয়ে বেশি দায়ী- most responsible পরিবেশ দূষণ- environment pollution পরিবেশ দূষণের জন্য- for the environment pollution ► পৃথিবীর- of the world চীন পৃথিবীর পরিবেশ দূষণের জন্য সবচেয়ে বেশি দায়ী। 
++4
+
+China is most responsible for the environment pollution of the world 
+
+যুক্তরাষ্ট্রের পরিবেশ নিয়ন্ত্রন সংক্রান্ত একটি গ্রুপের পরিচালিত নতুন গবেষণা প্রতিবেদনে এমন দাবি করা হয়েছে। দাবি করা - claim দাবি করা হয়েছে।- has been claimed এমন দাবি করা - It has been claimed প্রতিবেদনে এমন দাবি করা হয়েছে- It has been claimed in the report গবেষণা প্রতিবেদনে এমন দাবি করা হয়েছে – It has been claimed in the research report নতুন গবেষণা প্রতিবেদনে এমন দাবি করা হয়েছে - It has been claimed in the new research report একটি গ্রুপের পরিচালিত - conducted by a group একটি গ্রুপের পরিচালিত নতুন গবেষণা প্রতিবেদনে এমন দাবি করা হয়েছে - It has been claimed in the new research report conducted by a group পরিবেশ নিয়ন্ত্রন সংক্রান্ত – related to Environmental control ► যুক্তরাষ্ট্রের - of the USA/in the USA যুক্তরাষ্ট্রের পরিবেশ নিয়ন্ত্রন সংক্রান্ত - related to Environmental control in the USA ► যুক্তরাষ্ট্রের পরিবেশ নিয়ন্ত্রন সংক্রান্ত একটি গ্রুপের পরিচালিত নতুন গবেষণা প্রতিবেদনে এমন দাবি করা হয়েছে। 
++4
+
+It has been claimed in the new research report conducted by a group related to environmental control in the USA 
+
+
+সম্পূর্ণ বাক্য (অনুবাদসহ)ঃ  চীন পৃথিবীর পরিবেশ দূষণের জন্য সবচেয়ে বেশি দায়ী। যুক্তরাষ্ট্রের পরিবেশ নিয়ন্ত্রন সংক্রান্ত একটি গ্রুপের পরিচালিত নতুন গবেষণা প্রতিবেদনে এমন দাবি করা হয়েছে। 
++1
+
+China is most responsible for the environment pollution of the world. It has been claimed in the new research report conducted by a group related to environmental control in the USA 
++1
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২১) 
+
+বইমেলা একটি আকর্ষণীয় মেলা। বিভিন্ন রকমের বই এখানে বিক্রির জন্য প্রদর্শন করা হয়।  প্রতি বছর ফেব্রুয়ারী মাসে বাংলা একাডেমীতে বাংলাদেশের সবচেয়ে বৃহৎ বইমেলা অনুষ্ঠিত হয়। এটি একুশে বইমেলা হিসাবে পরিচিত। 
++1
+
+Book fair is an attractive fair. Various/different kinds of books are displayed here for selling.  The largest book fair of Bangladesh is held in Bangla academy in February every year. It is known as “Ekusyeboimela”. 
++1
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... বইমেলা একটি আকর্ষণীয় মেলা। 
++1
+
+Book fair is an attractive fair. 
+
+বিভিন্ন রকমের বই এখানে বিক্রির জন্য প্রদর্শন করা হয়। 
+
+এ বাক্যে প্রথমেই Subject বের করতে হবে। লক্ষ্য করুন- বাক্যটির Subject হলো “বিভিন্ন রকমের বই” যা ইংরেজিতে হবে “Various/different kinds of books” Subject এর পরে এবার রুল অনুসারে verb বসাতে হবে, এখানে verb হচ্ছে “প্রদর্শন করা হয়” যার ইংরেজি হলো “Display”। এখানে গ্রামাটিক্যাল একটি রুল মনে রাখতে হবে- sentence এ যখন subject নিজে সক্রিয়ভাবে কাজ করে না, তখন Passive voice এ করতে হবে। অতএব, এখানে “display বা প্রদর্শন করার” কাজটি করতে নিজে নিজে হতে পারে না।  অর্থাৎ, এখানে subject সক্রিয় নেই তাই এটি passive voice এ- করতে হবে। যে sentence এ subject নিজে সক্রিয়ভাবে কাজ করে না, বরং পরোক্ষভাবে object এর কাজটি তার উপর বর্তায় সে sentence এ verb এর Passive voice হয়। 
++3
+
+সুতরাং বাক্যটি হবে বিভিন্ন রকমের বই প্রদর্শন করা হয়... Various/different kinds of books are displayed..... Note: “Various/different kinds of books” plural হওয়ায় এর পরে are হয়েছে। এবং passive voice এর রুল অনুসারে- verb এর past participle (displayed) হয়েছে। এখানে বিক্রির জন্য - here for selling Note: preposition এর রুল অনুসারে for এর পরে verb(ing) হয়েছে, যেমনঃ for selling. 
++4
+
+সুতরাং পূর্ণ বাক্যটি হবেঃ Various/different kinds of books are displayed here for selling  (বিভিন্ন রকমের বই এখানে বিক্রির জন্য প্রদর্শন করা হয়।) 
++2
+
+বাংলাদেশের সবচেয়ে বৃহৎ বইমেলা - The largest book fair of Bangladesh 
+
+অনুষ্ঠিত হয় - is held 
+
+বাংলা একাডেমীতে - in Bangla Academy 
+
+প্রতি বছর ফেব্রুয়ারী মাসে - in February every year 
+
+এটি একুশে বইমেলা হিসাবে পরিচিত- It is known as “Ekusyeboimela” 
+
+
+সম্পূর্ণ বাক্যঃ  বইমেলা একটি আকর্ষণীয় মেলা। বিভিন্ন রকমের বই এখানে বিক্রির জন্য প্রদর্শন করা হয়।  প্রতি বছর ফেব্রুয়ারী মাসে বাংলা একাডেমীতে বাংলাদেশের সবচেয়ে বৃহৎ বইমেলা অনুষ্ঠিত হয়। এটি একুশে বইমেলা হিসাবে পরিচিত। 
++2
+
+Book fair is an attractive fair. Various/different kinds of books are displayed here for selling.  The largest book fair of Bangladesh is held in Bangla academy in February every year. It is known as “Ekusyeboimela”. 
++1
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২২) 
+
+বাংলাদেশে তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার দিন দিন বেড়েই চলছে। বেশিরভাগ ক্ষেত্রেই কম্পিউটার বিনোদনের যন্ত্র এবং টাইপরাইটারের বিকল্প হিসাবে ব্যবহার হচ্ছে। এ ক্ষেত্রে প্রতিবেশী দেশ ভারতের ঈর্ষণীয় সাফল্য আমাদের জন্য শিক্ষনীয় হতে পারে। 
++2
+
+বাংলাদেশে তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার দিন দিন বেড়েই চলছে। তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার – The use of information and communication technology বেড়ে যাওয়া/বৃদ্ধি পাওয়া- increase বেড়েই চলছে - increasing দিন দিন - day by day বাংলাদেশে - in Bangladesh বাংলাদেশে তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার দিন দিন বেড়েই চলছে। 
++4
+
+The use of information and communication technology is increasing day by day in Bangladesh. 
+
+বেশিরভাগ ক্ষেত্রেই কম্পিউটার বিনোদনের যন্ত্র এবং টাইপরাইটারের বিকল্প হিসাবে ব্যবহার হচ্ছে। বেশিরভাগ ক্ষেত্রেই – In most of the cases কম্পিউটার ব্যবহার হচ্ছে - computer is used বিনোদনের যন্ত্র হিসাবে – as the entertainment instrument এবং টাইপরাইটারের বিকল্প হিসাবে – and alternative to type writer কম্পিউটার বিনোদনের যন্ত্র এবং টাইপরাইটারের বিকল্প হিসাবে ব্যবহার হচ্ছে। 
++4
+
+computer is used as the entertainment instrument and alternative to type writer বেশিরভাগ ক্ষেত্রেই কম্পিউটার বিনোদনের যন্ত্র এবং টাইপরাইটারের বিকল্প হিসাবে ব্যবহার হচ্ছে। In most of the cases, computer is used as the entertainment instrument and alternative to type writer. 
++2
+
+এ ক্ষেত্রে প্রতিবেশী দেশ ভারতের ঈর্ষণীয় সাফল্য আমাদের জন্য শিক্ষনীয় হতে পারে। এ ক্ষেত্রে - In this perspective শিক্ষনীয় হতে পারে - may be learning আমাদের জন্য শিক্ষনীয় হতে পারে – may be learning for us ঈর্ষণীয় সাফল্য - the noticeable success প্রতিবেশী দেশ ভারতের - of our neighboring country India এ ক্ষেত্রে প্রতিবেশী দেশ ভারতের ঈর্ষণীয় সাফল্য আমাদের জন্য শিক্ষনীয় হতে পারে। 
++4
+
+In this perspective, the noticeable success of our neighboring country India may be learning for us. 
+
+
+সম্পূর্ণ বাক্যঃ বাংলাদেশে তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার দিন দিন বেড়েই চলছে। বেশিরভাগ ক্ষেত্রেই কম্পিউটার বিনোদনের যন্ত্র এবং টাইপরাইটারের বিকল্প হিসাবে ব্যবহার হচ্ছে। এ ক্ষেত্রে প্রতিবেশী দেশ ভারতের ঈর্ষণীয় সাফল্য আমাদের জন্য শিক্ষনীয় হতে পারে। 
++3
+
+The use of information and communication technology is increasing day by day in Bangladesh. In most of the cases, computer is used as the entertainment instrument and alternative to type writer. In this perspective, the noticeable success of our neighboring country India may be learning for us. 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৩) 
+
+খুলনা জেলায় প্রচন্ড গরম, বজ্রসহ ঝড় ও বৃষ্টি হতে পারে। সারা দেশের ওপর দিয়ে প্রচন্ড তাপপ্রবাহ বয়ে যাচ্ছে। 
+
+► খুলনা জেলায় - in khulna district প্রচন্ড - severe গরম - heat প্রচন্ড গরম - severe heat খুলনা জেলায় প্রচন্ড গরম - severe heat in khulna district. বজ্র - thunder বজ্রসহ - with thunderbolt ঝড় - storm বৃষ্টি - rain হতে পারে – may be বৃষ্টি হতে পারে - it may rain বজ্রসহ ঝড় ও বৃষ্টি হতে পারে - it may rain with thunderbolt 
++4
+
+খুলনা জেলায় প্রচন্ড গরম, বজ্রসহ ঝড় ও বৃষ্টি হতে পারে। 
+
+Severe heat in Khulna district, it may rain with thunderbolt. 
+
+সারা দেশের ওপর দিয়ে প্রচন্ড তাপপ্রবাহ বয়ে যাচ্ছে। সারা দেশের ওপর দিয়ে - over the country. প্রচন্ড – severe তাপপ্রবাহ - heat wave তীব্র তাপপ্রবাহ - severe heat wave বয়ে যাওয়া - flow বয়ে যাচ্ছে - is flowing তীব্র তাপপ্রবাহ বয়ে যাচ্ছে - severe heat wave is flowing  সারা দেশের ওপর দিয়ে প্রচন্ড তাপপ্রবাহ বয়ে যাচ্ছে।
++4
+
+Severe heat wave is flowing over the country. 
+
+
+সম্পূর্ণ বাক্যঃ  খুলনা জেলায় প্রচন্ড গরম, বজ্রসহ ঝড় ও বৃষ্টি হতে পারে। সারা দেশের ওপর দিয়ে প্রচন্ড তাপপ্রবাহ বয়ে যাচ্ছে। 
++1
+
+Severe heat in Khulna district, it may rain with thunderbolt. Severe heat wave is flowing over the country. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৪) 
+
+সারা বিশ্বের শহর গুলোতে যানবাহন সমস্যা একটি বড় সমস্যা হয়ে উঠেছে। আমাদের শহর গুলোতে অনেক বেশি যানবাহন রয়েছে।  পথচারীদের নিরাপদে চলাচল করতে কম স্থান এবং স্বাধীনতা আছে। এছাড়াও, অধিক সংখ্যক যানবাহন তীব্র দূষণ তৈরি করছে। সেইজন্য, এই সমস্যাটি হ্রাস করতে জনসাধারণের পরিবহন উন্নয়ন সম্পর্কে আমাদের আরো সতর্কতার সাথে চিন্তা করতে হবে। 
++2
+
+আসুন ভেঙ্গে ভেঙ্গে ট্রান্সলেট করি... 
+
+সারা বিশ্বের শহরগুলোতে যানবাহন সমস্যা একটি বড় সমস্যা হয়ে উঠেছে। 
+
+Traffic problem in cities all over the world has become a major problem. 
+
+আমাদের শহর গুলোতে অনেক বেশি যানবাহন রয়েছে।
+
+There are too many vehicles in our cities. 
+
+পথচারীদের নিরাপদে চলাচল করতে কম স্থান এবং স্বাধীনতা আছে। 
+
+Pedestrians have less space and freedom to move safely. 
+
+এছাড়াও, অধিক সংখ্যক যানবাহন তীব্র দূষণ তৈরি করছে। 
+
+এছাড়াও, - Also 
+
+অধিক সংখ্যক যানবাহন – a large number of vehicles 
+
+তীব্র দূষণ তৈরি করছে - are causing severe pollution. 
+
+Also, a large number of vehicles are causing severe pollution. নোটঃ Simple present continuous tense, তাই auxiliary verb এর পর main verb এর শেষে ing যোগ করা হয়েছে। 
++1
+
+সেইজন্য, এই সমস্যাটি হ্রাস করতে জনসাধারণের পরিবহন উন্নয়ন সম্পর্কে আমাদের আরো সতর্কতার সাথে চিন্তা করতে হবে। 
+
+Therefore, we need to think more carefully about developing public transport to reduce this problem. নোটঃ about (preposition) এর পরে রুল অনুযায়ী verb(ing) হয়েছে) 
++1
+
+
+সম্পূর্ণ বাক্য (অনুবাদ সহ)  সারা বিশ্বের শহর গুলোতে যানবাহন সমস্যা একটি বড় সমস্যা হয়ে উঠেছে। আমাদের শহর গুলোতে অনেক বেশি যানবাহন রয়েছে।  পথচারীদের নিরাপদে চলাচল করতে কম স্থান এবং স্বাধীনতা আছে। এছাড়াও, অধিক সংখ্যক যানবাহন তীব্র দূষণ তৈরি করছে। সেইজন্য, এই সমস্যাটি হ্রাস করতে জনসাধারণের পরিবহন উন্নয়ন সম্পর্কে আমাদের আরো সতর্কতার সাথে চিন্তা করতে হবে। 
++3
+
+Traffic problem in cities all over the world has become a major problem.  There are too many vehicles in our cities. Pedestrians have less space and freedom to move safely. Also, a large number of vehicles are causing severe pollution. Therefore, we need to think more carefully about developing public transport to reduce this problem. 
++3
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৫) 
+
+The Daily Star পত্রিকার অনুবাদ 
+
+
+Be equipped with modern technologies (আধুনিক প্রযুক্তির সাথে নিজেদেরকে সম্পৃক্ত করুন) 
+
+বিশেষায়িত নিরাপত্তা বাহিনির (এসএসএফ) কর্মকর্তাদেরকে গত শনিবার সমবেত হতে বলা হয়েছিল ক্রমাগত পরিবর্তিত অপরাধের বিরুদ্ধে লড়াইয়ে নিজেদেরকে আধুনিক প্রযুক্তি ও জ্ঞানে সমৃদ্ধ করবার জন্য। তিনি বলেন, “বাংলাদেশ সহ পৃথিবীর সকল স্থানে অপরাধের ধরন-ধারন প্রতিনিয়ত পরিবর্তন হচ্ছে। তাই আপনারা এই সব অপরাধকে ব্যর্থ করার নিমিত্তে নিজেদেরকে আধুনিক প্রযুক্তি ও জ্ঞানে সমৃদ্ধ হতে হবে একই সাথে এই সকল ব্যাপারে (প্রযুক্তি) সচেতন থাকতে হবে।” প্রধানমন্ত্রী বলেন, বিজ্ঞান ও প্রযুক্তির বর্তমান যুগে নতুন নতুন প্রযুক্তির উদ্ভাবন হচ্ছে এবং তাদের ব্যবহার বৃদ্ধি পাচ্ছে। রাজধানীর তেজগাঁওয়ে অবস্থিত অফিসার্স মেসে এলিট ফোর্সের ৩৩ তম প্রতিষ্ঠাবার্ষিকী অনুষ্ঠানে ভাষণে প্রধানমন্ত্রী এসব কথা বলেন, বাংলাদেশ সংবাদ সংস্থার রিপোর্ট। 
++3
+
+বিশেষায়িত নিরাপত্তা বাহিনির (এসএসএফ) কর্মকর্তাদেরকে গত শনিবার সমবেত হতে বলা হয়েছিল ক্রমাগত পরিবর্তিত অপরাধের বিরুদ্ধে লড়াইয়ে নিজেদেরকে আধুনিক প্রযুক্তি ও জ্ঞানে সমৃদ্ধ করবার জন্য । 
+
+On Saturday asked the personnel of the Special Security Force (SSF) to be equipped with modern technologies and knowledge to combat constant changing crimes. 
+
+তিনি বলেন, “বাংলাদেশ সহ পৃথিবীর সকল স্থানে অপরাধের ধরন-ধারন প্রতিনিয়ত পরিবর্তন হচ্ছে। তাই আপনারা এই সব অপরাধকে ব্যার্থ করার নিমিত্তে নিজেদেরকে আধুনিক প্রযুক্তি ও জ্ঞানে সমৃদ্ধ হতে হবে একই সাথে এই সকল ব্যাপারে (প্রযুক্তি) সচেতন থাকতে হবে।” 
+
+ভেঙ্গে ভেঙ্গে বিশ্লেষণ করলে.... বাংলাদেশ সহ পৃথিবীর সকল স্থানে অপরাধের ধরন-ধারন প্রতিনিয়ত পরিবর্তন হচ্ছে। এখানে Subject বের করার জন্য প্রশ্ন করুন ‘কি পরিবর্তন হচ্ছে?’ উত্তরঃ অপরাধের ধরন-ধারন (The pattern of crimes), প্রতিনিয়ত বা ঘনঘন পরিবর্তন হচ্ছে (frequently changing), বাংলাদেশ সহ (including Bangladesh) অতএব পুরো বাক্য- The pattern of crimes is frequently changing in the world including Bangladesh. 
++4
+
+প্যারার পরবর্তী অংশ... তাই আপনারা এই সব অপরাধকে ব্যার্থ করার নিমিত্তে নিজেদেরকে আধুনিক প্রযুক্তি ও জ্ঞানে সমৃদ্ধ হতে হবে একই সাথে এই সকল ব্যাপারে (প্রযুক্তি) সচেতন থাকতে হবে। 
++1
+
+নিজেদেরকে আধুনিক প্রযুক্তি ও জ্ঞানে সমৃদ্ধ হতে হবে You’ll have to be equipped with modern technologies and knowledge. 
+
+একই সাথে এই সকল ব্যাপারে (প্রযুক্তি) সচেতন থাকতে হবে as well as to remain aware of these (technologies) (একই সাথে/সেই সাথে থাকলে as well as ব্যবহার হয়) 
+
+এই সব অপরাধকে ব্যর্থ করার নিমিত্তে to thwart the crimes, অতএব পুরো বাক্য- So, you’ll have to be equipped with modern technologies and knowledge as well as to remain aware of these (technologies) to thwart the crimes, 
++1
+
+প্যারার পরবর্তী অংশ... প্রধানমন্ত্রী বলেন, বিজ্ঞান ও প্রযুক্তির বর্তমান যুগে নতুন নতুন প্রযুক্তির উদ্ভাবন হচ্ছে এবং তাদের ব্যবহার বৃদ্ধি পাচ্ছে। 
++1
+
+The prime minister said, in the present era of science and technology, new technologies are being invented and their use is increasing. 
+
+বিজ্ঞান ও প্রযুক্তির বর্তমান যুগে- in the present era of science and technology 
+
+নতুন নতুন প্রযুক্তির উদ্ভাবন হচ্ছে- new technologies are being invented (কে উদ্ভাবন করছে নেই, তাই বাক্যটি passive voice এ হয়েছে। 
+
+এবং তাদের ব্যবহার বৃদ্ধি পাচ্ছে- and their use is increasing. 
+
+প্যারাটির পুরো অনুবাদ 
+
+“The pattern of crimes is frequently changing in the world including Bangladesh. So, you’ll have to be equipped with modern technologies and knowledge as well as to remain aware of these (technologies) to thwart the crimes,” she said. 
+
+রাজধানীর তেজগাঁওয়ে অবস্থিত অফিসার্স মেসে এলিট ফোর্সের ৩৩ তম প্রতিষ্ঠাবার্ষিকী অনুষ্ঠানে ভাষণে প্রধানমন্ত্রী এসব কথা বলেন, বাংলাদেশ সংবাদ সংস্থার রিপোর্ট। 
+
+The prime minister was addressing the 33rd founding anniversary function of the elite force at its Officers’ Mess in Tejgaon in the capital, BSS reports. 
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৬) 
+
+The Daily Star পত্রিকার অনুবাদ 
+
+
+Dhaka continues to be unlivable despite progress (উন্নতি সত্ত্বেও বসবাসের অযোগ্য শহর “ঢাকা”) 
+
+► Despite massive infrastructure development, development projects will not make Dhaka a better place to live because the city is massively overpopulated. 
+
+শব্দগুচ্ছের অর্থ 
+
+ব্যাপক অবকাঠামোগত উন্নয়ন- massive infrastructure development 
+
+অত্যন্ত জনবহুল – massively overpopulated. 
+
+পুরো বাক্যের অনুবাদ ব্যাপক অবকাঠামোগত উন্নয়ন সত্ত্বেও ঢাকার উন্নয়ন প্রকল্পগুলি ঢাকাকে বাসযোগ্য স্থান হিসাবে তৈরি করবে না কারণ শহরটি অত্যন্ত জনবহুল। 
++1
+
+A seminar organized by Nagar Unnayan Sangbadik Forum (NUSF) on May 25 brought together urban planners and experts to discuss what needs to be done. 
+
+২৫মে নগর উন্নয়ন সাংবাদিক ফোরাম (এনইউএসএফ) কর্তক আয়োজিত এক সেমিনারে করনীয় বিষয় সম্পর্কে আলোচনা করতে শহর পরিকল্পনাবিদ ও বিশেষজ্ঞরা একত্রিত হয়েছিলেন। 
+
+► We learn that unless city planner’s start making plans to decentralize the capital city, its standard of living will continue to deteriorate. 
+
+শব্দগুচ্ছের অর্থ 
+
+যতক্ষণ পর্যন্ত না- unless 
+
+শহরের বিকেন্দ্রীকরণের পরিকল্পনা- plans to decentralize the capital city 
+
+নিম্নমুখী/খারাপের দিকে ধাবিত হওয়া- deteriorate. 
+
+পুরো বাক্যের অনুবাদ আমরা জানতে পারলাম, যতক্ষণ পর্যন্ত না শহর পরিকল্পনাবিদরা রাজধানী শহরের বিকেন্দ্রীকরণের পরিকল্পনা করবেন ততক্ষণ ইহার বসবাসের মান নিম্নমুখী হতে থাকবে। 
++1
+
+
+সম্পূর্ণ বাক্যটি অনুবাদ সহঃ 
+
+Despite massive infrastructure development, development projects will not make Dhaka a better place to live because the city is massively overpopulated. A seminar organized by Nagar Unnayan Sangbadik Forum (NUSF) on May 25 brought together urban planners and experts to discuss what needs to be done. We learn that unless city planner’s start making plans to decentralize the capital city, its standard of living will continue to deteriorate. 
++2
+
+ব্যাপক অবকাঠামোগত উন্নয়ন সত্ত্বেও ঢাকার উন্নয়ন প্রকল্পগুলি ঢাকাকে বাসযোগ্য স্থান হিসাবে তৈরি করবে না কারন শহরটি অত্যন্ত জনবহুল। ২৫মে নগর উন্নয়ন সাংবাদিক ফোরাম (এনইউএসএফ) কর্তৃক আয়োজিত এক সেমিনারে করনীয় বিষয় সম্পর্কে আলোচনা করতে শহর পরিকল্পনাবিদ ও বিশেষজ্ঞরা একত্রিত হয়েছিলেন। আমরা জানতে পারলাম, যতক্ষন পর্যন্ত না শহর পরিকল্পনাবিদরা রাজধানী শহরের বিকেন্দ্রীকরণের পরিকল্পনা করবেন ততক্ষন ইহার বসবাসের মান নিম্নমুখী হতে থাকবে। 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৭) 
+
+সমন্বিত ৮ ব্যাংক/আর্থিক প্রতিষ্ঠান নিয়োগ পরীক্ষা- ২০১৯ 
+
+কিশমিশ হলো শুষ্ক আঙ্গুর যা হাজার হাজার বছর ধরে খাওয়া হয়ে থাকে। প্রায় ৩৫০০ বছর পূর্বে, প্রথম কিশমিশ আবিষ্কৃত হয় যখন সূর্যের তাপে আঙ্গুরলতায় আঙ্গুর শুকানো হচ্ছিল। মধ্যযুগীয় ইউরোপে কিশমিশকে ব্যবহার করা হত মিষ্টান্য, ঔষধ এমনকি অর্থের বিকল্প হিসাবে। আমেরিকাতে কিশমিশ প্রথম উৎপাদিত হয়, যখন ক্যালিফোর্নিয়াতে ১৮৭৩ সালের তাপদাহে তাদের মূল্যবান আঙ্গুর শস্য বিনষ্ট হয় যা রেখে যায় শুষ্ক এবং শিকড়যুক্ত আঙ্গুরলতায় সুস্বাদু আঙ্গুর। এরই খুব অল্প কিছুদিন পর ক্যালিফোর্নিয়ার কৃষকেরা বীজহীন আঙ্গুর এর জাত উদ্ভাবন করেন যা ছিল পাতলা খোসাযুক্ত এবং সুমিষ্ট। এই আঙ্গুরগুলোই প্রয়োজন অনুযায়ী সূর্যের তাপে শুকিয়ে তৈরি করা হয় জনপ্রিয় কাল কিশমিশ যা আমরা বর্তমান সময়ে খেয়ে থাকি এবং ব্যবহার করি। পরবর্তিতে, বিশেষ পদ্ধতিতে সালফার ডাই অক্সাইডের দ্বারা আঙ্গুরকে প্রক্রিয়াজাতকরনের মাধ্যমে শুকিয়ে কিশমিশের একটি মূল্যবান জাত আবিষ্কার করা হয়। 
++4
+
+কিশমিশ হলো শুষ্ক আঙ্গুর যা হাজার হাজার বছর ধরে খাওয়া হয়ে থাকে। 
+
+Raisins are dried grapes that have been eaten for thousands of years.  (বাক্যটিতে কর্তা উহ্য, অর্থাৎ subject না থাকায় Passive voice এ করা হয়েছে।) 
++1
+
+প্রায় ৩৫০০ বছর পূর্বে, প্রথম কিশমিশ আবিষ্কৃত হয় যখন সূর্যের তাপে আঙ্গুরলতায় আঙ্গুর শুকানো হচ্ছিল। 
+
+Nearly 3,500 years ago, the first raisins were discovered as grapes that were drying in the sun on a vine. 
+
+প্রায় ৩৫০০ বছর পূর্বে- Nearly 3,500 years ago 
+
+প্রথম কিশমিশ আবিষ্কৃত হয় - the first raisins were discovered 
+
+যখন সূর্যের তাপে আঙ্গুরলতায় আঙ্গুর শুকানো হচ্ছিল- as grapes that were drying in the sun on a vine. নোটঃ লক্ষ্য করুন, ‘প্রথম কিশমিশ আবিষ্কৃত হয়’ কর্তা (subject) নেই, সেজন্য passive এ হয়েছে। 
++1
+
+মধ্যযুগীয় ইউরোপে কিশমিশকে ব্যবহার করা হত মিষ্টান্য, ঔষধ এমনকি অর্থের বিকল্প হিসাবে। 
+
+In medieval Europe, raisins were used as sweeteners, medicine, and even as a form of money!  নোটঃ বাক্যটিতে ‘কে ব্যবহার করতো’ নেই, কর্তা উহ্য। সেহেতু, passive এ হয়েছে। 
++1
+
+আমেরিকাতে কিশমিশ প্রথম উৎপাদিত হয়, যখন ক্যালিফোর্নিয়াতে ১৮৭৩ সালের তাপদাহে তাদের মূল্যবান আঙ্গুর শস্য বিনষ্ট হয় যা রেখে যায় শুষ্ক এবং শিকড়যুক্ত আঙ্গুরলতায় সুস্বাদু আঙ্গুর। 
+
+আমেরিকাতে কিশমিশ প্রথম উৎপাদিত হয়- In America, raisins were first grown (Passive) 
+
+যখন ক্যালিফোর্নিয়াতে ১৮৭৩ সালের তাপদাহে তাদের মূল্যবান আঙ্গুর শস্য বিনষ্ট হয় after an 1873 heat wave in California destroyed its valuable grape crop (past indefinite) 
+
+যা রেখে যায় শুষ্ক এবং শিকড়যুক্ত আঙ্গুরলতায় সুস্বাদু আঙ্গুর। leaving only dried, wrinkly, but tasty grapes on the vines. (Past indefinite) 
+
+In America, raisins were first grown after an 1873 heat wave in California destroyed its valuable grape crop, leaving only dried, wrinkly, but tasty grapes on the vines. 
+
+এরই খুব অল্প কিছুদিন পর ক্যালিফোর্নিয়ার কৃষকেরা বীজহীন আঙ্গুর এর জাত উদ্ভাবন করেন যা ছিল পাতলা খোসাযুক্ত এবং সুমিষ্ট। 
+
+Soon, farmers began developing seedless grapes in California that were thin-skinned and sweet. 
+
+এই আঙ্গুরগুলোই প্রয়োজন অনুযায়ী সুর্যের তাপে শুকিয়ে তৈরি করা হয় জনপ্রিয় কালো কিশমিশ যা আমরা বর্তমান সময়ে খেয়ে থাকি এবং ব্যবহার করি। 
+
+These grapes would be purposely dried in the sun and became the popular dark raisin we eat and enjoy today. 
+
+পরবর্তিতে, বিশেষ পদ্ধতিতে সালফার ডাই অক্সাইডের দ্বারা আঙ্গুরকে প্রক্রিয়াজাতকরনের মাধ্যমে শুকিয়ে কিশমিশের একটি মূল্যবান জাত আবিষ্কার করা হয়। 
+
+Later, a golden variety of raisin was made by treating grapes with a chemical called sulfur dioxide and using special methods to dry them. 
+
+
+সম্পূর্ণ বাক্যঃ কিশমিশ হলো শুষ্ক আঙ্গুর যা হাজার হাজার বছর ধরে খাওয়া হয়ে থাকে। প্রায় ৩৫০০ বছর পূর্বে, প্রথম কিশমিশ আবিষ্কৃত হয় যখন সুর্যের তাপে আঙ্গুরলতায় আঙ্গুর শুকানো হচ্ছিল। মধ্যযুগীয় ইউরোপে কিশমিশকে ব্যবহার করা হত মিষ্টান্য, ওষধ এমনকি অর্থের বিকল্প হিসাবে। আমেরিকাতে কিশমিশ প্রথম উৎপাদিত হয়, যখন ক্যালিফোর্নিয়াতে ১৮৭৩ সালের তাপদাহে তাদের মূল্যবান আঙ্গুর শস্য বিনষ্ট হয় যা রেখে যায় শুষ্ক এবং শিকড়যুক্ত আঙ্গুরলতায় সুস্বাদু আঙ্গুর। এরই খুব অল্প কিছুদিন পর ক্যালিফোর্নিয়ার কৃষকেরা বীজহীন আঙ্গুর এর জাত উদ্ভাবন করেন যা ছিল পাতলা খোসাযুক্ত এবং সুমিষ্ট। এই আঙ্গুরগুলোই প্রয়োজন অনুযায়ী সুর্যের তাপে শুকিয়ে তৈরি করা হয় জনপ্রিয় কাল কিশমিশ যা আমরা বর্তমান সময়ে খেয়ে থাকি এবং ব্যবহার করি। পরবর্তিতে, বিশেষ পদ্ধতিতে সালফার ডাই অক্সাইডের দ্বারা আঙ্গুরকে প্রক্রিয়াজাতকরনের মাধ্যমে শুকিয়ে কিশমিশের একটি মূল্যবান জাত আবিষ্কার করা হয়। 
++4
+
+Raisins are dried grapes that have been eaten for thousands of years. Nearly 3,500 years ago, the first raisins were discovered as grapes that were drying in the sun on a vine. In medieval Europe, raisins were used as sweeteners, medicine, and even as a form of money! In America, raisins were first grown after an 1873 heat wave in California destroyed its valuable grape crop, leaving only dried, wrinkly, but tasty grapes on the vines. Soon, farmers began developing seedless grapes in California that were thin-skinned and sweet. These grapes would be purposely dried in the sun and became the popular dark raisin we eat and enjoy today. Later, a golden variety of raisin was made by treating grapes with a chemical called sulfur dioxide and using special methods to dry them. 
++4
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৮) 
+
+The Daily Star পত্রিকার অনুবাদ 
+
+
+Prime Bank gets new DMD 
+
+Faisal Rahman has recently been appointed deputy managing director and chief business officer of Prime Bank. 
+
+সম্প্রতি প্রাইম ব্যাংকের ডেপুটি ম্যানেজিং ডিরেক্টর ও প্রধান ব্যবসায় কর্মকর্তা হিসাবে নিয়োগ পেলেন ফয়সাল রহমান। 
+
+He will lead the bank’s corporate and institutional banking division, the bank said in a statement yesterday. 
+
+তিনি ব্যাংটির কর্পোরেট ও প্রাতিষ্ঠানিক ব্যাংকিং বিভাগটি পরিচালনা করবেন বলে ব্যাংকটির একটি বিবৃতিতে গতকাল এ কথা জানান হয়। 
+
+► Prior to the appointment, he was the senior executive vice president and head of relationships & structured finance unit of Eastern Bank’s corporate banking division. 
+
+এই নিয়োগের পূর্বে তিনি ইস্টার্ণ ব্যাংকের সিনিয়র এক্সিকিউটিভ ভাইস প্রেসিডেন্ট ও কর্পোরেট ব্যাংকিং শাখার সম্পর্ক ও কাঠামোগত অর্থ শাখার প্রধান হিসাবে দায়িত্বপ্রাপ্ত ছিলেন। 
+
+He started his career at Credit Agricole Indosuez in 1995 and also worked at Standard Chartered Bank. 
+
+১৯৯৫ সালে তিনি তার কর্মজীবন শুরু করেন “ক্রেডিট এগ্রিকোল ইন্দোসিউজে” এবং পরবর্তিতে তিনি স্ট্যান্ডার্ড চাটার্ড ব্যাংকেও কর্মরত ছিলেন। 
+
+
+সম্পূর্ণ বাক্য (অনুবাদ সহ) সম্প্রতি প্রাইম ব্যাংকের ডেপুটি ম্যানেজিং ডিরেক্টর ও প্রধান ব্যবসায় কর্মকর্তা হিসাবে নিয়োগ পেলেন ফয়সাল রহমান। তিনি ব্যাংটির কর্পোরেট ও প্রাতিষ্ঠানিক ব্যাংকিং বিভাগটি পরিচালনা করবেন বলে ব্যাংকটির একটি বিবৃতিতে গতকাল এ কথা জানান হয়। এই নিয়োগের পূর্বে তিনি ইস্টার্ণ ব্যাংকের সিনিয়র এক্সিকিউটিভ ভাইস প্রেসিডেন্ট ও কর্পোরেট ব্যাংকিং শাখার সম্পর্ক ও কাঠামোগত অর্থ শাখার প্রধান হিসাবে দায়িত্বপ্রাপ্ত ছিলেন। ১৯৯৫ সালে তিনি তার কর্মজীবন শুরু করেন “ক্রেডিট এগ্রিকোল ইন্দোসিউজে” এবং পরবর্তিতে তিনি স্ট্যান্ডার্ড চাটার্ড ব্যংকেও কর্মরত ছিলেন। 
++4
+
+Faisal Rahman has recently been appointed deputy managing director and chief business officer of Prime Bank. He will lead the bank’s corporate and institutional banking division, the bank said in a statement yesterday.  Prior to the appointment, he was the senior executive vice president and head of relationships & structured finance unit of Eastern Bank’s corporate banking division. He started his career at Credit Agricole Indosuez in 1995 and also worked at Standard Chartered Bank. 
++2
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-২৯) 
+
+The Daily Star পত্রিকার অনুবাদ 
+
+At least 1,552 people were killed in road accidents across the country between January and April this year said a report published by National Committee to Protect Shipping, Roads and Railways (NCPSRR), a non-government organization, on Saturday. 
+
+The organization prepared the report based on 22 national dailies, 10 regional newspapers and eight online news portals and news agencies. 
+
+According to the report, 411 people, including 53 women and 71 children, lost lives and 725 others were injured in 383 accidents in January. 
+
+Some 401 accidents occurred in February where 415 people were killed and 884 others injured. 
+
+Among the deceased, 58 were women and 62 children. 
+
+শব্দগুচ্ছের অর্থ 
+
+সারা দেশে- across the country 
+
+প্রকাশিত এক প্রতিবেদনে বলা হয়েছে- said a report published 
+
+এই প্রতিবেদনটি প্রস্তুত করেছিল- prepared the report 
+
+ভিত্তি করে- based on 
+
+২২টি জাতীয় দৈনিক, ১০টি আঞ্চলিক সংবাদপত্র, ৮টি অনলাইন সংবাদ মাধ্যম এবং সংবাদ সংস্থাগুলির খবরের উপর 22 national dailies, 10 regional newspapers and 8 online news portals and news agencies. 
+
+রিপোর্ট অনুযায়ী- According to the report, 
+
+ফেব্রুয়ারি মাসে দুর্ঘটনা ঘটেছে- accidents occurred in February 
+
+
+সম্পূর্ণ অনুবাদ জাহাজ, সড়ক ও রেলওয়ে রক্ষার জাতীয় কমিটি (এনসিপিএসআরআর) নামক একটি বেসরকারি সংস্থা কর্তৃক শনিবার প্রকাশিত এক প্রতিবেদনে বলা হয়েছে, জানুয়ারি থেকে এপ্রিলের মধ্যে সারা দেশে সড়ক দুর্ঘটনায় অন্তত ১৫৫২ জন মানুষ নিহত হয়েছে। প্রতিষ্ঠানটি এই প্রতিবেদনটি প্রস্তুত করেছিল ২২টি জাতীয় দৈনিক, ১০টি আঞ্চলিক সংবাদপত্র, ৮টি অনলাইন সংবাদ মাধ্যম এবং সংবাদ সংস্থাগুলির খবরের উপর ভিত্তি করে। রিপোর্ট অনুযায়ী, জানুয়ারি মাসে ৩৮৩টি দুর্ঘটনায় ৫৩ জন নারী এবং ৭১ জন শিশু সহ মোট ৪১১ জন নিহত এবং ৭২৫ জন আহত হয়েছে। ফেব্রুয়ারি মাসে ৪০১টির মত দুর্ঘটনা ঘটেছে যেখানে ৪১৫ জন মারা গেছে এবং ৮৮৪ জন আহত হয়েছে। নিহত ব্যক্তিদের মধ্যে ৫৮ জন নারী এবং ৬২ জন শিশু। 
++4
+
+
+রিয়েল লাইফ প্রজেক্ট (পর্ব-৩০) 
+
+(The Daily Star পত্রিকার অনুবাদ) 
+
+
+Revive the Mosquito Control Department 
+
+At a time when the residents of Dhaka are suffering from the unending menace of mosquitoes, the Mosquito Control Department, situated in Old Dhaka, is sitting idle with its limited authority to control the problem. 
+
+ঢাকার অধিবাসীরা- the residents of Dhaka 
+
+মশার অশেষ অত্যাচারে – unending menace of mosquitoes 
+
+এই সমস্যা মোকাবেলায়- to control the problem 
+
+পুরাতন ঢাকায় অবস্থিত – situated in Old Dhaka 
+
+তার সীমিত লোকবল নিয়ে – with its limited authority 
+
+অলস সময় পার করছিল - sitting idle 
+
+প্যারাটির পুরো অনুবাদ একটা সময় যখন ঢাকার অধিবাসীরা মশার অশেষ অত্যাচারে অতিষ্ঠ, তখন এই সমস্যা মোকাবেলায় পুরাতন ঢাকায় অবস্থিত মশা নিয়ন্ত্রণ অধিদপ্তর তার সীমিত লোকবল নিয়ে অলস সময় পার করছিল। 
++1
+
+A Daily Star report published on June 9 reveals that the office building of the department itself is a breeding ground for mosquitoes and being used mostly as a warehouse for storing insecticides. 
+
+৯ জুন প্রকাশিত ডেইলি স্টার এর একটি প্রতিবেদনে জানা যায় যে A Daily Star report published on June 9 reveals that 
+
+অফিস ভবনটি নিজেই - the office building itself 
+
+একটি মশা প্রজননের স্থান- breeding ground for mosquitoes 
+
+একটি গুদাম হিসাবে ব্যবহৃত হয়ে আসছে- being used as a warehouse 
+
+কীটনাশক সংরক্ষণের জন্য- for storing insecticides 
+
+সম্পূর্ণ প্যারার অনুবাদ ৯ জুন প্রকাশিত ডেইলি স্টার এর একটি প্রতিবেদনে জানা যায় যে, উক্ত অধিদপ্তরের অফিস ভবনটি নিজেই একটি মশা প্রজননের স্থান যা প্রধানত কীটনাশক সংরক্ষণের জন্য একটি গুদাম হিসাবে ব্যবহৃত হয়ে আসছে। 
++1
+
+► When the department was established in 1948 to eradicate malaria, it had a strong workforce that carried out regular drives against mosquitoes and the breeding grounds. 
+
+But currently, its so called 281-strong staff have little to do because the department is not empowered enough to carry out any activity on its own. 
+
+ম্যালেরিয়া নির্মূল করার জন্য- to eradicate malaria 
+
+শক্তিশালী জনবল ছিল – strong workforce 
+
+মশা এবং তাদের প্রজনন স্থানের বিরুদ্ধে- against mosquitoes and the breeding grounds 
+
+নিয়মিত অভিযান পরিচালনা করতো- carried out regular drives 
+
+কিন্তু বর্তমানে, - But currently, 
+
+অধিদপ্তরটি যথেষ্ঠ পরিমান ক্ষমতাপ্রাপ্ত নয়- the department is not empowered enough 
+
+যা দিয়ে তারা নিজেরা কোন কর্মতৎপরতা চালাতে পারে - to carry out any activity on its own. 
+
+সম্পূর্ণ প্যারার অনুবাদ ১৯৪৮ সালে ম্যালেরিয়া নির্মূল করার জন্য যখন এই অধিদপ্তর প্রতিষ্ঠিত হয়, তখন এর শক্তিশালী জনবল ছিল যা মশা এবং তাদের প্রজনন স্থানের বিরুদ্ধে নিয়মিত অভিযান পরিচালনা করতো।  কিন্তু বর্তমানে, ইহার তথাকথিত শক্তিশালী ২৮১ জন কর্মচারীর! খুবই সামান্য কিছু করবার আছে কারন এই অধিদপ্তরটি যথেষ্ঠ পরিমান ক্ষমতাপ্রাপ্ত নয় যা দিয়ে তারা নিজেরা কোন কর্মতৎপরতা চালাতে পারে। 
+
+
+Chapter-8
+Essential Grammar
+
+Preposition শেখার এর ৩০টি গুরুত্বপূর্ণ রুল
+
+Preposition কাকে বলে? Preposition হল এমন শব্দ যা কোন Noun, pronoun, Noun phrase এর আগে বসে তার সাথে বাক্যস্থিত অন্য কোন শব্দের সম্পর্ক প্রকাশ করে। যেমনঃ I go to University. এখানে to শব্দটি go এবং University এর মধ্যে সম্পর্ক তৈরি করে।
+
+সাধারণ নিয়মাবলীঃ
+
+২৪ ঘন্টার বড় সময় (দিন, সপ্তাহ, মাস, বছর, সাল,) ইত্যাদির পূর্বে in বসে। (যেমনঃ in 1980, in February etc.)
+
+২৪ ঘন্টার ছোট সময় (সকাল, দুপুর, বিকাল, সন্ধ্যা, রাত, ঘড়ির সময়) ইত্যাদির পূর্বে at বসে। (নোটঃ সকাল হতে সন্ধ্যা অবধি সময়ের পূর্বে the থাকলে তার পূর্বে in বসে। যেমনঃ in the morning)
+
+দিবস, তারিখ, সাপ্তাহিক বার ইত্যাদির পূর্বে on বসে।
+
+বড় স্থান/জায়গার পূর্বে in ও ছোট স্থান/জায়গার পূর্বে at বসে।
+
+Perfect continuous tense এর ক্ষেত্রে সময়ের সমষ্টির পূর্বে for এবং নির্দিষ্ট সময়ের পূর্বে since বসে।
+
+কোন কিছু স্পর্শ করে আছে বুঝালে তার পূর্বে on বসে।
+
+শূণ্যস্থানের পরের শব্দ verb এর present (base from) হলে শূণ্যস্থানে to বসে।
+
+Preposition রুলসমূহ
+
+At এর ব্যবহার
+
+ছোট স্থান/শহর/জায়গার পূর্বে at বসে। যেমনঃ He lives at lalbag
+
+নির্দিষ্ট সময় বুঝাতে at বসে। যেমনঃ I go to school at 9 am.
+
+দূরত্ব বুঝাতে at বসে। যেমনঃ Khulna is at 100 kilometers from here.
+
+দামের পূর্বে at বসে। যেমনঃ Potato sells at 10 tk. per kg.
+
+দায়িত্ব বুঝাতে at বসে। যেমনঃ You must do this at your own risk.
+
+বয়স বুঝাতে at বসে। যেমনঃ He passed S.S.C at 16.
+
+On এর ব্যবহার
+
+কোন কিছুর উপর সংলগ্ন বুঝাতে on বসে। যেমনঃ Keep the mobile on the table.
+
+বার/দিন/তারিখের পূর্বে on বসে। যেমনঃ I went there on Saturday.
+
+নদীর তীরে বুঝাতে on বসে। যেমনঃ Khulna is on the rupsha.
+
+নির্ভরতা বুঝাতে on বসে। যেমনঃ We live on rice.
+
+Floor এর সংখ্যা বুঝাতে on বসে। যেমনঃ The Bank is on the 5th floor.
+
+সম্বন্ধ বুঝাতে on বসে। যেমনঃ He wrote an essay on Liberation.
+
+In এর ব্যবহার
+
+বড় স্থানের পূর্বে in বসে। যেমনঃ I live in Bangladesh. Note: (“I live in Bangladesh at Dhaka” উদাহরণটিতে লক্ষ্য করুন- Bangladesh বড় জায়গা হওয়ায় in ও Dhaka ছোট জায়গা হওয়ায় at বসেছে)
+
+কোন বিষয় বা ভাষা বুঝালে তার আগে in বসে। যেমনঃ In English, In Bengali. I wrote a novel in English.
+
+সময়ের ক্ষেত্রে বছর/মাসের পূর্বে In বসে। যেমনঃ He was born in 1980.
+
+পেশার পূর্বে In বসে। যেমনঃ He joined in navy.
+
+বিষয়ের পূর্বে In বসে। যেমনঃ He studies in History.
+
+অবস্থা বুঝাতে In বসে। যেমনঃ She is in happy mode.
+
+ক্ষেত্র বুঝাতে In বসে। যেমনঃ I have nothing to say in this regard.
+
+To এর ব্যবহার
+
+কোন স্থানে আসা এবং যাওয়া বুঝালে ঐ স্থানের আগে to বসে। যেমন: He goes to market. He went to Italy.
+
+ব্যক্তির কাছে বুঝালে তার আগে to বসে। যেমনঃ Razu came to me.
+
+অনুসারে বুঝাতে to বসে। যেমনঃ I work according to rule.
+
+সীমানার বাইরে বুঝাতে to বসে। যেমনঃ Korea is to the east of our country.
+
+OF এর ব্যবহার
+
+অধিকার/মালিকানা বুঝাতে Of বসে। যেমনঃ This is the car of Mr Azad.
+
+উপকরণ বুঝাতে Of বসে। যেমনঃ The Briefcase is made of leather.
+
+কারণ বুঝাতে Of বসে। যেমনঃ The man died of cancer.
+
+সম্পর্ক বুঝাতে Of বসে। যেমনঃ I know everything of it.
+
+Over এর ব্যবহার
+
+কোন কিছু স্পর্শ না করে উপরে বুঝাতে Over বসে। যেমনঃ The plane is over the field.
+
+মাধ্যম বুঝাতে Over বসে। যেমনঃ He talked over telephone.
+
+বিপরীত পাশ বুঝাতে Over বসে। যেমনঃ They live over the road.
+
+অধিক বুঝাতে Over বসে। যেমনঃ Simu was in India for over a month.
+
+সমগ্র/সারা অর্থ বুঝাতে Over বসে। যেমনঃ They have traveled over the world.
+
+Above এর ব্যবহার
+
+সংযুক্ত না হয়ে উপরে বুঝাতে Above বসে। যেমনঃ The fan is above my head.
+
+মানের উপরে বুঝাতে Above বসে। যেমনঃ I got above 90% marks in history.
+
+Between ও Among এর ব্যবহার Between: দুইয়ের মধ্যে বুঝাতে/তুলনা করতে Between বসে। যেমনঃ Bangladesh will win between India & England. Divide the apple between the two boys. Among: দুইয়ের অধিকের মধ্যে বুঝাতে/তুলনা করতে Among বসে। যেমনঃ Bangladesh will win among 30 countries. Divide the apple between the boys.
+
+With এর ব্যবহার
+
+সাথে বুঝাতে With বসে। যেমনঃ He came with me.
+
+দ্বারা/দিয়া বুঝাতে With বসে। যেমনঃ I write with this pen.
+
+For এর ব্যবহার
+
+জন্য বুঝাতে For বসে। যেমনঃ I would like to do something for you.
+
+সময়ের আগে ধরে/যাবৎ/ব্যাপিয়া বুঝাতে For বসে। যেমনঃ He has been working for 4 hours.
+
+কারণ বুঝাতে For বসে। যেমনঃ I will go to India for a tour.
+
+মূল্য বুঝাতে For বসে। যেমনঃ I have bought a Mobile for 5000 tk.
+
+সাহায্য অর্থে বুঝাতে For বসে। যেমনঃ Please do this favor for me.
+
+By এর ব্যবহার
+
+পাশে বুঝাতে By বসে। যেমনঃ She sat by me.
+
+পথ অর্থে বুঝাতে By বসে। যেমনঃ They will go there by road.
+
+কোন উপায় বা পদ্ধতি বুঝাতে তার আগে By বসে। যেমনঃ By hard work.
+
+মাধ্যম বুঝাতে By বসে। যেমনঃ He achieved success by hard labour.
+
+পরিমাপ বুঝাতে By বসে। যেমনঃ The table is 2 feet by 3 feet.
+
+হার বুঝাতে By বসে। যেমনঃ He is improving day by day.
+
+From এর ব্যবহার কারো নিকট হতে অথবা কোন স্থান হতে/থেকে বুঝালে ব্যক্তির বা স্থানের আগে From বসে। যেমনঃ তোমার নিকট হতে - From you, খুলনা থেকে - from Khulna He bought sweets from market.
+
+Into এর ব্যবহার
+
+বাইরে থেকে ভিতরে বুঝাতে Into বসে। যেমনঃ The boy entered into the room.
+
+সংঘর্ষ বুঝাতে Into বসে। যেমনঃ The car crashed into a parked microbus.
+
+সংখ্যায় ভাগ হওয়া বুঝাতে Into বসে। যেমনঃ They were divided into five groups
+
+Within এর ব্যবহার নির্দিষ্ট সময়ের মধ্যে বুঝাতে Within বসে। যেমনঃ I will come back within 20 minutes.
+
+Towards এর ব্যবহার দিকে বা বরাবর বোঝাতে Towards বসে। যেমনঃ I’m going towards university.
+
+Before এর ব্যবহার
+
+পূর্বে বুঝাতে Before বসে। যেমনঃ Rina came before launch.
+
+সম্মুখে বুঝাতে Before বসে। যেমনঃ Rina stood before me.
+
+After এর ব্যবহার
+
+‘পরে’ অর্থ প্রকাশ করতে After বসে। যেমনঃ I will play after study.
+
+চলমান অবস্থার পিছনে বুঝাতে After বসে। যেমনঃ Police run after the criminal.
+
+Below এর ব্যবহার নিচে অর্থ প্রকাশ করতে Below বসে। যেমনঃ We live below the sky. Please see the rule which is given below.
+
+Under এর ব্যবহার
+
+নিচে অর্থ প্রকাশ করতে Under বসে। যেমনঃ Let’s sit under the tree.
+
+বিবেচনাধীন অর্থ প্রকাশ করতে Under বসে। যেমনঃ This case is under the court.
+
+অধীনে অর্থ প্রকাশ করতে Under বসে। যেমনঃ He serves under me.
+
+Across এর ব্যবহার এক প্রান্ত থেকে অন্য প্রান্ত বুঝাতে across বসে। যেমনঃ Poverty is increasing across the country. Go across the street
+
+Along এর ব্যবহার বরাবর অর্থ প্রকাশ করতে along বসে। যেমনঃ Go along the bed.
+
+Through এর ব্যবহার কোন কিছুর মাধ্যমে বা মধ্যদিয়ে বুঝাতে Through বসে। যেমনঃ They went our village Through the forest
+
+Against এর ব্যবহার
+
+বিরুদ্ধে বুঝাতে Against বসে। যেমনঃ We fought against Pakistan in liberation war.
+
+বিপরীত অর্থ বুঝাতে Against বসে। যেমনঃ Rina Sat against the wall.
+
+About এর ব্যবহার
+
+সম্বন্ধে অর্থ প্রকাশ করতে About বসে। যেমনঃ Rafiq told me about the game.
+
+প্রায় অর্থ প্রকাশ করতে About বসে। যেমনঃ The movie is about to end.
+
+Beside এর ব্যবহার পাশে অর্থ প্রকাশ করতে beside বসে। যেমনঃ She sat beside me.
+
+Behind এর ব্যবহার পিছনে অর্থ প্রকাশ করতে behind বসে। যেমনঃ Please stay behind me.
+
+Beyond এর ব্যবহার সাধ্যের বাইরে বুঝাতে Beyond বসে। যেমনঃ The price of the Dress is beyond my budget.
+
+Down এর ব্যবহার উপর থেকে নিচে বুঝাতে Down বসে। যেমনঃ He fell down from a building.
+
+Since এর ব্যবহার নির্দিষ্ট সময় বুঝাতে Since বসে। যেমনঃ It has been raining since morning.
+
+Without এর ব্যবহার ছাড়া/ব্যতিত বুঝাতে without বসে। যেমনঃ Fish cannot live without water
+
+Verb
+
+Verb প্রধানত দুই প্রকার। যথা:
+
+Finite Verb
+
+Non finite Verb
+
+Finite Verb (সমাপিকা ক্রিয়া): যে Verb দ্বারা বাক্যের বক্তব্য পরিপূর্ণভাবে প্রকাশ পায় এবং Subject অনুযায়ী number/person অনুসারে রূপ পরিবর্তন হয় তাকে Finite Verb বলে। যেমনঃ Azad works in a bank. They respect the teacher very much. উপরের উদাহরনে লক্ষ্য করুন, Azad (subject) third person singular number হওয়ায় work (verb) এর সাথে s যুক্ত হয়েছে। আবার দ্বিতীয় উদাহরণে They Plural হওয়ায় verb এর সাথে s/es যুক্ত হয়নি।
+
+Non-finite Verb (অসমাপিকা ক্রিয়া): Subject এর Number ও Person দ্বারা যে Verb এর কোন রূপের পরিবর্তন হয় না তাকে Non-finite Verb বলে। এটা কখনো main verb হয় না ও এই Verb দ্বারা কোন বাক্যের অর্থ সম্পূর্ণ প্রকাশ পায় না। যেমনঃ I come home walking. He gives me to eat. I want sakib to act as club secretary. উপরের উদাহরণে লক্ষ্য করুন, Subject (I) পরিবর্তন হলেও Walking (verb) টি পরিবর্তন হবে না। এখানে walking শব্দটি Non-finite Verb, একইভাবে দ্বিতীয় বাক্যে to eat তৃতীয় বাক্যে to act ও Non-finite Verb.
+
+Shortcut Tips- 1
+
+Finite Verb- Shows tense, person & number
+
+Non-finite Verb – Does not shows tense, person & number
+
+Shortcut Tips- 2 ৩টি কমন structure যা থাকলে অবশ্যই Non-finite Verb হবে।
+
+To + V1= To go.
+
+v + ing (except continuous tense)
+
+v3 (except perfect tense)
+
+এ ৩টি ব্যতীত সব finite verb.
+
+Finite Verb দুই প্রকার। যথা:
+
+Principal Verb
+
+Auxiliary Verb
+
+1. Principal Verb (প্রধান ক্রিয়া): যে Verb অন্য Verb এর সাহায্য ছাড়াই নিজেই স্বাধীনভাবে সম্পূর্ণ অর্থ প্রকাশ করে ও ক্রিয়া সম্পাদন করে তাকে Principal Verb বলে। Example: They play in the field (তারা মাঠে খেলে) Principal Verb আবার দুই প্রকার। যথা: Transitive Verb (সকর্মক ক্রিয়া) ও Intransitive Verb (অকর্মক ক্রিয়া):
+
+Transitive Verb (সকর্মক ক্রিয়া) যে সমস্ত Verb এর Object বা কর্ম থাকে তাদেরকে Transitive Verb বলে। Example: The baby is drinking milk. শিশুটি দুধ পান করছে। I have bought a book. আমি একটি বই কিনেছি।
+
+Intransitive Verb (অকর্মক ক্রিয়া): যে Verb এর Object বা কর্ম থাকে না তাদেরকে Intransitive Verb বলে। Example:
+
+The man died. (লোকটি মারা গিয়েছিল) He went. সে গিয়েছিল।
+
+2. Auxiliary Verb (সাহায্যকারী ক্রিয়া): Auxiliary Verb কে সাহায্যকারী Verb বলা হয়। Sentence এ ব্যবহৃত যে সব Verb Principal Verb কে সহায়তা করে, সেসকল Verb কে Auxiliary Verb বলে। Auxiliary Verbs Sentence এ ব্যবহৃত হয়ে নিজে কোন অর্থ প্রকাশ করে না। Auxiliary Verb এর তালিকা: am, is, are, was, were, be, being, been, have, has, had ইত্যাদি। Example: I am watching TV. He has bought a smartphone.
+
+Modal Auxiliaries: Modal Auxiliaries মূল Verb এর অর্থকে প্রভাবিত করে ও ক্রিয়া সম্পাদনের জন্য যে Auxiliaries ব্যবহার হয় সেসবকে Modal Auxiliaries বলে। Modal Auxiliaries এর তালিকা: Can/could, may/might, shall/should, will/would, must, dare, need, ought to, used to, have to, be going to, be to, would rather, had better ইত্যাদি। Example: I can speak English Could you help me to solve the problem? It may rain today.
+
+Right forms of verbs এর ৫০টি গুরুত্বপূর্ণ রুল
+
+Rule- 1. Present Indefinite Tense এর subject যদি third person singular number হয় তাহলে verb এর শেষে s, es যোগ হবে। subject যদি plural number হয় তাহলে verb এর শেষে s/es যোগ হবে না। যেমনঃ He plays football. She writes a letter. They play football.
+
+Rule- 2. Present indefinite Tense এর বাক্যের subject third person ও singular number বাক্যটি যদি negative হয় তাহলে তাতে does not ব্যবহৃত হয় এবং তখন verb এর সাথে s/es হয় না। যেমনঃ He goes to market. (Affirmative) (সে বাজারে যায়) He does not go to market. (Negative) (সে বাজারে যায় না)
+
+Rule- 3. Modal Auxiliary verb (Can, could, may, might, shall, should, will, would, must, need, dare, have to etc.) এর পরে verb এর present form বসে এবং verb এর সাথে কোন কিছু যোগ হয় না। যেমনঃ He can do the work. I shall go to University. You should study attentively. You must obey your parents.
+
+শর্টকাট টেকনিক (Right forms of verbs)
+
+Verb (Base form)	Example
+Present indefinite	He goes to School.
+Future indefinite	I shall play football.
+Modal auxiliary	You must obey your teacher.
+Universal truth	The sun rises in the east.
+Habit	They go to gym everyday.
+Had better	You had better go there.
+Would rather	I would rather starve than beg.
+Lest	You must study hard, lest you fail.
+Infinitive	I like to take coffee.
+Verb (ing)	Example
+Present Continuous	He is going to university.
+Past Continuous	I was playing football.
+Future Continuous	I shall be reading the book.
+Preposition	He is capable of solving the problem.
+Can/could not help	She cannot help laughing.
+While	While playing in the field, a man calls him.
+Would you mind?	Would you mind opening the door?
+Gerund	Swimming is a good exercise.
+Present participle	I saw him playing.
+Verb (Past participle)	Example
+Present perfect	I have done the work.
+Past perfect	I had given the mobile.
+Future perfect	They will have finished the work.
+Having	Having learnt Computer I will go to UK.
+Passive voice	Football is played by them.
+To be......	It is to be done as soon as possible.
+Rule- 4. Sentence এ yet, just, just now, recently, already, lately, ever ইত্যাদি থাকলে present perfect tense হবে। যেমনঃ I have seen him lately. Have you ever been to Coxbazar?
+
+২৪ তম বিসিএস পরীক্ষা Just now he.....his dinner but he says he will see you when he’s finished. a) is having b) has had c) was having d) had Ans: b) has had
+
+Rule- 5. বাক্যটি যদি universal truth (চিরন্তন সত্য) হয় এবং অভ্যাসগত কাজ বোঝায় তাহলে present indefinite tense হবে। যেমনঃ The earth moves round the sun. The sun rises in the east.
+
+Rule- 6. While এর পর verb থাকলে সেটির সাথে ing যোগ হয়। কিন্তু while এর পর subject থাকলে এর অংশটি past continuous tense হয়। While it was raining, I was watching TV. While taking dinner, he received the phone.
+
+২৪ তম বিসিএস পরীক্ষা Don’t make the noise while your father..... a) is being asleep b) is sleeping c) asleep d) has slept Ans: b) is sleeping
+
+Rule- 7. Simple Sentence এ দুটি verb থাকলে দ্বিতীয় verb এর সাথে ing যোগ হয়। যেমনঃ He saw the boy playing in the field. I heard him speaking English.
+
+Rule- 8. Had rather, let, would better, had better, need not, do not, does not, did not, did never ইত্যাদি এরপর present form of verb বসে। যেমনঃ I had better go home. I would rather die than beg. I won’t let you go.
+
+Rule- 9. Sentence এ yesterday, ago, as soon as, last year, last month, that day, day before ইত্যাদি থাকলে past indefinite tense হবে। যেমনঃ He came home yesterday I went to Khulna last month. He didn’t go to University yesterday.
+
+২৪তম বিসিএস পরীক্ষা I opened the door as soon as I.....the bell. a) have heard b) was hearing c) am heard d) heard Ans: d) heard
+
+Rule- 10. Mind, would you mind, Do you mind, could not help, cannot help এর পরে verb এর সাথে ing যোগ হয়। যেমনঃ Do you mind keeping the phone here? (এখানে ফোনটি রাখলে তোমার অসুবিধা হবে কি?) Would you mind closing the door? (দরজাটি বন্ধ করলে আপনার সমস্যা হবে?)
+
+Rule- 11. With a view to/look forward to, get used to এর পর verb এর সাথে ing যোগ হবে। যেমনঃ I'm looking forward to seeing you ( আমি তোমার পথপানে তাকিয়ে আছি) I went shopping with a view to buying a mobile.
+
+৩৩ তম বিসিএস পরীক্ষা We look forward....a response from you. a) to receiving b) to receive c) in receiving d) for receiving Ans: a) to receiving
+
+Rule- 12. Each, every, either, neither, everyone, everybody, One of the, everything, anybody, nobody, no one, nothing, anything ইত্যাদি থাকলে verb এর singular number ব্যবহৃত হয়। যেমনঃ Each of the students was present. One of the robbers was very clever. Neither of the two brothers was present in the class.
+
+Rule- 13. ব্র্যাকেটে (be) থাকলে person, number এবং tense অনুযায়ী am/is/are/was/were/been হবে। যেমনঃ Allah (be) everywhere. Allah is everywhere. It (be) ten years ago. It was ten years ago. One of my friends (be) a polite person. One of my friends is/was a polite person.
+
+Rule- 14. বই/দেশের নাম দেখতে plural হলেও তাদের পরে singular verb বসে। যেমনঃ “The hundreds” is a famous book. (“দা হানড্রেডস” একটি বিখ্যাত বই) The United States of America is a rich country. (যুক্তরাষ্ট্র একটি ধনী দেশ)
+
+Rule- 15. কোন Sentence যদি Gerund দ্বারা শুরু হয়, অর্থাৎ, Subject এর স্থানে Verb থাকে তবে সেক্ষেত্রে অবশ্যই Verb+ing যুক্ত হবে। যেমনঃ Walking is a good exercise. (হাটা খুব ভাল ব্যায়াম) Helping the poor is a quality of an honest guy (দরিদ্রকে সাহায্য করা একজন সৎ লোকের গুণ) Being honest is a great virtue (সৎ হওয়া একটা মহৎ গুণ)
+
+Rule- 16. Sentence এ যদি now বা at this moment থাকে, তাহলে Verb এর Present Continuous Tense হয়। যেমনঃ The boy is coming now. We are eating now. They are playing in the field at this moment.
+
+Rule- 17. Always, often, regularly, sometimes, daily, everyday ইত্যাদি থাকে (এক্ষেত্রে যদি সময়ের উল্লেখ না থাকে), তবে present indefinite tense হবে। যেমনঃ Tipu always disturbs me. He prepares his assignment regularly.
+
+Rule- 18. Sentence এর শুরুতে যদি would that থাকে তাহলে subject এর পর could বসে এবং এরপর verb এর present form বসে। যেমনঃ Would that I could be a writer like William Shakespeare. Would that I could buy a Samsung Smartphone. Would that I could visit Sent martin!
+
+Rule- 19. Adjective এর আগে the বসলে subject টি plural হয় এবং সেই অনুযায়ী verb বসে। যেমনঃ The rich are not always happy. The poor live from hand to mouth.
+
+Rule- 20. As if, as though দ্বারা দুইটি clause যুক্ত হলে প্রথম clause টির verb present tense এর হলেও পরবর্তী clause টির verb এর past indefinite tense হয়। যেমনঃ He talks as if he were (was নয়) fool - সে বোকার মত কথা বলে। The Man behaves as if he owned the property - লোকটির হাবভাব দেখে মনে হয় সে যেন এই সম্পত্তির মালিক।
+
+৩০তম বিসিএস পরীক্ষা Rishan walks as if he.....lame. a) is b) had been c) has d) were Ans: d) were
+
+Rule- 21. To এর পরে সাধারণত verb এর present form বসে। You need to go there in time. I will go to market to buy a mobile.
+
+Rule- 22. Since বা for এর পর সময়ের উল্লেখ থাকলে সেটি present perfect continuous tense হবে। He has been playing cricket since morning. They have been waiting for 2 hours.
+
+Rule- 23. যদি had/if যুক্ত clause টি past indefinite tense হয় তাহলে পরের clause টি তে subject এর পর would/could/might বসে এবং verb এর present form হয়। If he came, I would go to the market. If I were rich enough, I would go to America. যদি had/if যুক্ত clause টি past perfect tense হয় তাহলে পরের clause টি তে subject এর পর would have/could have/might have বসে এবং verb এর past participle form হয়। যেমন: If he had come, I would have gone home.
+
+Rule- 24. একই দৈর্ঘ্য, পরিমাণ বা স্থান বুঝালে subject দেখতে plural হলেও verb singular হয়। যেমন:
+
+40 miles is a long way- ৪০ মাইল দীর্ঘ পথ 10 Minutes is enough to explain this topic (এই বিষয়টি ব্যাখ্যা করবার জন্য ১০ মিনিট সময়ই যথেষ্ট) 6,000 Taka is enough to buy a new mobile (একটি নতুন মোবাইল ফোন কিনতে ৬,০০০ টাকাই যথেষ্ট)
+
+Rule- 25. Wish/fancy/it is time/it is high time ইত্যাদি থাকলে verb এর past tense হবে। I wish I won the game. It is high time you changed your bad habits.
+
+Rule- 26. (can, could, may, might, shall, should, will, would etc.) এর পরে যদি be থাকে verb এর past participle form বসে। যেমনঃ It can be done. It can be written. This problem can be solved.
+
+Rule- 27. বর্তমানে কোন কাজ সম্পন্ন হয়েছে এরূপ অনুমান বুঝালে তখন verb এর future perfect tense হবে, Subject + shall/will + have + verb (past participle) যেমন: Ruhi will have reached New Market by this time. রুহী হয়ত (নিশ্চিত অনুমান) এতক্ষনে নিউমার্কেট পৌছে থাকবে।
+
+Rule- 28. If দ্বারা যুক্ত clause টি যদি present indefinite tense হয় তাহলে পরের clause টি future indefinite tense হবে। If he comes, I’ll go. If you want it, I’ll buy.
+
+Rule- 29. By এর পর verb এর সাথে ing যোগ হবে। You can solve it by trying more. You can enjoy the game by watching TV.
+
+Rule- 30. বাক্যে have/has থাকলে সেটি present perfect tense হবে। I have finished the word. He has done the work.
+
+Rule- 31. For, of, in, without, with, before, after ইত্যাদি preposition এর পরে verb এর সাথে ing যোগ হয়। You can’t go to office without taking permission.
+
+Rule- 32. বর্তমান কালে চলছে এমন কোন কাজ বোঝালে present continuous tense হয়। He is watching the game at the stadium. They are playing cricket.
+
+Rule- 33. কোন sentence যদি there দ্বারা শুরু হয় এবং তারপর singular number থাকে তবে there এর singular verb হয়, আর যদি there এর পর plural number থাকে তবে plural verb হয়। যেমন: There is a mosque in this village. There are deer in this jungle.
+
+Rule- 34. Main clause এর verb টি past tense হলে ও পরের অংশে next day, next week, next month, next year ইত্যাদি উল্লেখ থাকলে subject এর পরে should/would বসে। যেমন: He told that he would come here the next year.
+
+Rule- 35. দুইয়ের অধিক pronoun/subject যদি and দিয়ে যুক্ত হলে verb টি plural হয়। যেমন: You, he and I are going to the market.
+
+Rule- 36. Interrogative sentence এর যদি who, why, what, which, when ইত্যাদি question word দিয়ে শুরু হয় তাহলে subject এর আগে tense ও person অনুযায়ী auxiliary verb ব্যবহার করতে হবে। যেমন: What you (say)? Ans: What do you say? Why he (learn) English? Ans: Why does he learn English?
+
+Rule- 37. since দ্বারা দুটি clause যুক্ত থাকলে এবং since এর আগের অংশ present indefinite/present perfect tense হলে পরের অংশ verb এর past indefinite tense হয়। যেমন: It is many years since he came to Dhaka.
+
+Rule- 38. since দ্বারা clause যুক্ত থাকলে এবং since এর আগে clause বা বাক্যের অংশ past indefinite tense হলে পরের অংশ verb এর past perfect tense হয়। যেমন: Many years passed since I had lost my camera.
+
+Rule- 39. কোন sentence এর subject singular number হলে verb singular হয় এবং subject plural number হলে verb plural হয়। যেমন: He is a good guy. They are playing football.
+
+Rule- 40. কোন sentence যদি it দ্বারা শুরু হয় তাহলে তার পরবর্তী verb singular number হবে। যেমন: It (to be) very easy to do. Ans: It is very easy to do.
+
+Rule- 41. Passive voice এর সময় tense ও person অনুযায়ী auxiliary verb ও verb এর past participle form বসে। English is spoken all over the world. We are taught English by online.
+
+Rule- 42. Lest দ্বারা দুটি clause যুক্ত থাকলে, Lest এর পরবর্তী subject এর সাথে modal auxiliary (should/might) বসে। যেমন: Read attentively lest you should fail in the exam.
+
+Rule- 43. Each, any, no, some, something এসব শব্দের পরে singular noun থাকলে auxiliary Verb ও singular হবে। যেমন: Each and everyone has the right to say this. প্রত্যেকেরই এটা বলার অধিকার আছে। Something was under the table. টেবিলের নিচে কিছু ছিল।
+
+Rule- 44. After এর পরের এবং before এর আগের clause টি past perfect tense হবে এবং অন্য clause টি past indefinite tense হবে। যেমন: The bus had left the station before we reached.
+
+Rule- 45. একাধিক subject “and” দিয়ে যুক্ত হলে plural verb হয়। যেমনঃ She and he are siblings. Tomal and Tarek are good friends.
+
+Rule- 46. Uncountable noun (Oxygen, air, water, milk, smoke) ইত্যাদির ক্ষেত্রে singular verb হয়। যেমনঃ Milk is good for health. Water is very important for life.
+
+Rule- 47. Verb “to be” বিহীন sentence কে Negative করতে হলে Tense ও subject এর Number ও person অনুসারে do, does, did ব্যবহার করতে হবে। যেমনঃ We not (play) cricket Ans: We don’t play cricket
+
+Rule- 48. বাক্যে Tomorrow, next, coming, in the days ইত্যাদি থাকলে future indefinite tense হয়। Example: I will go to university tomorrow. He will come here next week.
+
+Rule- 49. Having এর পরে মূল verb এর past participle হয়। যেমনঃ Having learnt Computer I will go to America (কম্পিউটার শিখে আমি আমেরিকা যাব)
+
+Rule- 50. “To be” verb (am, is, are, was, were) ইত্যাদি থাকলে Passive voice এর ক্ষেত্রে verb এর past participle হয়। যেমনঃ The laptop was stolen by thief.
+
+The Modal Auxiliaries যে সমস্ত Auxiliary Verbs মূল Verb এর সাথে যুক্ত হয়ে বিভিন্ন অর্থ প্রকাশ করে তাকে Modal Auxiliaries বলে। Modal Auxiliaries এর তালিকা: Can/could, may/might, shall/should, will/would, must, dare, need, ought to, used to, have to, be going to, be to, would rather, had better. Note: Modal verb এর পরে verb এর সাথে কোন কিছু (S, es, ing) যোগ না হয়ে verb এর present form বসবে।
+
+Uses of Modal Auxiliaries
+
+Can এর ব্যবহার
+
+Permission (অনুমতি) বুঝাতে Present এবং Future Tense এ সকল Person এ can ব্যবহৃত হয়। যেমনঃ Can I use the Mobile? (আমি কি মোবাইলটি ব্যবহার করতে পারি?)
+
+Ability (ক্ষমতা বা সামর্থ্য) বুঝাতে: যেমনঃ I cannot swim (আমি সাঁতার কাটতে পারিনা) She can draw well (সে ভালো আঁকতে পারে)
+
+Request বুঝাতে: যেমনঃ Can you give me a hand? (তুমি কি আমাকে সাহায্য করতে পার?)
+
+Suggestion (প্রস্তাব) বুঝাতে: যেমনঃ I can buy it if you want (যদি আপনি চান তবে আমি এটা কিনতে পারি)
+
+দক্ষতা বুঝাতে can ব্যবহৃত হয়। যেমনঃ I can speak English (acquired knowledge) (আমি ইংরেজি বলতে পারি)
+
+Could এর ব্যবহার
+
+Polite request বুঝাতে: যেমনঃ Could you help me to solve the problem? (তুমি কি আমাকে সমস্যাটি সমাধান করতে সাহায্য করতে পারবে?)
+
+Permission (অনুমতি) অর্থে: Could I use your book? (আমি কি বইটি ব্যবহার করতে পারি?)
+
+Suggestion (প্রস্তাব) বুঝাতে: You could consult to a lawyer about the matter. (আপনি এই বিষয় সম্পর্কে একজন আইনজীবীর সঙ্গে পরামর্শ করতে পারেন)
+
+Past ability (অতীত ক্ষমতা) বুঝাতে: When I was young, I could play football. (যখন আমি তরুণ ছিলাম, তখন আমি ফুটবল খেলতে পারতাম) “There is no shortcut way to success”
+
+May এর ব্যবহার কোন কাজের সম্ভাবনা বুঝাতে May বসে। যেমনঃ
+
+আজ বৃষ্টি আসতে পারে-- It may rain today.
+
+সে আজ যেতে পারে-- He may go today. অনুমতি চাওয়া বুঝাতে may বসে।
+
+আমি কি তোমায় সাহায্য করতে পারি? -- May i help you?
+
+আমি কি ভিতরে আসতে পারি? -- May i come in? ইচ্ছা বা প্রার্থনাসূচক বাক্যে May বসে।
+
+আল্লাহ তোমার মঙ্গল করুক! - May God bless you!
+
+তুমি দীর্ঘজীবি হও--May you live long. কোন ব্যক্তি বা বস্তুর ক্ষেত্রে "হতে পারে" বুঝালে may be বসে।
+
+কলমটি দামী হতে পারে - The pen may be costly.
+
+এটা গরম হতে পারে - This may be hot
+
+'Might' এর ব্যবহার:
+
+Possibility (সম্ভাবনা may থেকে কম সম্ভব) প্রকাশ করতে: যেমনঃ He might come today (তিনি আজ আসতে পারেন)
+
+Conditional এবং পূর্বে প্রকাশিত Past verb এর ক্ষেত্রে might ব্যবহার হয় যেমনঃ If I saw him, I might suggest him. (আমি যদি তাকে দেখতাম, তবে আমি তাকে সাজেশন দিতাম)
+
+SHALL এর ব্যবহার:
+
+ভবিষ্যতের কোন ঘটনা ঘটবে বুঝাতে সাধারণত I/we এর সাথে shall ব্যবহার হয়। যেমন: I shall go there. (আমি সেখানে যাবো)
+
+Requests, offers ও suggestions বুঝাতে: shall ব্যবহার হয়। যেমন: Shall we solve the problem? = আমরা কি সমস্যাটি সমাধান করব? Let’s solve the problem = চলুন সমস্যাটি সমাধান করি
+
+'Should' এর ব্যবহার:
+
+Duty বুঝাতে: যেমনঃ We should obey our parents (আমাদের পিতামাতাকে মান্য করা উচিৎ)
+
+উপদেশ বুঝাতে: যেমনঃ You should stop smoking (তোমার ধূমপান বন্ধ করা উচিৎ)
+
+কিছু করা উচিত ছিল.. এরকম প্রকাশ পেলে: যেমনঃ We should have visited Sundarban. (আমাদের সুন্দরবন ভ্রমণ করা উচিত ছিলো)
+
+কোথাও কিছু থাকা উচিত……… There should be a school in this village- এই গ্রামে একটি স্কুল থাকা উচিত
+
+অনুমান বুঝাতে should ব্যবহৃত হয়। যেমন: It should be raining now.
+
+'Will' এর ব্যবহার:
+
+ইচ্ছা, আদেশ, অনুরোধ বুঝাতে: যেমনঃ Will you please stop talking? (তুমি কি কথা বলা বন্ধ করবে?) I will buy a car (আমি একটা গাড়ি কিনবো)
+
+অনুরোধ বুঝাতে: যেমনঃ Will you sent the E-mail for me, please? (তুমি কি আমার জন্য মেইলটা পাঠাবে?)
+
+দৃঢ় প্রতিশ্রুতি বুঝাতে: যেমনঃ I will go there at any cost (আমি যে কোনভাবে হোক সেখানে যাবো)
+
+ভবিষ্যদ্বাণী এবং অনুমান বুঝাতে: যেমনঃ I think he will be able to do it. (আমি মনে করি তিনি এটা করতে সক্ষম হবেন)
+
+Would এর ব্যবহার
+
+Polite request, offer, invitations বুঝাতে: যেমনঃ Would you open the door, please? (তুমি কি দয়া করে দরজাটি খুলে দিবে?) Would you like something to drink? (তুমি কি কিছু পান করতে চাও?)
+
+Preference বুঝাতে: like, love, prefer এর সাথে would ব্যবহৃত হয়। যেমনঃ I would like to have a cup of tea. (আমি এক কাপ চা খেতে চাই)
+
+If clause টি past tense এ থাকলে Principal clause এ subject এর পরে would বসে। যেমনঃ If you wanted, I would wait you. (তুমি চাইলে আমি তোমার জন্য অপেক্ষা করতাম)
+
+Preference (অধিকতর পছন্দ) বুঝাতে rather/sooner এর সাথে would ব্যবহৃত হয়। would rather/would sooner এর পরে verb এর present form ব্যবহৃত হয়। যেমনঃ He would rather die than beg (সে মরবে তবু ভিক্ষা করবে না)
+
+Used to (করতাম, যেতাম ইত্যাদি অতীত অভ্যস্ত বুঝাতে) গঠন: Sub+ used to + verb1+ ext.
+
+I used to develop websites- আমি ওয়েবসাইট তৈরি করতাম।
+
+I used to live in Canada - আমি কানাডায় বাস করতাম।
+
+I used to like vegetables - আমি শাকসবজি পছন্দ করতাম।
+
+I used to go to the park - আমি পার্কে যেতাম।
+
+Had better You'd better go for a walk = তুমি বরং হাটতে বের হও। You'd better help the poor = তুমি বরং গরিবদেরকে সাহায্য কর। You'd better invite your friends = তুমি বরং তোমার বন্ধুদেরকে নিমন্ত্রন কর। You had better take rest = তুমি বরং বিশ্রাম নাও।
+
+Have to/ has to এর ব্যবহার বাধ্যবাধকতা বুঝাতে: (করতে হবে, যেতে হবে এ ধরনের কথার ক্ষেত্রে) have to/ has to বসবে। Example:
+
+I have to do - আমাকে করতে হবে
+
+I have to go - আমাকে যেতে হবে
+
+I have to play - আমাকে খেলতে হবে
+
+I have to learn - আমাকে শিখতে হবে
+
+I have to earn - আমাকে উপার্জন করতে হবে
+
+MUST এর ব্যবহার
+
+বাধ্যবাধকতা বুঝাতে: You must obey your parents. (তোমার অবশ্যই পিতামাতাকে মান্য করা উচিত)
+
+দৃঢ় সংকল্প বুঝাতে: I must see him succeed. (আমি অবশ্যই তাকে সফল দেখতে চাই)
+
+NEED এর ব্যবহার Modal হিসাবে ব্যবহারের ক্ষেত্রে need নেতিবাচক অর্থ প্রকাশ করে। modal হিসাবে need Present Indefinite Tense এ ব্যবহৃত হয়। উদাহরণ: You need not hurry (তোমার তাড়াহুড়ার প্রয়োজন নেই)
+
+Modal হিসেবে Dare এর ব্যবহার: Modal হিসেবে Dare কোন কিছুর সাহস বুঝাতে ব্যবহার হয়। উদাহরণ: How dare you say that! How dare you laugh at me!
+
+Voice Change Voice হল যখন subject নিজে কিছু করে অথবা অন্যের কাজ তার উপর বর্তায়। Voice দুই প্রকার। যথা: Active voice ও Passive voice Active voice: যে sentence এ subject নিজে সক্রিয় হয়ে verb এর কাজ সম্পন্ন করে তাকে active voice বলে। Passive voice: যে sentence এ subject নিজে সক্রিয়ভাবে কাজ করে না, বরং পরোক্ষভাবে object এর কাজটি তার উপর বর্তায় সে sentence এ verb এর Passive voice হয়।
+
+নিচের উদাহরণ ২টি লক্ষ্য করুন:
+
+He bought a mobile. লক্ষ্য করুন, এখানে verb (bought) এর কাজটি subject (He) সক্রিয়ভাবে করতে পারে। অতএব, বাক্যটি Active voice.
+
+A mobile was bought by him. এ বাক্যটিতে verb (bought) এর কাজটি subject (A mobile) করতে পারে না; অতএব, বাক্যটি Passive voice.
+
+Active voice কে passive voice এ রূপান্তর করার নিয়ম: a) Active voice এর object টি passive voice এর subject এবং Active voice এর subject টি passive voice এর object এবং তার পূর্বে by বসে। b) মূল verb এর past participle হয় এবং subject ও tense অনুসারে auxiliary verb/be verb হয়।
+
+Passive structure: Object + be verb + Verb (Past Participle) + by Subject উদাহরণ: Active voice: He plays football. Passive: Football is played by him.
+
+Shortcut tips of Voice change Passive structure: Object + be verb + Verb (Past Participle) + by Subject
+
+Tense	Passive structure
+Present Indefinite	Am/is/are + v3
+Past Indefinite	Was/were + v3
+Perfect (Present, past, Future)	Been + v3
+Continuous (Present, Past, Future)	Being + v3
+Modal auxiliary & Future Indefinite	Be + v3
+Example: Present Indefinite Active: He likes coffee. Passive: Coffee is liked by him.
+
+Past Indefinite Active: She called me. Passive: I was called by her.
+
+Continuous (Present, Past) Active: He is playing cricket. Passive: Cricket is being played by him. Active: They were giving a performance. Passive: A performance was being given by them.
+
+Perfect (Present, Perfect, Future) Active: They have won the battle. Passive: The battle has been won by them.
+
+Modal auxiliary Active: Government should ban smoking Passive: Smoking should be banned by the government.
+
+বিসিএস সহ অন্যান্য প্রতিযোগিতামূলক পরীক্ষায় করার কিছু প্রশ্ন ও উত্তর ব্যাখ্যাসহ প্রদত্ত হল
+
+▶ Which is the correct form of the sentence? ‘He is writing a letter’ a) A letter is written by him b) A letter was written by him c) A letter was being written by him d) A letter is being written by him Ans: D (জনস্বাস্থ্য প্রকৌশল অধিদপ্তর - ২০১৫) ব্যাখ্যা: উপরে উল্লেখিত Structure অনুযায়ী object কে subject + am/is/are + being + verb এর past participle + by + subject কে object. সঠিক উত্তরটি হচ্ছে- d) A letter is being written by him
+
+▶ The correct passive form of ‘You must shut these doors’ is..... a) These must be shut doors b) shut the doors you must c) Shut must be the doors d) These doors must be shut Ans: D (৩৫তম বিসিএস) ব্যাখ্যা: রুল অনুযায়ী Modal auxiliary এর ক্ষেত্রে object কে subject + modal + be + verb এর past participle হয়। অতএব, সঠিক উত্তরটি হচ্ছে- d) These doors must be shut
+
+Active voice থেকে passive voice এ রূপান্তরের গুরুত্বপূর্ণ রুলসমূহ নিম্নে প্রদত্ত হল।
+
+Double object যুক্ত Active voice কে passive voice করার নিয়ম Sentence এ ২টি object থাকলে ব্যক্তিবাচক object কে subject করা উচিৎ। যেমনঃ Active: I gave him a pen. Passive: He was given a pen by me. Note: বাক্যটিতে him ও pen ২টি object রয়েছে। him ব্যক্তিবাচক object হওয়ায় এটাকেই subject করা হয়েছে।
+
+Modal auxiliary এর ক্ষেত্রে Can, could, shall, should, may, must, ought to, going to যুক্ত Active voice কে passive voice এ রূপান্তরের নিয়ম: Structure: Modal + be + Verb3 (Past participle) Active: You must do the work. Passive: The work must be done by you. Active: He is going to open a shop. Passive: A shop is going to be opened by him.
+
+Imperative sentence এ passive করার নিয়ম a) Let+ object+ be + Verb3 Active: Do the work. Passive: Let the work be done.
+
+b) Don not যুক্ত থাকলে Imperative sentence এ passive করার নিয়ম: Let not+ object+ be + Verb3 Active: Do not play cricket at noon. Passive: Let not cricket be played at noon.
+
+C) Let + ব্যক্তিবাচক object এর ক্ষেত্রে Let + object কে subject + be + Verb3 + by + ব্যক্তিবাচক object Active: Let me do the sum. Passive: Let the sum be done by me.
+
+(খাদ্য অধিদপ্তর পরীক্ষা-২০০০) Who যুক্ত প্রশ্নবোধক বাক্যে passive By whom + Auxiliary (tense ও person) + sub + be/been/being + v3 +? Active: Who will do the work? Passive: By whom will the work be done?
+
+▶ The passive form of ‘Who has broken the glass’? is..... a) By who have the glass been broken? b) By whom has the glass been broken? c) By whom have the glass been broken? d) Whom has the glass been broken? Ans: B (১২তম প্রভাষক নিবন্ধন-২০১৫)
+
+Whom দিয়ে প্রশ্নবোধক বাক্যের ক্ষেত্রে passive Who + Tense + V3 + by + object +? Active: Whom did she accuse? Passive: Who was accused by her? (জনপ্রশাসন মন্ত্রনালয় পরীক্ষা-২০১৫)
+
+What- দিয়ে প্রশ্নবোধক বাক্যের ক্ষেত্রে passive What + Auxiliary verb + Verb- এর past participle + by+ subject- এর object+? Active: What do you know? Passive: What is known by you?
+
+Phrasal verb এর ক্ষেত্রে passive বাক্যে যদি Phrasal verb থাকে তার সাথে preposition যুক্ত থাকলে তা সর্বদা verb এর সাথেই সংযুক্ত থাকে। Active: He looks after the orphans. Passive: The orphans are looked after by him.
+
+Reflexive object এর ক্ষেত্রে passive Reflexive object (myself, himself, herself, themselves etc) Active voice কে passive voice করার নিয়ম: Structure Active voice এর subject টি passive voice এর subject হিসাবে বসবে। + Auxiliary (Tense & person অনুযায়ী) + Verb3 (Past participle) + by + Reflexive object Active: She killed herself. Passive: She was killed by herself.
+
+Active sentence যার নিম্নরূপ কাঠামো: Subject + verb + object +present participle একে নিম্নরূপে passive করা হয় Object- এর subject+ Tense এবং person- অনুসারে Auxiliary verb + Verb- এর past participle+ present participle- যুক্ত অংশ + by + subject- এর object। Active: I saw him going to the market. Passive: He was seen going to the market by me.
+
+Quasi passive এর ক্ষেত্রে active voice কে passive voice এ পরিবর্তনের নিয়ম
+
+Active voice এর subject টি passive voice এর subject হিসাবে বসে।
+
+Auxiliary verb + Adjective + When
+
+প্রথম subject অনুযায়ী It/They বসে।
+
+Auxiliary + V3 Example: Active: Honey taste sweet. Passive: Honey is sweet, when it is tasted.
+
+By এর পরিবর্তে অন্যান্য preposition দিয়ে passive voice অনেক ক্ষেত্রে passive voice করার সময় by ছাড়া অন্যান্য preposition যেমন: to, at, in, with ইত্যাদি বসে। Active: I know him. Passive: He is known to me. Active: The news shocked me. Passive: I was shocked at the news. ▶By ছাড়া passive voice সহযোগে ফ্রীহ্যান্ড রাইটিং এর উপর বিস্তারিত আলোচনা দেখুন ১৭ নং পৃষ্ঠায়।
+
+Gerund, Participle & Infinitive
+
+Gerund Verb এর present form এর সাথে ing যুক্ত হয়ে Gerund, Noun ও Verb এর কাজ একসাথে সম্পন্ন করে। Gerund এর বৈশিষ্ট্য হচ্ছে এটি স্থির অবস্থা প্রকাশ করবে এবং আচরণ করবে noun এর মতো। উদাহরণঃ
+
+Swimming is a good exercise.
+
+He started watching television. প্রথম Sentence এ Swimming is a good exercise (সাঁতার একটি ভাল ব্যায়াম) “Swim” এর সাথে ing যুক্ত হয়ে Swimming গঠিত হয়েছে। এই বাক্যটিতে স্থির অবস্থা প্রকাশ পেয়েছে, কারণ এখানে কেউ সাঁতার কাটে না। ইহা is verb এর subject অর্থাৎ Swimming এখানে Noun এর কার্য সম্পন্ন করছে। যেহেতু প্রথম Sentence এ Swimming একই সাথে Noun ও Verb এর কার্য সম্পাদন করে তাই তা Gerund. দ্বিতীয় Sentence এ “watching” Verbal টি verb “watch” এর সাথে ing যুক্ত হয়ে গঠিত হয়েছে। Verbal দ্বারা উপভোগ কার্যটি সম্পাদন করেছে। অন্যদিকে “watching” started verb টির Object হিসেবে বসেছে। তাই “watching” Noun এর কাজ সম্পন্ন করেছে। যেহেতু watching একই সাথে noun ও Verb এর কাজ সম্পাদন করে তাই এখানে “watching” উক্ত Sentence এর gerund.
+
+Uses of Gerund
+
+Verb এর Subject রূপে: Swimming is a good exercise = সাঁতার একটি ভাল ব্যায়াম।
+
+Verb এর Object রূপে: I like sleeping = আমি ঘুমাতে পছন্দ করি।
+
+Preposition এর Object রূপে: He is fond of eating = সে খাওয়ার পাগল।
+
+Verb এর complement রূপে: My hobby is traveling = ভ্রমণ করা আমার শখ।
+
+Gerund কখনো কখনো Sentence- এ compound noun- এর অংশ হিসেবে ব্যবহৃত হয়। যেমন- This is the walking place of the garden.
+
+Participle Participle এর বৈশিষ্ট্য হচ্ছে এটি চলমান অবস্থা প্রকাশ করবে এবং আচরণ করবে adjective এর মতো। যেমনঃ I saw a walking boy. (আমি একজন বালককে হাটতে দেখেছিলাম) এই বাক্যটি চলমান অবস্থা প্রকাশ পেয়েছে কারণ এখানে কেউ হাটে, তাই Walking শব্দটি Participle এবং আচরণ করে adjective এর মতো।
+
+Types of participle Participle ৩ প্রকার।
+
+Present Participle
+
+Past Participle
+
+Perfect Participle
+
+Structure of Participle
+
+Present Participle = V1 + ing
+
+Past Participle = V3
+
+Perfect Participle = Having + V3 (Example: Having learnt Computer I will go to America)
+
+Infinitive Verb এর Present form এর পূর্বে to বসিয়ে Infinitive গঠন করা হয়। Tense, number, person অনুযায়ী এর কোন পরিবর্তন হয় না। Example : To tell a lie is a great sin. I like to run.
+
+শর্টকাট টিপস Gerund & participle Gerund = V1+ing (স্থির অবস্থা প্রকাশ করবে এবং আচরণ করবে noun এর মতো) Participle = V1+ing (চলমান অবস্থা প্রকাশ করবে এবং আচরণ করবে adjective এর মতো) “The most beautiful is Almighty Allah, the perfect encyclopedia is Al-Quran, the most melodious song is Azan & the best exercise is Namaz”
+
+Clause কাকে বলে? Clause কত প্রকার ও কি কি? Clause হচ্ছে কয়েকটি শব্দের সমষ্টি যাতে একটি subject এবং finite verb অবশ্যই থাকে। Clause ছাড়া কোন বাক্য তৈরী করা যায় না। প্রতিটি বাক্যেই এক বা একাধিক clause থাকে। Example:
+
+He is poor. (One sentence, one clause)
+
+He is poor, but is intelligent as well as honest. (One sentence, two clauses) উপরের উদাহরণগুলোতে লক্ষ্য করুন, প্রতিটি বাক্যে এক গুচ্ছ শব্দ একটি subject এবং finite verb রয়েছে।
+
+Clause কে আমরা প্রধানত ২ ভাগে ভাগ করতে পারি।
+
+Independent or Principal Clause
+
+Dependent or Subordinate Clause
+
+Independent or Principal Clause: যে Clause অন্য কোনো clause- এর সাহায্য ছাড়াই নিজের অর্থ প্রকাশ করতে পারে, তাকে independent Clause বা Principal Clause বলে। এটি অর্থ প্রকাশের জন্য অন্য কোন clause এর উপর নির্ভরশীল নয়। উদাহরণ: Rana has a girlfriend who is very cute. ব্যাখ্যা: উপরের বাক্যটিতে “Rana has a girlfriend” একটি Principal Clause কারণ, এটিকে বাক্য থেকে আলাদা করে লিখলেও নিজে নিজে সম্পূর্ণ অর্থ প্রকাশ করতে পারে।
+
+Dependent or Subordinate Clause: যে Clause অন্য কোনো clause- এর সাহায্য ছাড়া নিজের অর্থ প্রকাশ করতে পারে না, তাকে dependent Clause বলে। উদাহরণ: She went to school after having breakfast. ব্যাখ্যা: উপরের বাক্যটিতে “after having breakfast.” একটি dependent Clause বা Sub-ordinate Clause কারণ, এটিকে বাক্য থেকে আলাদা করে লিখলে Principal Clause (She went to school) ছাড়া নিজে নিজে সম্পূর্ণ অর্থ প্রকাশ করতে পারে না। অন্যদিকে She went to school একাই কোন Clause এর সাহায্য ছাড়াই সম্পূর্ণ অর্থ প্রকাশ করতে পারে।
+
+Subordinate clause তিন প্রকার।
+
+Noun Clause
+
+Adjective Clause
+
+Adverb Clause
+
+Noun Clause: Noun এর পজিশনে যে Clause বসে সেটি Noun Clause। সহজ ভাষায় যে Clause noun এর কাজ করে সেটাই noun clause। Subject হিসাবে Verb এর পূর্বে subject হিসাবে........ যেমনঃ What Rana explained astonished his neighbors. (What Rana explained এ অংশটুকু Verb এর পূর্বে বসেছে তাই এটি Noun clause)
+
+Verb এর পরে object হিসাবে যেমনঃ He didn’t know why the computer wasn’t working. (Why the computer wasn’t working এ অংশটুকু Verb এর পরে বসেছে তাই এটি Noun clause)
+
+Preposition এর object হিসাবে Jube is not responsible for where Rina attempted to go. (For এর পরে object হিসাবে where Rina attempted to go এটি Noun clause)
+
+Adjective Clause যখন Noun বা pronoun এর পরে কোন Clause বসে সে Noun বা pronoun সম্পর্কে অতিরিক্ত তথ্য দেয় বা noun বা pronoun কে modify করে তখন তাকে Adjective Clause বলে। Adjective clauses সাধারণত relative pronouns (who, whom, whose, that, which) দিয়ে শুরু হয়। Example: Sima who lives in Khulna is my friend. (সিমা যে খুলনায় বাস করে সে আমার বন্ধু) এখানে Sima একটি Noun এবং who lives in Khulna এ অংশটুকু Adjective Clause যা Sima সম্পর্কে অতিরিক্ত তথ্য দিচ্ছে বা modify করছে। আরো উদাহরণ: I love the people who respect their parents. (Modifies noun: people) The book that is on the table belongs to Nazrul Islam. (Modifies noun: book) Students who are talent achieve good result. (Modifies noun: Students)
+
+Adverb Clause: যে clause Adverb এর কাজ করে, অর্থাৎ একটি verb, বা একটি adjective-clause বা অন্য একটি adverb clause- কে modify করে তাকে Adverb Clause বলে। সাধারণত Adverbial Clause এ নিম্নলিখিত conjunction থাকবে If, that, who, which, when, after, before, while, whether, since, as, because, as long as, as much as, though, although, till, until, unless, before, after, so that, whoever, whatever, whenever, wherever etc. Example: The patient had died before the doctor came. Call me when you need help. You will work hard so that you can success in life. Whether you like it or not, you have to go to school.
+
+Modifiers Modifiers কাকে বলে? Modifiers কত প্রকার ও কি কি? Modifiers এমন কত গুলো শব্দ, শব্দসমষ্টি বা খন্ডবাক্য যা অন্য আরেকটি শব্দের আগে বা পরে বসে ঐ শব্দ, শব্দসমষ্টি বা খন্ডবাক্যকে প্রভাবিত করে এবং তার সম্পর্কে নতুন তথ্য প্রদান করে তাকে আরোও অর্থবহ করে তোলে। Example:
+
+The girl with the red hat is my sister = লাল টুপি পরিহিত মেয়েটি আমার বোন।
+
+The teacher with the answer sheet entered into the hall = শিক্ষক উত্তরপত্র হাতে নিয়ে হলে প্রবেশ করলেন।
+
+Modifiers কে প্রধানত আমরা ২ ভাগে ভাগ করতে পারি
+
+Adjectives Modifiers
+
+Adverbs Modifiers
+
+These are described below:
+
+Adjectives Modifiers: Adjective Modifiers সাধারণত noun অথবা pronoun এর দোষ, গুণ, অবস্থা, ইত্যাদি প্রকাশ করে তার সম্পর্কে নতুন তথ্য প্রদান করে তাকে আরোও অর্থবহ করে তোলে। Example:
+
+He sang a nice song = সে একটি চমৎকার গান গেয়েছিল। (Here the adjective ‘nice’ modifies the noun ‘song’)
+
+He is a generous leader = তিনি একজন মহান নেতা। (Here the adjective ‘generous’ modifies the noun ‘leader’)
+
+Adjective phrase: একটি prepositional phrase যা noun অথবা pronoun কে modify করে। এটি সাধারণত noun এর পরে বসে তার সম্পর্কে নতুন তথ্য প্রদান করে তাকে আরোও অর্থবহ করে তোলে। Example:
+
+Have you read the novel ‘Rang Pencil’ by Humayun Ahmed? = তুমি কি হুমায়ুন আহমেদের রং পেন্সিল উপন্যাসটি পড়েছো? উপরের বাক্যে বোল্ড কৃত শব্দ, ‘Rang Pencil’ হচ্ছে একটি adjective phrase যা noun “novel” কে মডিফাই করেছে।
+
+The adjective clause as modifiers: যখন dependent clause গুলো relative pronoun ব্যবহার করে শুরু হয় এবং তার আগের noun বা pronoun কে modify করে, তখন তারা পুরো একটি clause হিসেবেই সেই noun বা pronoun কে modify করে। Example:
+
+The boy who help the poor is my friend = যে ছেলেটি গরিবদেরকে সাহায্য করে সে আমার বন্ধু।
+
+I need a maidservant who will serve for my mother = আমি একজন কাজের মেয়ে চাই যে আমার মাকে সাহায্য করবে। “Education is the key to unlock the golden door of freedom.” – George Washington Carver
+
+Adverbs Modifiers: Adverb Modifiers সাধারণত verb, adjective, অথবা অন্য আরেকটি adverb কে modify করে একটি নির্দিষ্ট অর্থ প্রকাশ করে তার সম্পর্কে নতুন তথ্য প্রদান করে।
+
+Adverbs modifying a verb: Adverb এর প্রধান কাজ হচ্ছে verb কে modify করা। Example:
+
+He is finishing the task quickly = সে কাজটিকে দ্রুত শেষ করিতেছে। (এখানে, the adverb ‘quickly’ is modifying the verb “finishing”)
+
+Adverb modifying adjective: Adjective সাধারণত noun কে modify করে কিন্তু adverb সেই adjective কেও modify করে তার সম্পর্কে নতুন তথ্য প্রদান করে। Example:
+
+She is a very famous actor = সে খুব বিখ্যাত অভিনেতা। (এখানে, very is modifying the adjective “famous”)
+
+Adverb modifying another adverb: Adverb মাঝেমাঝে অন্যান্য adverb কেও modify করে তার সম্পর্কে নতুন তথ্য প্রদান করে। Example:
+
+He is running very fast = সে খুব দ্রুত দৌড়াচ্ছে। (এখানে, ‘very’ is modifying the adverb ‘fast’)
+
+Adverb phrase as a modifier: Adverb phrase সাধারণত একটি prepositional phrase যা adjective, adverb অথবা verb কে modify করে তার সম্পর্কে নতুন তথ্য প্রদান করে। Example:
+
+I was excited to see my brother was seated in the front row = আমার ভাইকে সামনের সারিতে বসতে দেখে আমি খুবই উত্তেজনা বোধ করছিলাম। (এখানে, ‘front row’ is modifying the adverb ‘seated’)
+
+Adverb clause as modifiers: যখন dependent clause গুলো relative pronoun ব্যবহার করে শুরু হয় এবং তার আগের verb, adjective, অথবা অন্যান্য adverb কে modify করে, তখন তারা পুরো একটি clause হিসেবেই সেই noun বা pronoun কে modify করে। Example:
+
+When you were seven years old, your mother died = যখন তোমার সাত বছর বয়স, তখন তোমার মা মারা যান। (এখানে, ‘when you were seven years old’ is an adverb clause and is modifying the verb, ‘died’)
+
+Conditional একটি conditional sentence এ দুইটি খন্ডবাক্য তথা clause থাকে। একটি if clause অন্যটি main clause। “if clause” শর্ত বোঝাতে এবং “main clause” সেই শর্তেও পরিণাম/ফলাফল/প্রেক্ষাপট বোঝাতে ব্যবহৃত হয়।
+
+Conditional Sentence গঠনের সহজ নিয়ম:
+
+Conditional sentence type	If clause (verb tense)	Main clause (verb tense)
+Zero	Simple present	Simple present
+Type 1	Simple present	Simple future
+Type 2	Simple past	Present conditional/present continuous conditional
+Type 3	Past perfect	Perfect conditional/perfect continuous conditional
+Mixed type	Past perfect/simple past	Present conditional/perfect conditional
+Present conditional tense - Subject + would + v1
+
+Present continuous conditional tense - Subject + would + be+ ving
+
+The perfect conditional tense - Subject+ would + have + v3
+
+The perfect continuous conditional tense - Subject + would + have + been + ving
+
+The zero conditional General truths বা সাধারণ সত্য বুঝাতে zero conditional ব্যবহৃত হয়। উভয় বাক্যেই simple present tense ব্যবহৃত হয়। মাঝে মাঝে if এর পরিবর্তে when ব্যবহৃত হয়ে থাকে, কিন্তু এতে বাক্যের অর্থের কোনো পরিবর্তন হয় না।
+
+If you touch a fire, you get burned. (simple present tense+simple present tense)
+
+If you want to come, call me before 5:00.
+
+When it rains, the grass gets wet.
+
+Type 1 Conditional এই ধরনের conditional বাক্য possible condition এবং তার probable result নির্দেশ করে। If clause টি হবে simple present tense এবং main clause টি হবে simple future tense।
+
+If I have enough money, I will buy some new books. (Simple present tense+ Simple future tense)
+
+If you rest, you will feel better.
+
+You will miss the train if you don’t hurry. (Main clause আগে আসায় if clause থেকে কমা উঠে গেছে)
+
+Type 2 Conditional এই ধরনের conditional সাধারণত hypothetical condition এবং এটার probable result নির্দেশ করে। If clause টি simple past tense হয় এবং main clause টি present conditional/ present continuous conditional tense হয়।
+
+If the weather wasn’t so bad, we would go to the zoo. (Simple past tense+ Present conditional tense)
+
+If I were you, I would give up smoking.
+
+If you gave him your ticket, he could go to the concert. (‘would’ এর পরিবর্তে modal verb ব্যবহার করা যায়)
+
+If I spoke English, I would be working in Canada. (Simple past tense+ Present continuous conditional tense)
+
+Type 3 Conditional এই ধরনের conditional এ unreal past condition এবং এর probable past result নির্দেশ করে। এখানে if clause টি past perfect tense হয় এবং main clause টি perfect conditional tense/perfect continuous conditional tense হয়।
+
+If you had worked harder, you would have passed your exam. (Past perfect + Perfect conditional)
+
+If I had accepted that promotion, I would have been working in Rajshahi. (Past perfect + Perfect continuous conditional)
+
+If I had cleaned the house, I could have gone to the party. (would এর পরিবর্তে modal verb ব্যবহার করা যায়)
+
+Mixed Conditional এই রকম conditional এর ক্ষেত্রে if clause টি unreal past condition এবং main clause টি এটার বর্তমানের probable result নির্দেশ করে। এই conditional দিয়ে বাক্য গঠনের ক্ষেত্রে if clause টি past perfect/simple past tense হয় এবং main clause টি present conditional/perfect conditional tense হয়।
+
+If I had worked harder at school, I would have a better job now. (Past perfect + present conditional)
+
+If I was a good cook, I’d have invited them to lunch. (Past simple+ Perfect conditional)
+
+If you had crashed the bus, you might be in trouble. (Would এর পরিবর্তে modal verb ব্যবহার করা যায়)
+
+Causative (কাউকে দিয়ে কিছু করিয়ে নেওয়া)
+
+Make (কাউকে দিয়ে কিছু করিয়ে নেওয়া/ বাধ্য করা) Structure: Sub + make/made + person + verb (base form) Example
+
+আমি তাকে দিয়ে করাই। I make him do.
+
+আমি তোমাকে বিষয়টি বুঝাবো। I will make you understand the topic.
+
+আমি দিপুকে দিয়ে কাজটি করতে বাধ্য করলাম। I made Dipu do this job.
+
+শিক্ষক ছাত্রকে দিয়ে লিখিয়ে নিল। The teacher made the student write.
+
+Let (কাউকে কিছু করতে দেওয়া বা অনুমতি দেওয়া) কাউকে কিছু করতে দেওয়া বা অনুমতি দেওয়া বোঝাতে Let ব্যবহার হয়। Let ব্যবহারের ক্ষেত্রে রুল হচ্ছে- Let এর পরবর্তী verb এর সাথে S, es, ing, past participle কিছুই হবে না। নিচের উদাহরণগুলো লক্ষ্য করুন Let ব্যবহার করে কিভাবে ইংরেজি বাক্যকে বড় করা যায়। Example
+
+আমি তোমাকে ল্যাপটপটি ব্যবহার করতে দিব। I will let you use the laptop.
+
+আমি তোমাকে মোবাইলটি ব্যবহার করতে দিব না। I won’t let you use the mobile phone.
+
+তিনি আমাকে ফোন ব্যবহার করতে দেননি। He didn’t let me use the mobile.
+
+ম্যানেজার তাকে কাজ থেকে আগেই যেতে দিলেন। Manager let him leave early from the work.
+
+অফিসে জরুরী কাজ থাকা সত্ত্বেও ম্যানেজার কর্মীদের কাজ থেকে আগেই যেতে দিলেন। In spite of having urgent task Manager let the workers leave early from the work.
+
+অফিসে জরুরী কাজ থাকা সত্ত্বেও ম্যানেজার কর্মীদেরকে রাজনৈতিক সহিংসতার কারনে কাজ থেকে আগে আগেই যেতে দিলেন। In spite of having urgent task Manager let the workers leave early from the work due to political violence.
+
+Have (কাউকে দিয়ে কিছু করিয়ে নেওয়া) Structure: Sub + have/had/has + person + verb (base form) Example
+
+আমি টিপুকে দিয়ে আমার রুম পরিষ্কার করিয়েছিলাম। I had Tipu clean my room.
+
+সে তুহিনকে দিয়ে অফিসের কাজ করিয়ে নেয়। He has Tuhin do his office work.
+
+আমি ডাক্তার দিয়ে আমার স্বাস্থ্য পরীক্ষা করিয়ে নিব। I will have the doctor test my health.
+
+Get (কাউকে খুশি করে করিয়ে নেওয়া) Structure: Sub + get/got + person + to + verb (base form) Example
+
+নাপিতকে দিয়ে আমি চুল কাটালাম। I got the barber to cut my hair.
+
+আমি ধোপাকে দিয়ে আমার কাপড় ধুইয়ে নিব। I will get the washerman to wash my clothes.
+
+দয়া করে কাউকে দিয়ে কাজটি করিয়ে নাও। Please get someone to do the work.
+
+আমি একজন মেকানিককে দিয়ে মোবাইলটি মেরামত করিয়ে নিলাম। I got a mechanic to repair my mobile
+
+Note: Get এর ক্ষেত্রে verb এর পূর্বে to বসে।
+
+Articles যে Word কোন ব্যক্তি, বস্তু, প্রাণীকে নির্দিষ্ট বা অনির্দিষ্টভাবে বুঝায় তাদেরকে Article বলে। Article হলো Parts of speech এর একটি অংশ। A, an, এবং the কে Article বলে। ইংরেজিতে Article দুই প্রকার
+
+Definite
+
+Indefinite
+
+Definite article: The কে Definite article বলে কারণ ইহা এক বা একাধিক বস্তু বা প্রাণীকে নির্দিষ্ট করে বুঝায়। Example
+
+Dhaka is the capital of Bangladesh
+
+I use the Mobile.
+
+Indefinite article: A এবং An কে Indefinite article বলে। অনির্দিষ্ট Noun (ব্যক্তি, প্রাণী ও বস্তুকে) কে বোঝাতে A এবং An ব্যবহার হয়। যেমন:
+
+He bought a Smartphone.
+
+I’m looking for an English book.
+
+A and An (Indefinite article) গুরুত্বপূর্ণ রুল Rule-1 সাধারণত consonant থাকলে তার পূর্বে a এবং vowel (a, e, i, o, u) থাকলে তার পূর্বে an বসে। যেমন: an ant, an eagle, a horse, a bag, a pen
+
+Rule-2 যদি শব্দের প্রথম অক্ষর h থাকে এবং h যদি উচ্চারিত হয় তবে তার পূর্বে a বসে এবং h উচ্চারিত না হলে তার পূর্বে an পূর্বে বসে। যেমন: a horse, a house, an honorable man, an hour
+
+Rule-3 কোন শব্দ vowel দিয়ে শুরু হলেও তা যদি ইউ (U) এর মত উচ্চারিত হয় তার পূর্বে a বসে। যেমনঃ a university, a European, a useful product, a unit.
+
+Rule-4 O দিয়ে যেসব শব্দ গঠিত তার পূর্বে an বসে। ব্যতিক্রমঃ one যুক্ত শব্দের পূর্বে a বসে। যেমন: a one-taka note, an open field
+
+Rule- 5 Abbreviation প্রথম অক্ষর vowel এর মত উচ্চারিত হলে তার পূর্বে an বসে। যেমনঃ
+
+Mr. Robin is an M.B.B.S
+
+He is an M.A
+
+Rule- 6 এক জাতীয় সকল singular common noun এর পূর্বে indefinite article (a/an) বসে। যেমনঃ
+
+A dog is a faithful animal.
+
+A lion is always dangerous.
+
+Rule- 7 সংখ্যাবাচক যেমন: dozen, hundred, thousand, million ইত্যাদি এর পূর্বে a বসে। যেমন:
+
+He earns a thousand dollar a month
+
+At least a million of people attend the conference.
+
+Rule- 8 বিশেষ কিছু Idioms/Phrase এর পূর্বে a/an বসে। যেমন: In a hurry, in a fix
+
+Rule- 9 Plural noun এর পূর্বে few, little, lot of ইত্যাদি থাকলে তার পূর্বে a বসে। যেমন: He earns a lot of money by freelancing.
+
+Uses of Definite article: The
+
+Rule- 1 singular ও plural উভয় Number নির্দিষ্ট করে বুঝানোর ক্ষেত্রে এর পূর্বে The বসে। যেমন:
+
+The boys are playing.
+
+The students of this University are good at English
+
+Rule- 2 বই, ধর্মগ্রন্থ, সংবাদপত্র, নদী, সাগর, মহাসাগর, পর্বতশ্রেণি, ইত্যাদি নামের পূর্বে The বসে। যেমন: The Holy Quran, “The hundreds” (book), The Daily Start, The Amazan, the Himalayas, the Bay of Bengal ইত্যাদি।
+
+Rule- 3 জাতি ও গোষ্ঠীর নামের পূর্বে the বসে। যেমন: The English, the Muslims, the British, the rich.
+
+Rule- 4 তারিখের নামের পূর্বে the বসে। যেমন: The 10th of December.
+
+Rule- 5 Proper noun এর পূর্বে Adjective থাকলে উক্ত Adjective এর পূর্বে the বসে। যেমন: The great Omar was the king of Half world.
+
+Rule- 6 পদবী/উপাধি এর পূর্বে the বসে। যেমন: The President, The Prime minister, the Senator
+
+Never use an article যেসব ক্ষেত্রে আর্টিকেল ব্যবহার করা যায় না। Example: Incorrect: The Allah is almighty. Correct: Allah is almighty. Incorrect: The India is a big country Correct: India is a big country Incorrect: I am fond of playing the football. Correct: I am fond of playing football. Incorrect: Tipu is learning the French. Correct: Tipu is learning French. Incorrect: He is good at the English. Correct: He is good at English.
+
+Redundancy – পুনরাবৃত্তি Redundancy এর অর্থ হল পুনরাবৃত্তি বা প্রয়োজনের চেয়ে বেশি। উদাহরণস্বরূপ, Please repeat again এখানে Repeat অর্থ পুনরায় করা আবার again অর্থ পুনরায়। অতএব, এক্ষেত্রে repeat থাকার কারণে again হল Redundancy, যা বলা/লেখার প্রয়োজন নেই। অর্থাৎ, সঠিক ফরম্যাট হল- Please repeat or Please again.
+
+Redundancy এর কিছু উদাহরণ Incorrect: Please refer back to page 7 Correct: Please refer to page 7 (দয়া করে ৭ নং পৃষ্ঠায় ফেরত আসুন)
+
+Incorrect: Don’t repeat this mistake again Correct: Don’t repeat this mistake. (এ ভুলটি পুনরায় করো না)
+
+Incorrect: I saw the natural scene with my eyes. Correct: I saw the natural scene. (আমি প্রাকৃতিক দৃশ্যটি দেখেছিলাম)
+
+Chapter-9
+Presentation
+
+ইংরেজিতে উপস্থাপনা কিভাবে করবেন, কি ডায়ালগ ব্যবহার করবেন এ বিষয়ে নিম্নে আলোকপাত করা হয়েছে। ইংরেজি বক্তৃতার শুরুতে ও শেষে কিভাবে প্রফেশনালভাবে নিজেকে উপস্থাপন করবেন এবং প্রেজেন্টেশনের কমন ও গুরুত্বপূর্ণ ডায়ালগসমূহ বাংলা অনুবাদসহ প্রদত্ত হল। আশা করি যারা প্রেজেন্টেশনে স্কিলড হতে চান তাদের জন্য বিশেষ সহায়ক হবে। 
+
+Starting system- 1
+
+Good Afternoon everyone. How are you? This is [Name]. First, I would like to thanks my honorable Moderator/ Sir/Brother [Name] for giving me such chance to say a few words about the selected topic in front of you. Today’s topic is [Topic’s Name]. Dear audience.
+
+শুভ অপরাহ্ণ সবাইকে। আপনারা কেমন আছেন? আমি [অমুকে] বলছি। প্রথমেই আমি আমার সম্মানি ত মডারেটরকে ধন্যবাদ জানাচ্ছি আমাকে আপনাদের সামনে নির্ধারিত বিষয়ের উপর কিছু কথা বলার এই সুযোগ দানের জন্য। আজকের বিষয়বস্তু হল [বিষয়বস্তুর নাম]। সুপ্রিয় শ্রোতামণ্ডলী- 
+
+Starting system- 2
+
+Dear Sir, I am giving you thanks for inviting me. Good evening. Hope you are quite well physically and mentally. I am [name]. I feel glad to be with you. Now, I am going to start discussion on today’s topic. The topic’s name is [topic name]. Dear friends…..
+
+প্রিয় মহোদয়, আমাকে আমন্ত্রণ জানানোর জন্য আমি আপনাকে ধন্যবাদ জানাচ্ছি। শুভ সন্ধ্যা। আশা করি আপনারা শারীরিক ও মানসিক দিক দিয়ে খুবই ভালো আছেন। আমি [অমুকে]। আপনাদের সাথে থাকতে পারাতে আমি খুবই আনন্দিত বোধ করছি। এখন আমি আজকের বিষয়বস্তু নিয়ে আলোচনা শুরু করতে যাচ্ছি। আজকের বিষয় [নির্ধারিত বিষয়]। প্রিয় বন্ধুরা - 
+
+Starting system - 3
+
+In the very beginning my heartiest thanks to the honorable Moderator for giving me a chance to say something in front of you. Hi everyone, Good morning. My name is (name). Almost all of the speakers has already described about the selected topic. Now, I also want to add some new ideas on the topic. My friends……..
+
+শুরুতেই সম্মানিত মডারেটরকে আন্তরিক ধন্যবাদ জ্ঞাপন করছি আমাকে আপনাদের সামনে কিছু বলতে সুযোগ দানের জন্য। সবাইকে শুভ সকাল। আমার নাম [নাম]। এখানে বক্তাদের প্রায় সকলেই নির্ধারিত বিষয়ের উপর ইতোমধ্যেই আলোচনা করেছেন। এখন আমি বিষয়টির উপর নতুন কিছু ধারনার অবতারনা করতে চাই। আমার বন্ধুরা... 
+
+Finishing system- 1
+
+That’s all from my sides, for the time being. Thank you so much for listening my speech with patience. Hope the conversation will help us for our future life. We will meet with another same interesting topic again. Stay well. Till than Allah Hafiz.
+
+আমার দিক থেকে এখন এ পর্যন্তই। আমার বক্তব্য ধৈর্য ধরে শোনার জন্য আপনাদেরকে অশেষ ধন্যবাদ। আশা করি এই আলোচনা আমাদের ভবিষ্যৎ জীবনের জন্য কাজে লাগবে। আমরা পূনরায় একই ধরনের মজার বিষয় নিয়ে আবার মিলিত হব। ভালো থাকবেন। সে পর্যন্ত আল্লাহ হাফেজ। 
+
+Finishing system- 2
+
+That’s all about me. Thank you very much for your kind attention. Stay well. See you next.
+
+আমার সম্পর্কে এগুলোয় ছিল সবকিছু। আপনাদের মনোযোগের জন্য অনেক ধন্যবাদ। ভালো থাকবেন। আবার দেখা হবে। 
+
+ইংরেজি বক্তৃতা/উপস্থাপনার আরও বিষয়সমূহ
+
+আজকের বৈঠকের আলোচ্যসূচি এই যে….
+
+Here is the agenda for today’s meeting... 
+
+আজকের উপস্থাপনে আমি আপনাদের দেখাতে চাই…
+
+In today’s presentation, I’d like to show you... 
+
+আজকের উপস্থাপনের উদ্দেশ্য হলো…
+
+The purpose of today’s presentation is to… 
+
+আজকের বৈঠকের বিষয় হলো…
+
+The topic of today’s meeting is… 
+
+আপনাদের কিছু জানার থাকলে আমার কথা বলার মাঝে যেকোন সময় প্রশ্ন করতে পারেন…
+
+Please feel free to interrupt me, if you have any question... 
+
+আপনাদের মনযোগের জন্য ধন্যবাদ...
+
+Thanks for your attention… 
+
+আপনাদের সবাইকে অশেষ ধন্যবাদ আজকে আসার জন্য...
+
+Thank you all very much for coming today… 
+
+আপনারা যেমনটা দেখতে পাচ্ছেন এখানে...
+
+As you can see here… 
+
+আপনি আসলে কি বুঝাতে চাচ্ছেন?...
+
+What exactly do you mean?.. 
+
+আপনি কি একটা ক্রেডিট কার্ড খুলবেন? আজকের জন্য আপনি সব কিছু ১০% কমে পাবেন...
+
+Would you like to open a credit card? You can get 10% off of everything for today… 
+
+আপনি কি বুঝাতে চাচ্ছেন আমি বুঝতে পেরেছি…
+
+I see what you mean… 
+
+আমরা এই বিষয়টার উপর শেষে/ একটু পরে আলোকপাত করতে পারি...
+
+Perhaps we can look at that point at the end/ little later… 
+
+আমরা এখানে দেখতে পাচ্ছি...
+
+Here we can see… 
+
+আমরা কি শুরু করবো?
+
+Shall we get started? 
+
+আমার উপস্থাপনা নিম্নেবর্ণিত বিষয়গুলো নিয়ে গঠিত…
+
+My presentation consists of the following parts…. 
+
+আমার কথায় কান দাও..
+
+Give ear to my word… 
+
+আমার নাম জন এবং আমি দায়িত্বে আছি…
+
+My name is John and I’m responsible for…. 
+
+আমার নাম পেট্রি সিয়া…
+
+My name is Patricia… 
+
+আমি আপনাদের আমার উপস্থাপন এর একটা সংক্ষিপ্তসার দিচ্ছি..
+
+I’d like to give you a brief outline of my presentation…. 
+
+আমি আপনাদের সবাইকে মনোযোগ এবং আগ্রহের জন্য ধন্যবাদ জানাচ্ছি...
+
+I’d like to thank you all for your attention and interest… 
+
+আমি আপনার সাথে সম্পূর্ণ একমত...
+
+I totally agree with you… 
+
+আমি আপনি কি বলতে চাচ্ছেন বুঝতে পেরেছি..
+
+I get your point…. 
+
+আমি আশা করছি এখানে আসার পথে আপনাদের ভ্রমন টা ভালো হয়েছে..
+
+I hope you all had a pleasant Journey here today… 
+
+আমি আসলে আপনার সাথে একমত হতে পারছি না..
+
+I’m afraid. I can’t agree… 
+
+আমি প্রশ্নে ফেরত আসবো পরে যদি সময় থাকে..
+
+I’ll come back to the question later if I get time… 
+
+আমি এখন যাবো উপস্থাপনার অন্য একটি অংশে..
+
+I’d like to move on to another part of the presentation…. 
+
+আমি নিজের পরিচয় দিয়ে নিচ্ছি…
+
+Let me introduce myself first… 
+
+আমি মূল পয়েন্টগুলো একত্রে বলছি..
+
+I’d like to sum up the main points… 
+
+আমি যেই পণ্যটি দেখাচ্ছি তা অসাধারণ..
+
+The product I am showing is awesome….
