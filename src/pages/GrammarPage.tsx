@@ -57,8 +57,8 @@ export default function GrammarPage() {
     }
   };
 
-  const totalRules = chapters.reduce((acc, ch) => acc + ch.rules.length, 0);
-  const totalExamples = chapters.reduce((acc, ch) => acc + ch.examples.length, 0);
+  const totalSections = chapters.reduce((acc, ch) => acc + ch.sections.length, 0);
+  const totalChapters = chapters.length;
 
   if (selectedChapter) {
     const currentIndex = chapters.findIndex(c => c.id === selectedChapter.id);
@@ -136,8 +136,8 @@ export default function GrammarPage() {
                   <FileText className="w-5 h-5 text-blue-500" />
                 </div>
                 <div className="text-left">
-                  <div className="text-2xl font-bold text-foreground">{totalRules}</div>
-                  <div className="text-xs text-muted-foreground">Grammar Rules</div>
+                  <div className="text-2xl font-bold text-foreground">{totalSections}</div>
+                  <div className="text-xs text-muted-foreground">Sections</div>
                 </div>
               </motion.div>
               
@@ -151,7 +151,7 @@ export default function GrammarPage() {
                   <Lightbulb className="w-5 h-5 text-amber-500" />
                 </div>
                 <div className="text-left">
-                  <div className="text-2xl font-bold text-foreground">{totalExamples}+</div>
+                  <div className="text-2xl font-bold text-foreground">100+</div>
                   <div className="text-xs text-muted-foreground">Examples</div>
                 </div>
               </motion.div>
@@ -273,7 +273,7 @@ export default function GrammarPage() {
                     </div>
                     
                     <div className="flex items-center gap-4 text-xs text-muted-foreground shrink-0">
-                      <span>{chapter.rules.length} rules</span>
+                      <span>{chapter.sections.length} sections</span>
                       <ChevronRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
                     </div>
                   </motion.div>

@@ -2,11 +2,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ArrowLeft, BookOpen, Lightbulb, CheckCircle2, 
   ChevronDown, ChevronUp, GraduationCap, FileText,
-  Bookmark, Share2, Volume2, Copy, Check
+  Bookmark, Share2, Copy, Check, BookMarked, Zap
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Button } from '@/components/ui/button';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import type { GrammarChapter } from '@/lib/grammarParser';
+import { formatGrammarContent, extractBilingualPairs } from '@/lib/grammarParser';
 
 interface GrammarChapterViewProps {
   chapter: GrammarChapter;
@@ -25,11 +27,19 @@ export default function GrammarChapterView({
   hasNext,
   hasPrevious
 }: GrammarChapterViewProps) {
-  const [expandedRules, setExpandedRules] = useState<Set<string>>(new Set([chapter.rules[0]?.id]));
+  const [expandedSections, setExpandedSections] = useState<Set<string>>(
+    new Set(chapter.sections.slice(0, 3).map(s => s.id))
+  );
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [showAllContent, setShowAllContent] = useState(false);
 
-  const toggleRule = (id: string) => {
-    setExpandedRules(prev => {
+  const bilingualPairs = useMemo(() => 
+    extractBilingualPairs(chapter.rawContent), 
+    [chapter.rawContent]
+  );
+
+  const toggleSection = (id: string) => {
+    setExpandedSections(prev => {
       const next = new Set(prev);
       if (next.has(id)) {
         next.delete(id);
@@ -40,10 +50,36 @@ export default function GrammarChapterView({
     });
   };
 
+  const expandAll = () => {
+    setExpandedSections(new Set(chapter.sections.map(s => s.id)));
+  };
+
+  const collapseAll = () => {
+    setExpandedSections(new Set());
+  };
+
   const copyToClipboard = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
     setCopiedId(id);
     setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  const getSectionIcon = (type: string) => {
+    switch (type) {
+      case 'rule': return <FileText className="w-4 h-4" />;
+      case 'shortcut': return <Zap className="w-4 h-4" />;
+      case 'example': return <Lightbulb className="w-4 h-4" />;
+      default: return <BookOpen className="w-4 h-4" />;
+    }
+  };
+
+  const getSectionColor = (type: string) => {
+    switch (type) {
+      case 'rule': return 'text-blue-600 dark:text-blue-400 bg-blue-500/10 border-blue-500/20';
+      case 'shortcut': return 'text-amber-600 dark:text-amber-400 bg-amber-500/10 border-amber-500/20';
+      case 'example': return 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/20';
+      default: return 'text-purple-600 dark:text-purple-400 bg-purple-500/10 border-purple-500/20';
+    }
   };
 
   return (
@@ -68,11 +104,11 @@ export default function GrammarChapterView({
             </Button>
             
             <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8">
-                <Bookmark className="w-4 h-4" />
+              <Button variant="outline" size="sm" onClick={expandAll} className="text-xs">
+                Expand All
               </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8">
-                <Share2 className="w-4 h-4" />
+              <Button variant="outline" size="sm" onClick={collapseAll} className="text-xs">
+                Collapse All
               </Button>
             </div>
           </div>
@@ -87,15 +123,18 @@ export default function GrammarChapterView({
           className="mb-10"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 border border-primary/20">
-              <span className="text-xl font-serif font-bold text-primary">{chapter.id}</span>
+            <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20">
+              <span className="text-2xl font-serif font-bold text-primary">{chapter.id}</span>
             </div>
             <div className="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent" />
           </div>
           
-          <h1 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h1 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-2">
             {chapter.title}
           </h1>
+          <p className="font-bengali text-xl text-primary/80 mb-4">
+            {chapter.titleBengali}
+          </p>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
             {chapter.description}
           </p>
@@ -104,166 +143,204 @@ export default function GrammarChapterView({
           <div className="flex items-center gap-6 mt-6 text-sm">
             <div className="flex items-center gap-2 text-muted-foreground">
               <FileText className="w-4 h-4 text-primary" />
-              <span><strong className="text-foreground">{chapter.rules.length}</strong> Grammar Rules</span>
+              <span><strong className="text-foreground">{chapter.sections.length}</strong> Sections</span>
             </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Lightbulb className="w-4 h-4 text-amber-500" />
-              <span><strong className="text-foreground">{chapter.examples.length}</strong> Examples</span>
-            </div>
+            {bilingualPairs.length > 0 && (
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Lightbulb className="w-4 h-4 text-amber-500" />
+                <span><strong className="text-foreground">{bilingualPairs.length}</strong> Examples</span>
+              </div>
+            )}
           </div>
         </motion.div>
 
-        {/* Rules Section */}
-        {chapter.rules.length > 0 && (
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="mb-10"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-5 h-5 text-primary" />
-              <h2 className="font-serif text-xl font-semibold text-foreground">Grammar Rules</h2>
-            </div>
-            
-            <div className="space-y-3">
-              {chapter.rules.map((rule, index) => (
-                <motion.div
-                  key={rule.id}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 + index * 0.05 }}
-                  className={`
-                    border rounded-xl overflow-hidden transition-all duration-300
-                    ${expandedRules.has(rule.id) 
-                      ? 'border-primary/30 bg-primary/5 shadow-md shadow-primary/5' 
-                      : 'border-border bg-card hover:border-primary/20'
-                    }
-                  `}
+        {/* Sections */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mb-10"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <GraduationCap className="w-5 h-5 text-primary" />
+            <h2 className="font-serif text-xl font-semibold text-foreground">Chapter Content</h2>
+          </div>
+          
+          <div className="space-y-3">
+            {chapter.sections.map((section, index) => (
+              <motion.div
+                key={section.id}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.05 + index * 0.03 }}
+                className={`
+                  border rounded-xl overflow-hidden transition-all duration-300
+                  ${expandedSections.has(section.id) 
+                    ? 'border-primary/30 bg-primary/5 shadow-md shadow-primary/5' 
+                    : 'border-border bg-card hover:border-primary/20'
+                  }
+                `}
+              >
+                <button
+                  onClick={() => toggleSection(section.id)}
+                  className="w-full flex items-center justify-between p-4 text-left"
                 >
-                  <button
-                    onClick={() => toggleRule(rule.id)}
-                    className="w-full flex items-center justify-between p-4 text-left"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className={`
-                        w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold
-                        ${expandedRules.has(rule.id)
-                          ? 'bg-primary text-primary-foreground'
-                          : 'bg-muted text-muted-foreground'
-                        }
-                      `}>
-                        {index + 1}
-                      </div>
+                  <div className="flex items-center gap-3">
+                    <div className={`
+                      w-10 h-10 rounded-xl flex items-center justify-center border
+                      ${getSectionColor(section.type)}
+                    `}>
+                      {getSectionIcon(section.type)}
+                    </div>
+                    <div>
                       <span className={`
-                        font-medium transition-colors
-                        ${expandedRules.has(rule.id) ? 'text-primary' : 'text-foreground'}
+                        font-medium transition-colors block
+                        ${expandedSections.has(section.id) ? 'text-primary' : 'text-foreground'}
                       `}>
-                        {rule.title}
+                        {section.title}
+                      </span>
+                      <span className="text-xs text-muted-foreground capitalize">
+                        {section.type}
                       </span>
                     </div>
-                    {expandedRules.has(rule.id) ? (
-                      <ChevronUp className="w-5 h-5 text-primary" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-muted-foreground" />
-                    )}
-                  </button>
-                  
-                  <AnimatePresence>
-                    {expandedRules.has(rule.id) && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.2 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="px-4 pb-4 pt-2 border-t border-primary/10">
-                          <p className="text-muted-foreground leading-relaxed font-bengali whitespace-pre-wrap">
-                            {rule.content}
-                          </p>
-                          
-                          {rule.examples.length > 0 && (
-                            <div className="mt-4 space-y-2">
-                              <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-                                <Lightbulb className="w-4 h-4 text-amber-500" />
-                                <span>Examples</span>
-                              </div>
-                              {rule.examples.map((example, i) => (
-                                <div
-                                  key={i}
-                                  className="pl-6 py-2 border-l-2 border-amber-500/30 bg-amber-500/5 rounded-r-lg"
-                                >
-                                  <p className="text-sm text-foreground font-bengali">{example}</p>
-                                </div>
-                              ))}
-                            </div>
-                          )}
+                  </div>
+                  {expandedSections.has(section.id) ? (
+                    <ChevronUp className="w-5 h-5 text-primary" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-muted-foreground" />
+                  )}
+                </button>
+                
+                <AnimatePresence>
+                  {expandedSections.has(section.id) && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-4 pb-4 pt-2 border-t border-primary/10">
+                        <div className="prose prose-sm dark:prose-invert max-w-none">
+                          <div className="text-muted-foreground leading-relaxed font-bengali whitespace-pre-wrap text-base">
+                            {formatGrammarContent(section.content)}
+                          </div>
                         </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              ))}
-            </div>
-          </motion.section>
-        )}
+                        
+                        {section.englishContent && (
+                          <div className="mt-4 p-4 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
+                            <div className="flex items-center gap-2 mb-2">
+                              <Lightbulb className="w-4 h-4 text-emerald-500" />
+                              <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400">Examples</span>
+                            </div>
+                            <p className="text-foreground leading-relaxed">
+                              {section.englishContent}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
 
-        {/* Translation Examples */}
-        {chapter.examples.length > 0 && (
+        {/* Raw Content Toggle */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mb-10"
+        >
+          <Button
+            variant="outline"
+            onClick={() => setShowAllContent(!showAllContent)}
+            className="w-full gap-2"
+          >
+            <BookMarked className="w-4 h-4" />
+            {showAllContent ? 'Hide Full Chapter Text' : 'Show Full Chapter Text'}
+          </Button>
+          
+          <AnimatePresence>
+            {showAllContent && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                className="mt-4 overflow-hidden"
+              >
+                <ScrollArea className="h-[500px] rounded-xl border border-border bg-card p-6">
+                  <div className="prose prose-sm dark:prose-invert max-w-none">
+                    <div className="font-bengali text-base leading-loose whitespace-pre-wrap">
+                      {formatGrammarContent(chapter.rawContent)}
+                    </div>
+                  </div>
+                </ScrollArea>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.section>
+
+        {/* Bilingual Examples */}
+        {bilingualPairs.length > 0 && (
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className="mb-10"
           >
             <div className="flex items-center gap-3 mb-6">
               <BookOpen className="w-5 h-5 text-emerald-500" />
-              <h2 className="font-serif text-xl font-semibold text-foreground">Practice Examples</h2>
+              <h2 className="font-serif text-xl font-semibold text-foreground">
+                Bengali-English Examples
+              </h2>
             </div>
             
-            <div className="space-y-4">
-              {chapter.examples.slice(0, 10).map((example, index) => (
+            <div className="space-y-3">
+              {bilingualPairs.slice(0, 20).map((pair, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 + index * 0.05 }}
-                  className="group p-5 rounded-xl border border-border bg-card hover:border-emerald-500/30 hover:shadow-lg transition-all duration-300"
+                  transition={{ delay: 0.3 + index * 0.02 }}
+                  className="group p-4 rounded-xl border border-border bg-card hover:border-emerald-500/30 transition-all"
                 >
-                  <div className="flex items-start justify-between gap-4 mb-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-medium px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
-                        Bengali
-                      </span>
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1 space-y-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                          বাংলা
+                        </span>
+                      </div>
+                      <p className="font-bengali text-foreground">
+                        {pair.bengali}
+                      </p>
+                      
+                      <div className="flex items-center gap-2 pt-2">
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                          English
+                        </span>
+                      </div>
+                      <p className="text-muted-foreground italic">
+                        {pair.english}
+                      </p>
                     </div>
+                    
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 opacity-0 group-hover:opacity-100 transition-opacity"
-                      onClick={() => copyToClipboard(example.english, `example-${index}`)}
+                      className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity shrink-0"
+                      onClick={() => copyToClipboard(`${pair.bengali}\n${pair.english}`, `pair-${index}`)}
                     >
-                      {copiedId === `example-${index}` ? (
-                        <Check className="w-3.5 h-3.5 text-emerald-500" />
+                      {copiedId === `pair-${index}` ? (
+                        <Check className="w-4 h-4 text-emerald-500" />
                       ) : (
-                        <Copy className="w-3.5 h-3.5" />
+                        <Copy className="w-4 h-4" />
                       )}
                     </Button>
                   </div>
-                  
-                  <p className="font-bengali text-foreground mb-4 text-lg leading-relaxed">
-                    {example.bengali}
-                  </p>
-                  
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-medium px-2 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400">
-                      English
-                    </span>
-                  </div>
-                  
-                  <p className="text-muted-foreground leading-relaxed italic">
-                    {example.english}
-                  </p>
                 </motion.div>
               ))}
             </div>
@@ -274,7 +351,7 @@ export default function GrammarChapterView({
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.4 }}
           className="flex items-center justify-between pt-8 border-t border-border"
         >
           <Button
@@ -284,15 +361,19 @@ export default function GrammarChapterView({
             className="gap-2"
           >
             <ArrowLeft className="w-4 h-4" />
-            Previous Chapter
+            Previous
           </Button>
+          
+          <span className="text-sm text-muted-foreground">
+            Chapter {chapter.id}
+          </span>
           
           <Button
             onClick={onNext}
             disabled={!hasNext}
             className="gap-2"
           >
-            Next Chapter
+            Next
             <ArrowLeft className="w-4 h-4 rotate-180" />
           </Button>
         </motion.div>
@@ -301,7 +382,7 @@ export default function GrammarChapterView({
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.5 }}
           className="mt-10 p-6 rounded-2xl bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border border-primary/20 text-center"
         >
           <CheckCircle2 className="w-10 h-10 mx-auto mb-3 text-primary" />

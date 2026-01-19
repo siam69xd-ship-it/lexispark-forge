@@ -68,16 +68,16 @@ export default function GrammarChapterCard({ chapter, index, onClick }: GrammarC
         
         {/* Stats */}
         <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
-          {chapter.rules.length > 0 && (
+          {chapter.sections.length > 0 && (
             <div className="flex items-center gap-1.5">
               <FileText className="w-3.5 h-3.5" />
-              <span>{chapter.rules.length} Rules</span>
+              <span>{chapter.sections.length} Sections</span>
             </div>
           )}
-          {chapter.examples.length > 0 && (
+          {chapter.titleBengali && (
             <div className="flex items-center gap-1.5">
               <Lightbulb className="w-3.5 h-3.5" />
-              <span>{chapter.examples.length} Examples</span>
+              <span className="font-bengali">{chapter.titleBengali.slice(0, 15)}...</span>
             </div>
           )}
         </div>
