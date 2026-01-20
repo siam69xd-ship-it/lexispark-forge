@@ -7,6 +7,7 @@ import { lazy, Suspense } from "react";
 import { WordProvider } from "@/context/WordContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { AuthProvider } from "@/context/AuthContext";
+import { GrammarProvider } from "@/context/GrammarContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import Navbar from "@/components/Navbar";
 import HomePage from "@/pages/HomePage";
@@ -18,6 +19,8 @@ const WordDetailPage = lazy(() => import("@/pages/WordDetailPage"));
 const QuizPage = lazy(() => import("@/pages/QuizPage"));
 const FlashcardsPage = lazy(() => import("@/pages/FlashcardsPage"));
 const ReadAndLearnPage = lazy(() => import("@/pages/ReadAndLearnPage"));
+const GrammarPage = lazy(() => import("@/pages/GrammarPage"));
+const GrammarChapterPage = lazy(() => import("@/pages/GrammarChapterPage"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
 const AuthPage = lazy(() => import("@/pages/AuthPage"));
 const DashboardPage = lazy(() => import("@/pages/DashboardPage"));
@@ -49,30 +52,34 @@ const App = () => (
       <ThemeProvider>
         <AuthProvider>
           <WordProvider>
-            <TooltipProvider>
-              <Toaster />
-              <Sonner />
-              <BrowserRouter>
-                <Suspense fallback={<LoadingFallback />}>
-                  <Routes>
-                    <Route path="/" element={<><Navbar /><HomePage /></>} />
-                    <Route path="/words" element={<><Navbar /><WordsPage /></>} />
-                    <Route path="/word/:id" element={<><Navbar /><WordDetailPage /></>} />
-                    <Route path="/quiz" element={<><Navbar /><QuizPage /></>} />
-                    <Route path="/flashcards" element={<><Navbar /><FlashcardsPage /></>} />
-                    <Route path="/read-and-learn" element={<><Navbar /><ReadAndLearnPage /></>} />
-                    <Route path="/about" element={<><Navbar /><AboutPage /></>} />
-                    <Route path="/terms" element={<><Navbar /><TermsPage /></>} />
-                    <Route path="/privacy" element={<><Navbar /><PrivacyPage /></>} />
-                    <Route path="/faq" element={<><Navbar /><FAQPage /></>} />
-                    <Route path="/contact" element={<><Navbar /><ContactPage /></>} />
-                    <Route path="/auth" element={<AuthPage />} />
-                    <Route path="/dashboard" element={<><Navbar /><DashboardPage /></>} />
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
-                </Suspense>
-              </BrowserRouter>
-            </TooltipProvider>
+            <GrammarProvider>
+              <TooltipProvider>
+                <Toaster />
+                <Sonner />
+                <BrowserRouter>
+                  <Suspense fallback={<LoadingFallback />}>
+                    <Routes>
+                      <Route path="/" element={<><Navbar /><HomePage /></>} />
+                      <Route path="/words" element={<><Navbar /><WordsPage /></>} />
+                      <Route path="/word/:id" element={<><Navbar /><WordDetailPage /></>} />
+                      <Route path="/quiz" element={<><Navbar /><QuizPage /></>} />
+                      <Route path="/flashcards" element={<><Navbar /><FlashcardsPage /></>} />
+                      <Route path="/read-and-learn" element={<><Navbar /><ReadAndLearnPage /></>} />
+                      <Route path="/grammar" element={<><Navbar /><GrammarPage /></>} />
+                      <Route path="/grammar/:id" element={<><Navbar /><GrammarChapterPage /></>} />
+                      <Route path="/about" element={<><Navbar /><AboutPage /></>} />
+                      <Route path="/terms" element={<><Navbar /><TermsPage /></>} />
+                      <Route path="/privacy" element={<><Navbar /><PrivacyPage /></>} />
+                      <Route path="/faq" element={<><Navbar /><FAQPage /></>} />
+                      <Route path="/contact" element={<><Navbar /><ContactPage /></>} />
+                      <Route path="/auth" element={<AuthPage />} />
+                      <Route path="/dashboard" element={<><Navbar /><DashboardPage /></>} />
+                      <Route path="*" element={<NotFound />} />
+                    </Routes>
+                  </Suspense>
+                </BrowserRouter>
+              </TooltipProvider>
+            </GrammarProvider>
           </WordProvider>
         </AuthProvider>
       </ThemeProvider>
