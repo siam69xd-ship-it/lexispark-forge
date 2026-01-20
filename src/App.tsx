@@ -18,7 +18,6 @@ const WordDetailPage = lazy(() => import("@/pages/WordDetailPage"));
 const QuizPage = lazy(() => import("@/pages/QuizPage"));
 const FlashcardsPage = lazy(() => import("@/pages/FlashcardsPage"));
 const ReadAndLearnPage = lazy(() => import("@/pages/ReadAndLearnPage"));
-const GrammarPage = lazy(() => import("@/pages/GrammarPage"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
 const AuthPage = lazy(() => import("@/pages/AuthPage"));
 const DashboardPage = lazy(() => import("@/pages/DashboardPage"));
@@ -62,7 +61,6 @@ const App = () => (
                     <Route path="/quiz" element={<><Navbar /><QuizPage /></>} />
                     <Route path="/flashcards" element={<><Navbar /><FlashcardsPage /></>} />
                     <Route path="/read-and-learn" element={<><Navbar /><ReadAndLearnPage /></>} />
-                    <Route path="/grammar" element={<><Navbar /><GrammarPage /></>} />
                     <Route path="/about" element={<><Navbar /><AboutPage /></>} />
                     <Route path="/terms" element={<><Navbar /><TermsPage /></>} />
                     <Route path="/privacy" element={<><Navbar /><PrivacyPage /></>} />

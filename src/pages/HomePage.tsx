@@ -38,9 +38,9 @@ export default function HomePage() {
   const features = [
     { icon: BookOpen, text: 'Learn words through Bangla & English passages' },
     { icon: MousePointer, text: 'Click any word to see meaning, usage, contrast, and pronunciation' },
-    { icon: GraduationCap, text: 'Master grammar with chapter-wise lessons' },
     { icon: Brain, text: 'Practice with adaptive quizzes' },
     { icon: Target, text: 'Designed for reading, writing, and comprehension' },
+    { icon: GraduationCap, text: 'Suitable for students, writers, and advanced learners' },
   ];
 
   const howItWorks = [
@@ -81,7 +81,6 @@ export default function HomePage() {
     'Context-based learning',
     'Bangla + English explanations',
     'Difficulty-based word levels',
-    'Essential Grammar chapters',
     'Pronunciation (US & UK)',
     'Adaptive quizzes',
     'Exam-neutral academic focus',
