@@ -34,9 +34,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const fetchProfile = async (userId: string) => {
     try {
       const { data, error } = await supabase
-        .from('profiles')
+        .from('profiles' as any)
         .select('*')
-        .eq('id', userId)
+        .eq('user_id', userId)
         .maybeSingle();
 
       if (error) {
@@ -44,7 +44,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return;
       }
 
-      setProfile(data);
+      setProfile(data as unknown as Profile | null);
     } catch (err) {
       console.error('Error in fetchProfile:', err);
     }

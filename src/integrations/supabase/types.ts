@@ -14,7 +14,123 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      daily_streaks: {
+        Row: {
+          current_streak: number | null
+          id: string
+          last_activity_date: string | null
+          longest_streak: number | null
+          user_id: string
+        }
+        Insert: {
+          current_streak?: number | null
+          id?: string
+          last_activity_date?: string | null
+          longest_streak?: number | null
+          user_id: string
+        }
+        Update: {
+          current_streak?: number | null
+          id?: string
+          last_activity_date?: string | null
+          longest_streak?: number | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          email: string | null
+          id: string
+          login_provider: string | null
+          name: string | null
+          user_id: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          login_provider?: string | null
+          name?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          login_provider?: string | null
+          name?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      quiz_attempts: {
+        Row: {
+          completed_at: string
+          correct_answers: number
+          id: string
+          quiz_type: string
+          score_percentage: number
+          total_questions: number
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string
+          correct_answers: number
+          id?: string
+          quiz_type: string
+          score_percentage: number
+          total_questions: number
+          user_id: string
+        }
+        Update: {
+          completed_at?: string
+          correct_answers?: number
+          id?: string
+          quiz_type?: string
+          score_percentage?: number
+          total_questions?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_word_progress: {
+        Row: {
+          first_viewed_at: string
+          id: string
+          last_viewed_at: string
+          status: string | null
+          user_id: string
+          view_count: number | null
+          word: string
+          word_id: string
+        }
+        Insert: {
+          first_viewed_at?: string
+          id?: string
+          last_viewed_at?: string
+          status?: string | null
+          user_id: string
+          view_count?: number | null
+          word: string
+          word_id: string
+        }
+        Update: {
+          first_viewed_at?: string
+          id?: string
+          last_viewed_at?: string
+          status?: string | null
+          user_id?: string
+          view_count?: number | null
+          word?: string
+          word_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
