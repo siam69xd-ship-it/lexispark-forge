@@ -17,6 +17,8 @@ export interface GrammarRule {
   number?: number;
   description?: string;
   examples?: string[];
+  rule?: string;
+  example?: string;
 }
 
 export interface ShortcutTip {
@@ -60,6 +62,11 @@ export interface Connector {
   examples: string[];
 }
 
+export interface ProjectSentence {
+  bengali: string;
+  english: string;
+}
+
 export interface Project {
   number: number;
   title?: string;
@@ -67,8 +74,60 @@ export interface Project {
   english?: string;
   passage?: string;
   translation?: string;
-  sentences?: { bengali: string; english: string }[];
+  sentences?: ProjectSentence[];
   steps?: string[];
+  headline?: string;
+}
+
+// Chapter 8 - Essential Grammar types
+export interface VerbType {
+  type: string;
+  description?: string;
+  example?: string;
+  structures?: string[];
+  subtypes?: string[];
+  examples?: string[];
+}
+
+export interface TopicContent {
+  topic: string;
+  count?: number;
+  common_rules?: string[];
+  types?: VerbType[];
+  rules?: GrammarRule[];
+  modals?: ModalAux[];
+  active_to_passive?: string;
+  tense_structures?: string[];
+  definitions?: Definition[];
+}
+
+export interface ModalAux {
+  modal: string;
+  uses: string[];
+  examples: string[];
+}
+
+export interface Definition {
+  term: string;
+  description: string;
+  example: string;
+}
+
+export interface GrammarPart {
+  part: string;
+  topics: TopicContent[];
+}
+
+// Chapter 9 - Presentation types
+export interface PresentationSystem {
+  system: number;
+  english: string;
+  bangla: string;
+}
+
+export interface PresentationPhrase {
+  bengali: string;
+  english: string;
 }
 
 export interface GrammarChapter {
@@ -90,6 +149,12 @@ export interface GrammarChapter {
   ict_topic?: { sentences: GrammarExample[] };
   environment_topic?: { bengali: string; english: string; verb_ing_usage: string[] };
   corona_pandemic_example?: { bengali: string; english: string; linking_words_used: string[] };
+  // Chapter 8 - Essential Grammar
+  parts?: GrammarPart[];
+  // Chapter 9 - Presentation
+  starting_systems?: PresentationSystem[];
+  finishing_systems?: PresentationSystem[];
+  presentation_phrases?: PresentationPhrase[];
 }
 
 export interface GrammarBook {
@@ -116,4 +181,15 @@ export interface ChapterProgress {
   practiceScore: number | null;
   practiceCompleted: boolean;
   lastAttempt?: string;
+}
+
+// AI Feedback response
+export interface AIFeedbackResponse {
+  score: number;
+  isCorrect: boolean;
+  strengths: string[];
+  improvements: string[];
+  correctedVersion: string;
+  grammarTips: string[];
+  overallComment: string;
 }

@@ -1,1 +1,4 @@
-project_id = "szhnuutqbdyistoysygg"
+project_id = "hvegpoyoxstonmvnitzr"
+
+[functions.grammar-feedback]
+verify_jwt = false
