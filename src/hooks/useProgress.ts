@@ -57,7 +57,7 @@ export function useProgress() {
     try {
       // Fetch word progress
       const { data: words, error: wordsError } = await supabase
-        .from('user_word_progress')
+        .from('user_word_progress' as any)
         .select('*')
         .eq('user_id', user.id)
         .order('last_viewed_at', { ascending: false });
@@ -66,7 +66,7 @@ export function useProgress() {
 
       // Fetch quiz attempts
       const { data: quizzes, error: quizzesError } = await supabase
-        .from('quiz_attempts')
+        .from('quiz_attempts' as any)
         .select('*')
         .eq('user_id', user.id)
         .order('completed_at', { ascending: false });
@@ -75,19 +75,19 @@ export function useProgress() {
 
       // Fetch streak
       const { data: streakData, error: streakError } = await supabase
-        .from('daily_streaks')
+        .from('daily_streaks' as any)
         .select('*')
         .eq('user_id', user.id)
         .maybeSingle();
 
       if (streakError) throw streakError;
 
-      const wordData = (words || []) as WordProgress[];
-      const quizData = (quizzes || []) as QuizAttempt[];
+      const wordData = (words || []) as unknown as WordProgress[];
+      const quizData = (quizzes || []) as unknown as QuizAttempt[];
 
       setWordProgress(wordData);
       setQuizAttempts(quizData);
-      setStreak(streakData);
+      setStreak(streakData as unknown as DailyStreak | null);
 
       // Calculate stats
       const today = new Date().toISOString().split('T')[0];
@@ -106,8 +106,8 @@ export function useProgress() {
         todayWords,
         quizzesTaken: quizData.length,
         averageScore: Math.round(avgScore),
-        currentStreak: streakData?.current_streak || 0,
-        longestStreak: streakData?.longest_streak || 0
+        currentStreak: (streakData as unknown as DailyStreak | null)?.current_streak || 0,
+        longestStreak: (streakData as unknown as DailyStreak | null)?.longest_streak || 0
       });
     } catch (error) {
       console.error('Error fetching progress:', error);
@@ -126,7 +126,7 @@ export function useProgress() {
     try {
       // Check if word already exists
       const { data: existing } = await supabase
-        .from('user_word_progress')
+        .from('user_word_progress' as any)
         .select('id, view_count')
         .eq('user_id', user.id)
         .eq('word_id', wordId)
@@ -135,22 +135,22 @@ export function useProgress() {
       if (existing) {
         // Update view count
         await supabase
-          .from('user_word_progress')
+          .from('user_word_progress' as any)
           .update({
-            view_count: existing.view_count + 1,
+            view_count: (existing as any).view_count + 1,
             last_viewed_at: new Date().toISOString()
           })
-          .eq('id', existing.id);
+          .eq('id', (existing as any).id);
       } else {
         // Insert new
         await supabase
-          .from('user_word_progress')
+          .from('user_word_progress' as any)
           .insert({
             user_id: user.id,
             word_id: wordId,
             word: word,
             status: 'viewed'
-          });
+          } as any);
       }
 
       // Update streak
@@ -168,7 +168,7 @@ export function useProgress() {
 
     try {
       const { data: existing } = await supabase
-        .from('user_word_progress')
+        .from('user_word_progress' as any)
         .select('id')
         .eq('user_id', user.id)
         .eq('word_id', wordId)
@@ -176,18 +176,18 @@ export function useProgress() {
 
       if (existing) {
         await supabase
-          .from('user_word_progress')
+          .from('user_word_progress' as any)
           .update({ status: 'learned', last_viewed_at: new Date().toISOString() })
-          .eq('id', existing.id);
+          .eq('id', (existing as any).id);
       } else {
         await supabase
-          .from('user_word_progress')
+          .from('user_word_progress' as any)
           .insert({
             user_id: user.id,
             word_id: wordId,
             word: word,
             status: 'learned'
-          });
+          } as any);
       }
 
       toast({
@@ -206,27 +206,27 @@ export function useProgress() {
 
     try {
       const { data: existing } = await supabase
-        .from('user_word_progress')
+        .from('user_word_progress' as any)
         .select('id, status')
         .eq('user_id', user.id)
         .eq('word_id', wordId)
         .maybeSingle();
 
       if (existing) {
-        const newStatus = existing.status === 'favorite' ? 'viewed' : 'favorite';
+        const newStatus = (existing as any).status === 'favorite' ? 'viewed' : 'favorite';
         await supabase
-          .from('user_word_progress')
+          .from('user_word_progress' as any)
           .update({ status: newStatus })
-          .eq('id', existing.id);
+          .eq('id', (existing as any).id);
       } else {
         await supabase
-          .from('user_word_progress')
+          .from('user_word_progress' as any)
           .insert({
             user_id: user.id,
             word_id: wordId,
             word: word,
             status: 'favorite'
-          });
+          } as any);
       }
 
       await fetchProgress();
@@ -246,14 +246,14 @@ export function useProgress() {
       const scorePercentage = (correctAnswers / totalQuestions) * 100;
 
       await supabase
-        .from('quiz_attempts')
+        .from('quiz_attempts' as any)
         .insert({
           user_id: user.id,
           quiz_type: quizType,
           total_questions: totalQuestions,
           correct_answers: correctAnswers,
           score_percentage: scorePercentage
-        });
+        } as any);
 
       await updateStreak();
       await fetchProgress();
@@ -269,48 +269,49 @@ export function useProgress() {
       const today = new Date().toISOString().split('T')[0];
       
       const { data: existing } = await supabase
-        .from('daily_streaks')
+        .from('daily_streaks' as any)
         .select('*')
         .eq('user_id', user.id)
         .maybeSingle();
 
       if (existing) {
-        const lastActivity = existing.last_activity_date;
+        const existingData = existing as any;
+        const lastActivity = existingData.last_activity_date;
         const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
         const yesterdayStr = yesterday.toISOString().split('T')[0];
 
-        let newStreak = existing.current_streak;
+        let newStreak = existingData.current_streak;
         
         if (lastActivity === today) {
           // Already active today, no change
           return;
         } else if (lastActivity === yesterdayStr) {
           // Continuing streak
-          newStreak = existing.current_streak + 1;
+          newStreak = existingData.current_streak + 1;
         } else {
           // Streak broken, start fresh
           newStreak = 1;
         }
 
         await supabase
-          .from('daily_streaks')
+          .from('daily_streaks' as any)
           .update({
             current_streak: newStreak,
-            longest_streak: Math.max(newStreak, existing.longest_streak),
+            longest_streak: Math.max(newStreak, existingData.longest_streak),
             last_activity_date: today
           })
           .eq('user_id', user.id);
       } else {
         // Create new streak record
         await supabase
-          .from('daily_streaks')
+          .from('daily_streaks' as any)
           .insert({
             user_id: user.id,
             current_streak: 1,
             longest_streak: 1,
             last_activity_date: today
-          });
+          } as any);
       }
     } catch (error) {
       console.error('Error updating streak:', error);
