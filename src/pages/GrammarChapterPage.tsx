@@ -553,6 +553,427 @@ export default function GrammarChapterPage() {
     });
   }
 
+  // Chapter 7: Basic Formula and Steps
+  if (chapter.basic_formula || chapter.steps) {
+    lessonSections.push({
+      title: 'Writing Formula',
+      icon: <Zap className="w-5 h-5" />,
+      content: (
+        <div className="space-y-6">
+          {chapter.basic_formula && (
+            <div className="p-6 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20">
+              <h4 className="font-semibold text-primary mb-3">Basic Formula:</h4>
+              <p className="text-xl font-mono font-bold text-foreground">{chapter.basic_formula}</p>
+            </div>
+          )}
+          {chapter.steps && chapter.steps.length > 0 && (
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Translation Steps:</h4>
+              {chapter.steps.map((step, i) => (
+                <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-muted/30 border border-border">
+                  <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-bold shrink-0">
+                    {i + 1}
+                  </span>
+                  <p className="font-bengali text-foreground pt-1">{step}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )
+    });
+  }
+
+  // Chapter 7: Projects (Real Life Writing Examples)
+  if (chapter.projects && chapter.projects.length > 0) {
+    lessonSections.push({
+      title: 'Real Life Projects',
+      icon: <FileText className="w-5 h-5" />,
+      content: (
+        <div className="space-y-6">
+          {chapter.projects.map((proj, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.05 }}
+              className="p-5 rounded-xl border border-border bg-card hover:shadow-md transition-shadow"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 text-primary flex items-center justify-center text-sm font-bold shrink-0">
+                  {proj.number}
+                </span>
+                <div>
+                  {proj.title && <h4 className="font-semibold text-foreground">{proj.title}</h4>}
+                  {proj.headline && <p className="text-sm text-primary font-medium">{proj.headline}</p>}
+                </div>
+              </div>
+
+              {/* Bengali Text */}
+              {(proj.bengali || proj.passage) && (
+                <div className="p-4 rounded-lg bg-gradient-to-r from-muted/50 to-muted/30 border border-border/50 mb-3">
+                  <p className="font-bengali text-muted-foreground leading-relaxed">
+                    {proj.passage || proj.bengali}
+                  </p>
+                </div>
+              )}
+
+              {/* English Translation */}
+              {(proj.english || proj.translation) && (
+                <div className="p-4 rounded-lg bg-gradient-to-r from-green-500/10 to-green-500/5 border border-green-500/20">
+                  <div className="flex items-center gap-2 mb-2">
+                    <CheckCircle className="w-4 h-4 text-green-600 dark:text-green-400" />
+                    <span className="text-sm font-semibold text-green-600 dark:text-green-400">English Translation:</span>
+                  </div>
+                  <p className="text-foreground leading-relaxed">
+                    {proj.translation || proj.english}
+                  </p>
+                </div>
+              )}
+
+              {/* Project Steps */}
+              {proj.steps && proj.steps.length > 0 && (
+                <div className="mt-4 pt-4 border-t border-border/50">
+                  <h5 className="text-sm font-semibold text-muted-foreground mb-2">Analysis:</h5>
+                  <div className="space-y-1">
+                    {proj.steps.map((step, j) => (
+                      <p key={j} className="text-sm text-muted-foreground pl-2 border-l-2 border-primary/30">
+                        {step}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Sentences */}
+              {proj.sentences && proj.sentences.length > 0 && (
+                <div className="mt-4 space-y-3">
+                  {proj.sentences.map((sentence, j) => (
+                    <div key={j} className="p-3 rounded-lg bg-muted/30 border border-border/50">
+                      <p className="font-bengali text-sm text-muted-foreground mb-1">{sentence.bengali}</p>
+                      <p className="text-sm text-foreground">{sentence.english}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      )
+    });
+  }
+
+  // Chapter 8: Essential Grammar Parts
+  if (chapter.parts && chapter.parts.length > 0) {
+    chapter.parts.forEach((part, partIndex) => {
+      lessonSections.push({
+        title: part.part,
+        icon: <GraduationCap className="w-5 h-5" />,
+        content: (
+          <div className="space-y-6">
+            {part.topics.map((topic, topicIndex) => (
+              <motion.div 
+                key={topicIndex}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: topicIndex * 0.05 }}
+                className="p-5 rounded-xl border border-border bg-card"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <BookOpen className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">{topic.topic}</h4>
+                    {topic.count && <p className="text-xs text-muted-foreground">{topic.count} items</p>}
+                  </div>
+                </div>
+
+                {/* Common Rules */}
+                {topic.common_rules && topic.common_rules.length > 0 && (
+                  <div className="space-y-2 mb-4">
+                    {topic.common_rules.map((rule, j) => (
+                      <p key={j} className="text-sm text-muted-foreground font-bengali pl-3 border-l-2 border-primary/30">
+                        • {rule}
+                      </p>
+                    ))}
+                  </div>
+                )}
+
+                {/* Types */}
+                {topic.types && topic.types.length > 0 && (
+                  <div className="space-y-3">
+                    {topic.types.map((type, j) => (
+                      <div key={j} className="p-4 rounded-lg bg-muted/30 border border-border/50">
+                        <h5 className="font-semibold text-primary mb-2">{type.type}</h5>
+                        {type.description && <p className="text-sm text-muted-foreground font-bengali mb-2">{type.description}</p>}
+                        {type.example && <p className="text-sm text-foreground italic">• {type.example}</p>}
+                        {type.structures && (
+                          <div className="flex flex-wrap gap-2 mt-2">
+                            {type.structures.map((s, k) => (
+                              <span key={k} className="px-2 py-1 text-xs rounded bg-primary/10 text-primary font-mono">{s}</span>
+                            ))}
+                          </div>
+                        )}
+                        {type.subtypes && (
+                          <div className="flex flex-wrap gap-2 mt-2">
+                            {type.subtypes.map((st, k) => (
+                              <span key={k} className="px-2 py-1 text-xs rounded bg-muted text-muted-foreground">{st}</span>
+                            ))}
+                          </div>
+                        )}
+                        {type.examples && (
+                          <div className="mt-2 space-y-1">
+                            {type.examples.map((ex, k) => (
+                              <p key={k} className="text-sm text-muted-foreground">• {ex}</p>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Modal Auxiliaries */}
+                {topic.modals && topic.modals.length > 0 && (
+                  <div className="space-y-3">
+                    {topic.modals.map((modal, j) => (
+                      <div key={j} className="p-4 rounded-lg bg-muted/30 border border-border/50">
+                        <h5 className="font-bold text-primary mb-2">{modal.modal}</h5>
+                        <div className="space-y-1 mb-3">
+                          {modal.uses.map((use, k) => (
+                            <p key={k} className="text-sm text-muted-foreground font-bengali">• {use}</p>
+                          ))}
+                        </div>
+                        <div className="space-y-1">
+                          {modal.examples.map((ex, k) => (
+                            <p key={k} className="text-sm text-foreground italic pl-2 border-l-2 border-primary/30">"{ex}"</p>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Tense Structures for Voice */}
+                {topic.tense_structures && topic.tense_structures.length > 0 && (
+                  <div className="space-y-2">
+                    <h5 className="text-sm font-semibold text-foreground mb-2">Tense Structures:</h5>
+                    {topic.tense_structures.map((ts, j) => (
+                      <p key={j} className="text-sm font-mono text-muted-foreground bg-muted/50 px-3 py-2 rounded">{ts}</p>
+                    ))}
+                  </div>
+                )}
+
+                {/* Definitions (Gerund, Participle, Infinitive) */}
+                {topic.definitions && topic.definitions.length > 0 && (
+                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {topic.definitions.map((def, j) => (
+                      <div key={j} className="p-4 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+                        <h5 className="font-bold text-primary mb-2">{def.term}</h5>
+                        <p className="text-sm text-muted-foreground font-bengali mb-2">{def.description}</p>
+                        <p className="text-sm text-foreground italic">• {def.example}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Rules */}
+                {topic.rules && topic.rules.length > 0 && (
+                  <div className="space-y-2">
+                    {topic.rules.map((rule, j) => (
+                      <div key={j} className="p-3 rounded-lg bg-muted/30 border border-border/50">
+                        {rule.description && <p className="text-sm text-muted-foreground font-bengali">{rule.description}</p>}
+                        {rule.example && <p className="text-sm text-foreground italic mt-1">• {rule.example}</p>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+        )
+      });
+    });
+  }
+
+  // Chapter 9: Presentation Starting Systems
+  if (chapter.starting_systems && chapter.starting_systems.length > 0) {
+    lessonSections.push({
+      title: 'Starting a Presentation',
+      icon: <Play className="w-5 h-5" />,
+      content: (
+        <div className="space-y-4">
+          {chapter.starting_systems.map((system, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="p-5 rounded-xl border border-border bg-card"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500/20 to-green-500/5 text-green-600 flex items-center justify-center text-lg font-bold">
+                  {system.system}
+                </span>
+                <span className="text-sm font-semibold text-green-600 dark:text-green-400">System {system.system}</span>
+              </div>
+              <div className="p-4 rounded-lg bg-gradient-to-r from-green-500/10 to-green-500/5 border border-green-500/20 mb-3">
+                <p className="text-foreground leading-relaxed">{system.english}</p>
+                <button onClick={() => speak(system.english)} className="mt-2 p-2 hover:bg-green-500/10 rounded-full transition-colors inline-flex items-center gap-2 text-sm text-green-600">
+                  <Volume2 className="w-4 h-4" />
+                  Listen
+                </button>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+                <p className="font-bengali text-muted-foreground leading-relaxed">{system.bangla}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      )
+    });
+  }
+
+  // Chapter 9: Presentation Finishing Systems
+  if (chapter.finishing_systems && chapter.finishing_systems.length > 0) {
+    lessonSections.push({
+      title: 'Finishing a Presentation',
+      icon: <Award className="w-5 h-5" />,
+      content: (
+        <div className="space-y-4">
+          {chapter.finishing_systems.map((system, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="p-5 rounded-xl border border-border bg-card"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500/20 to-amber-500/5 text-amber-600 flex items-center justify-center text-lg font-bold">
+                  {system.system}
+                </span>
+                <span className="text-sm font-semibold text-amber-600 dark:text-amber-400">System {system.system}</span>
+              </div>
+              <div className="p-4 rounded-lg bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 mb-3">
+                <p className="text-foreground leading-relaxed">{system.english}</p>
+                <button onClick={() => speak(system.english)} className="mt-2 p-2 hover:bg-amber-500/10 rounded-full transition-colors inline-flex items-center gap-2 text-sm text-amber-600">
+                  <Volume2 className="w-4 h-4" />
+                  Listen
+                </button>
+              </div>
+              <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
+                <p className="font-bengali text-muted-foreground leading-relaxed">{system.bangla}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      )
+    });
+  }
+
+  // Chapter 9: Presentation Phrases
+  if (chapter.presentation_phrases && chapter.presentation_phrases.length > 0) {
+    lessonSections.push({
+      title: 'Useful Phrases',
+      icon: <MessageCircle className="w-5 h-5" />,
+      content: (
+        <div className="space-y-3">
+          {chapter.presentation_phrases.map((phrase, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: i * 0.05 }}
+              className="p-4 rounded-xl border border-border bg-card hover:border-primary/30 transition-colors"
+            >
+              <p className="font-bengali text-muted-foreground mb-2">{phrase.bengali}</p>
+              <div className="flex items-center gap-3">
+                <p className="font-medium text-foreground flex-1">{phrase.english}</p>
+                <button onClick={() => speak(phrase.english)} className="p-2 hover:bg-primary/10 rounded-full transition-colors">
+                  <Volume2 className="w-4 h-4 text-primary" />
+                </button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      )
+    });
+  }
+
+  // Corona Pandemic Example (Chapter 6)
+  if (chapter.corona_pandemic_example) {
+    lessonSections.push({
+      title: 'Linking Words in Action',
+      icon: <BookMarked className="w-5 h-5" />,
+      content: (
+        <div className="space-y-4">
+          <div className="p-5 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+            <div className="flex items-center gap-2 mb-3">
+              <Languages className="w-4 h-4 text-primary" />
+              <h4 className="text-sm font-semibold text-primary">Bengali Passage:</h4>
+            </div>
+            <p className="font-bengali leading-relaxed text-foreground">{chapter.corona_pandemic_example.bengali}</p>
+          </div>
+          <div className="p-5 rounded-xl bg-gradient-to-br from-green-500/10 to-green-500/5 border border-green-500/20">
+            <div className="flex items-center gap-2 mb-3">
+              <CheckCircle className="w-4 h-4 text-green-600 dark:text-green-400" />
+              <h4 className="text-sm font-semibold text-green-600 dark:text-green-400">English Translation:</h4>
+            </div>
+            <p className="leading-relaxed text-foreground">{chapter.corona_pandemic_example.english}</p>
+          </div>
+          <div className="p-4 rounded-xl bg-muted/50 border border-border">
+            <h4 className="text-sm font-semibold text-foreground mb-3">Linking Words Used:</h4>
+            <div className="flex flex-wrap gap-2">
+              {chapter.corona_pandemic_example.linking_words_used.map((word, i) => (
+                <span key={i} className="px-3 py-1.5 text-sm rounded-full bg-gradient-to-r from-primary/20 to-primary/10 text-primary font-medium border border-primary/20">
+                  {word}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+    });
+  }
+
+  // Environment Topic Example (Chapter 5)
+  if (chapter.environment_topic) {
+    lessonSections.push({
+      title: 'Verb+ing in Action',
+      icon: <BookMarked className="w-5 h-5" />,
+      content: (
+        <div className="space-y-4">
+          <div className="p-5 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
+            <div className="flex items-center gap-2 mb-3">
+              <Languages className="w-4 h-4 text-primary" />
+              <h4 className="text-sm font-semibold text-primary">Bengali Passage:</h4>
+            </div>
+            <p className="font-bengali leading-relaxed text-foreground">{chapter.environment_topic.bengali}</p>
+          </div>
+          <div className="p-5 rounded-xl bg-gradient-to-br from-green-500/10 to-green-500/5 border border-green-500/20">
+            <div className="flex items-center gap-2 mb-3">
+              <CheckCircle className="w-4 h-4 text-green-600 dark:text-green-400" />
+              <h4 className="text-sm font-semibold text-green-600 dark:text-green-400">English Translation:</h4>
+            </div>
+            <p className="leading-relaxed text-foreground">{chapter.environment_topic.english}</p>
+          </div>
+          <div className="p-4 rounded-xl bg-muted/50 border border-border">
+            <h4 className="text-sm font-semibold text-foreground mb-3">Verb+ing Usage Highlighted:</h4>
+            <div className="flex flex-wrap gap-2">
+              {chapter.environment_topic.verb_ing_usage.map((usage, i) => (
+                <span key={i} className="px-3 py-1.5 text-sm rounded-full bg-gradient-to-r from-amber-500/20 to-amber-500/10 text-amber-600 dark:text-amber-400 font-medium border border-amber-500/20">
+                  {usage}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+    });
+  }
+
   if (chapter.practice?.bengali && chapter.practice?.english) {
     lessonSections.push({
       title: 'Practice Passage',
