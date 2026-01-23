@@ -59,23 +59,81 @@ export default function GrammarChapterPage() {
   const translationExercises = useMemo((): TranslationExercise[] => {
     if (!chapter) return [];
     
-    const exercises: TranslationExercise[] = [];
+    const passageExercises: TranslationExercise[] = [];
+    const sentenceExercises: TranslationExercise[] = [];
     let idCounter = 1;
     
-    // From practice passage - full passage translation
-    if (chapter.practice?.bengali && chapter.practice?.english) {
-      exercises.push({
-        id: idCounter++,
-        bengali: chapter.practice.bengali,
-        english: chapter.practice.english,
-        type: 'passage'
+    // Priority 1: From projects with full passages (Chapter 7 has 30 projects)
+    if (chapter.projects) {
+      chapter.projects.forEach((proj) => {
+        if (proj.passage && proj.translation) {
+          passageExercises.push({
+            id: idCounter++,
+            bengali: proj.passage,
+            english: proj.translation,
+            type: 'passage',
+            hint: proj.title || proj.headline || `Project ${proj.number}`
+          });
+        } else if (proj.bengali && proj.english) {
+          sentenceExercises.push({
+            id: idCounter++,
+            bengali: proj.bengali,
+            english: proj.english,
+            type: 'sentence',
+            hint: proj.title || `Project ${proj.number}`
+          });
+        }
+        // From project sentences (newspaper translations etc.)
+        if (proj.sentences) {
+          proj.sentences.forEach(s => {
+            sentenceExercises.push({
+              id: idCounter++,
+              bengali: s.bengali,
+              english: s.english,
+              type: 'sentence',
+              hint: proj.title || proj.headline
+            });
+          });
+        }
       });
     }
     
-    // From practice exercises
+    // Priority 2: From practice passage - full passage translation
+    if (chapter.practice?.bengali && chapter.practice?.english) {
+      passageExercises.push({
+        id: idCounter++,
+        bengali: chapter.practice.bengali,
+        english: chapter.practice.english,
+        type: 'passage',
+        hint: 'Chapter Practice Passage'
+      });
+    }
+    
+    // Priority 3: From environment topic or corona example (full passages)
+    if (chapter.environment_topic) {
+      passageExercises.push({
+        id: idCounter++,
+        bengali: chapter.environment_topic.bengali,
+        english: chapter.environment_topic.english,
+        type: 'passage',
+        hint: 'Environment Topic - Focus on verb+ing usage'
+      });
+    }
+    
+    if (chapter.corona_pandemic_example) {
+      passageExercises.push({
+        id: idCounter++,
+        bengali: chapter.corona_pandemic_example.bengali,
+        english: chapter.corona_pandemic_example.english,
+        type: 'passage',
+        hint: 'Linking Words Practice'
+      });
+    }
+    
+    // Priority 4: From practice exercises
     if (chapter.practice_exercises) {
       chapter.practice_exercises.forEach((ex) => {
-        exercises.push({
+        sentenceExercises.push({
           id: idCounter++,
           bengali: ex.bengali,
           english: ex.english,
@@ -84,46 +142,13 @@ export default function GrammarChapterPage() {
       });
     }
     
-    // From projects with full passages
-    if (chapter.projects) {
-      chapter.projects.forEach((proj) => {
-        if (proj.passage && proj.translation) {
-          exercises.push({
-            id: idCounter++,
-            bengali: proj.passage,
-            english: proj.translation,
-            type: 'passage',
-            hint: proj.title
-          });
-        } else if (proj.bengali && proj.english) {
-          exercises.push({
-            id: idCounter++,
-            bengali: proj.bengali,
-            english: proj.english,
-            type: 'sentence'
-          });
-        }
-        // From project sentences
-        if (proj.sentences) {
-          proj.sentences.forEach(s => {
-            exercises.push({
-              id: idCounter++,
-              bengali: s.bengali,
-              english: s.english,
-              type: 'sentence'
-            });
-          });
-        }
-      });
-    }
-    
-    // From content examples
+    // Priority 5: From content examples
     if (chapter.content) {
       chapter.content.forEach(section => {
         if (section.examples) {
           section.examples.forEach(ex => {
             if (ex.bengali && ex.english) {
-              exercises.push({
+              sentenceExercises.push({
                 id: idCounter++,
                 bengali: ex.bengali,
                 english: ex.english,
@@ -135,29 +160,13 @@ export default function GrammarChapterPage() {
       });
     }
     
-    // From environment topic or corona example (full passages)
-    if (chapter.environment_topic) {
-      exercises.push({
-        id: idCounter++,
-        bengali: chapter.environment_topic.bengali,
-        english: chapter.environment_topic.english,
-        type: 'passage',
-        hint: 'Environment topic - Focus on verb+ing usage'
-      });
-    }
+    // Combine: prioritize passages, then sentences
+    // For Chapter 7 with many projects, allow up to 15 exercises
+    const maxExercises = chapter.projects && chapter.projects.length > 5 ? 15 : 10;
+    const passages = passageExercises.slice(0, Math.min(passageExercises.length, 8));
+    const sentences = sentenceExercises.slice(0, maxExercises - passages.length);
     
-    if (chapter.corona_pandemic_example) {
-      exercises.push({
-        id: idCounter++,
-        bengali: chapter.corona_pandemic_example.bengali,
-        english: chapter.corona_pandemic_example.english,
-        type: 'passage',
-        hint: 'Linking words practice'
-      });
-    }
-    
-    // Limit to reasonable number but include passages
-    return exercises.slice(0, 8);
+    return [...passages, ...sentences];
   }, [chapter]);
 
   // Get grammar focus for AI feedback
